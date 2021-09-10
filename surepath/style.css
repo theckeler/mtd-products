@@ -45,6 +45,22 @@
   display: -ms-flexbox;
   display: flex;
 }
+.mtd-page .blocks.two > .block {
+  width: 50%;
+}
+.mtd-page .video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+}
+.mtd-page .video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .mtd-page .hero.section-1 {
   padding: 0;
@@ -77,4 +93,7 @@
   margin-top: 20px;
   font-size: 1.5rem;
   line-height: 1.5;
+}
+.mtd-page .section-3 {
+  padding: 30px;
 }
