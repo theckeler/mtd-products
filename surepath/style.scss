@@ -1,71 +1,6 @@
 @import "../foundation/";
 
-.surepath {
-  .wrapper {
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-
-  .bg-yellow,
-  .button {
-    background: #ffc20f;
-  }
-
-  .bg-black {
-    background: #000;
-  }
-
-  .title {
-    font-weight: bold;
-  }
-
-  .visually-hidden {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-  }
-
-  .button {
-    display: block;
-    padding: 15px 25px;
-    text-align: center;
-    font-size: rem(14px);
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 700;
-    border: 2px solid transparent;
-    margin-top: 20px;
-
-    &:hover {
-      border-color: #000;
-      background: #ffc20f;
-      color: #1f1f1f;
-    }
-  }
-
-  .no-list {
-    list-style: none;
-    padding: 0;
-  }
-
-  .list {
-    list-style: disc;
-  }
-
-  .blocks {
-    display: flex;
-  }
-
+.mtd-page {
   .hero.section-1 {
     padding: 0;
     position: relative;
@@ -86,6 +21,21 @@
   .section-2 {
     padding: 70px 20px;
     color: #fff;
+    text-align: center;
+
+    .wrapper {
+      max-width: 750px;
+    }
+
+    h2 {
+      font-size: rem(48px);
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: rem(24px);
+      line-height: 1.5;
+    }
   }
 }
 

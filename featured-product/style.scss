@@ -1,61 +1,6 @@
 @import "../foundation/";
 
-.featured-products {
-  .wrapper {
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-
-  .bg-yellow,
-  .button {
-    background: #ffc20f;
-  }
-
-  .bg-black {
-    background: #000;
-  }
-
-  .title {
-    font-weight: bold;
-  }
-
-  .button {
-    display: block;
-    padding: 15px 25px;
-    text-align: center;
-    font-size: rem(14px);
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 700;
-    border: 2px solid transparent;
-    margin-top: 20px;
-
-    &:hover {
-      border-color: #000;
-      background: #ffc20f;
-      color: #1f1f1f;
-    }
-  }
-
-  .no-list {
-    list-style: none;
-    padding: 0;
-  }
-
-  .list {
-    list-style: disc;
-  }
-
-  .blocks {
-    display: flex;
-  }
-
+.mtd-page {
   &--header {
     background: #efefef;
     //padding-bottom: 30px;
@@ -257,7 +202,7 @@
 }
 
 @media only screen and (max-width: 1300px) {
-  .featured-products {
+  .mtd-page {
     .block-3 {
       max-width: initial;
     }
@@ -266,15 +211,15 @@
       display: none;
     }
 
-    .featured-products--grid {
+    .mtd-page--grid {
       grid-template-columns: 1fr 1fr;
     }
   }
 }
 
 @media only screen and (max-width: 992px) {
-  .featured-products {
-    .featured-products--main {
+  .mtd-page {
+    .mtd-page--main {
       display: grid;
       grid-template-areas: "block-4" "block-1" "block-2";
 
@@ -301,15 +246,15 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .featured-products {
-    .featured-products--grid {
+  .mtd-page {
+    .mtd-page--grid {
       grid-template-columns: 1fr;
     }
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .featured-products {
+  .mtd-page {
     .blocks {
       flex-direction: column;
 
