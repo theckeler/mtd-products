@@ -1,0 +1,77 @@
+.surepath .wrapper {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.surepath img {
+  width: 100%;
+  height: auto;
+}
+.surepath .bg-yellow,
+.surepath .button {
+  background: #ffc20f;
+}
+.surepath .bg-black {
+  background: #000;
+}
+.surepath .title {
+  font-weight: bold;
+}
+.surepath .visually-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.surepath .button {
+  display: block;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  border: 2px solid transparent;
+  margin-top: 20px;
+}
+.surepath .button:hover {
+  border-color: #000;
+  background: #ffc20f;
+  color: #1f1f1f;
+}
+.surepath .no-list {
+  list-style: none;
+  padding: 0;
+}
+.surepath .list {
+  list-style: disc;
+}
+.surepath .blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.surepath .hero.section-1 {
+  padding: 0;
+  position: relative;
+}
+.surepath .hero.section-1 .layered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.surepath .hero.section-1 > img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.surepath .section-2 {
+  padding: 70px 20px;
+  color: #fff;
+}
