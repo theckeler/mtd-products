@@ -123,6 +123,14 @@
     width: 1px;
   }
 
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
   .faqs-container {
     padding: 60px 0;
 
@@ -133,16 +141,23 @@
     }
 
     .question {
+      display: flex;
+      position: relative;
       font-size: rem(22px);
       padding: 32px 0;
-      display: flex;
       font-weight: 700;
 
-      &:after {
-        content: "\2716";
-        margin-left: auto;
+      span {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        position: relative;
+        width: 30px;
+        height: 30px;
         transform: rotate(45deg);
+        transform-origin: center;
         transition: all 0.2s;
+        margin-left: auto;
       }
 
       &:hover {
@@ -150,7 +165,7 @@
       }
 
       &.active {
-        &:after {
+        span {
           transform: rotate(0);
         }
       }
@@ -173,7 +188,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1001;
+    z-index: 101;
   }
 }
 
@@ -189,6 +204,13 @@
 
 @media only screen and (max-width: 768px) {
   .mtd-page {
+    .desktop {
+      display: none;
+    }
+
+    .mobile {
+      display: block;
+    }
   }
 }
 
