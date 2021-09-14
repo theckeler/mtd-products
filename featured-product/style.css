@@ -2,6 +2,11 @@
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.mtd-page ul {
+  margin-bottom: 0;
 }
 .mtd-page img {
   width: 100%;
@@ -11,8 +16,18 @@
 .mtd-page .button {
   background: #ffc20f;
 }
+.mtd-page .bg-grey {
+  background: #efefef;
+}
+.mtd-page .yellow {
+  color: #ffc20f;
+}
 .mtd-page .bg-black {
   background: #000;
+}
+.mtd-page .clip-corner {
+  -webkit-clip-path: polygon(0 44px, 44px 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 44px, 44px 0, 100% 0, 100% 100%, 0 100%);
 }
 .mtd-page .title {
   font-weight: bold;
@@ -26,7 +41,6 @@
   text-decoration: none;
   font-weight: 700;
   border: 2px solid transparent;
-  margin-top: 20px;
 }
 .mtd-page .button:hover {
   border-color: #000;
@@ -44,6 +58,51 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.mtd-page .blocks.two > .block {
+  width: 50%;
+}
+.mtd-page .blocks.three > .block {
+  width: 33%;
+}
+.mtd-page .video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+}
+.mtd-page .video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.mtd-page .img-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+.mtd-page .img-wrapper > img {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.mtd-page .visually-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .mtd-page--header {
@@ -134,7 +193,7 @@
 }
 .mtd-page--sub {
   margin-top: 30px;
-  padding: 40px 20px;
+  padding: 40px 0;
   background: #efefef;
 }
 .mtd-page--grid {
@@ -163,6 +222,10 @@
 .mtd-page--grid .product {
   background: #fff;
   min-height: 400px;
+  overflow: hidden;
+}
+.mtd-page--grid .product .img-wrapper {
+  min-height: 160px;
 }
 .mtd-page--grid .full-link {
   display: grid;
@@ -182,6 +245,10 @@
 .mtd-page--grid .full-link:hover .button {
   background: #000;
   color: #fff;
+}
+.mtd-page--grid .full-link:hover .img-wrapper > img {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 .mtd-page--grid .block {
   padding: 20px;

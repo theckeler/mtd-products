@@ -108,7 +108,7 @@
 
   &--sub {
     margin-top: 30px;
-    padding: 40px 20px;
+    padding: 40px 0;
     background: #efefef;
   }
 
@@ -144,6 +144,11 @@
     .product {
       background: #fff;
       min-height: 400px;
+      overflow: hidden;
+
+      .img-wrapper {
+        min-height: 160px;
+      }
     }
 
     .full-link {
@@ -165,6 +170,13 @@
         .button {
           background: #000;
           color: #fff;
+        }
+
+        .img-wrapper {
+          > img {
+            transform: scale(1.03);
+            //opacity: 0.8;
+          }
         }
       }
     }

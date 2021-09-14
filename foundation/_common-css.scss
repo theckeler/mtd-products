@@ -3,6 +3,12 @@
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  ul {
+    margin-bottom: 0;
   }
 
   img {
@@ -15,8 +21,20 @@
     background: #ffc20f;
   }
 
+  .bg-grey {
+    background: #efefef;
+  }
+
+  .yellow {
+    color: #ffc20f;
+  }
+
   .bg-black {
     background: #000;
+  }
+
+  .clip-corner {
+    clip-path: polygon(0 44px, 44px 0, 100% 0, 100% 100%, 0 100%);
   }
 
   .title {
@@ -32,7 +50,6 @@
     text-decoration: none;
     font-weight: 700;
     border: 2px solid transparent;
-    margin-top: 20px;
 
     &:hover {
       border-color: #000;
@@ -58,6 +75,12 @@
         width: 50%;
       }
     }
+
+    &.three {
+      > .block {
+        width: 33%;
+      }
+    }
   }
 
   .video-wrapper {
@@ -72,6 +95,85 @@
       width: 100%;
       height: 100%;
     }
+  }
+
+  .img-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+
+    > img {
+      transition: all 0.2s ease-in-out;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  .faqs-container {
+    padding: 60px 0;
+
+    h2 {
+      font-size: rem(48px);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .question {
+      font-size: rem(22px);
+      padding: 32px 0;
+      display: flex;
+      font-weight: 700;
+
+      &:after {
+        content: "\2716";
+        margin-left: auto;
+        transform: rotate(45deg);
+        transition: all 0.2s;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &.active {
+        &:after {
+          transform: rotate(0);
+        }
+      }
+    }
+
+    .answer {
+      overflow: hidden;
+      max-height: 0;
+      border-bottom: 1px solid #d9d9d9;
+      transition: max-height 0.2s;
+
+      &.active {
+        max-height: 1000px;
+      }
+    }
+  }
+
+  .layered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
   }
 }
 
