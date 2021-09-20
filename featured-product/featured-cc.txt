@@ -1,0 +1,160 @@
+<link rel="stylesheet" href="/on/demandware.static/-/Sites-cubcadet-Library/default/dw1e4c679d/stylesheets/featured.min.css" />
+
+          <script>
+            const heroImg = "/on/demandware.static/-/Sites-cubcadet-Library/default/dw1e4c679d/images/iStock-1167706595.jpg";
+            const heroCopy = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet bibendum massa. Cras dapibus in tortor ac ultricies. Nam elementum commodo tristique. Pellentesque nec ornare nisi. In tempor libero semper tortor lacinia posuere id eu urna. Curabitur pretium risus nec augue rutrum vulputate. In eleifend purus tortor, in varius quam accumsan eu. Aenean nibh dolor, dignissim id fermentum sed, posuere eu ipsum. Proin enim sem, eleifend sit amet dictum ut, dignissim nec orci. Donec et mi ut ex sollicitudin elementum. Quisque felis augue, vehicula ac arcu at, eleifend facilisis purus. Integer non lacus urna.';
+
+            const hero = document.querySelector(".hero");
+            const introCopyP = document.createElement("p");
+            introCopyP.innerHTML = heroCopy;
+            hero.append(introCopyP);
+            const introCopyImgDiv = document.createElement("div");
+            introCopyImgDiv.classList.add("hero--img");
+            introCopyImgDiv.innerHTML = `<img src="${heroImg}">`;
+            hero.prepend(introCopyImgDiv);
+          </script>
+
+
+          <div class="featured-product mtd-page">
+
+            <ul class="mtd-page--main wrapper no-list">
+              <li class="bg-yellow block-1">
+                <h3>Featured Product</h3>
+                <div class="title">25 US Ton Log Splitter</div>
+                <div class="sub-title">LS 25 CC H</div>
+                <ul class="list">
+                  <li class="attribute-values">25 US tons of ram pressure</li>
+                  <li class="attribute-values">160cc Honda® OHC engine</li>
+                  <li class="attribute-values">19 second cycle time with auto return</li>
+                </ul>
+              </li>
+              <li class="block-2">
+                <img src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwe4e4f297/products/Equipment/Cub-Cadet-LS25CCH_1.jpg?sw=1000&sh=1000&sm=fit" alt="" />
+                <a href="#" class="button">View Full Details</a>
+              </li>
+              <li class="block-3">
+                <p class="title">Horizontal and vertical operation.</p>
+                <p>Cub Cadet log splitters make it easier to set up big logs faster with flexibility to operate in both horizontal and vertical positions. Either way, you have the power to make quick work of splitting wood.</p>
+
+                <p class="title">Portable power.</p>
+                <p>Sometimes you need to go to where the logs are. The Cub Cadet log splitters have 16” wheels with diamond-tread steel fenders and a tow hitch that lets you haul your wood splitter to exactly where you need it.</p>
+
+                <p class="title">Cut in 15 seconds.</p>
+                <p>Get the job done faster with 15-19 second cycle times. The auto return feature lets you clean and prep your workspace without the downtime of waiting for the wedge to go up.</p>
+              </li>
+              <li class="block-4">
+                <img src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dwd4468393/images/product-line-browse/Main-Carousel/LogSplitter_ProdLineBrow_Hero_LS25_Desktop_1015x630.jpg" alt="" />
+              </li>
+            </ul>
+
+
+            <div class="mtd-page--sub">
+              <div class="wrapper">
+                <ul class="mtd-page--grid no-list">
+
+                  
+                  <li class="product product-1">
+                    <div class="title bg-black">Morbi mollis ultricies massa mollis eleifend</div>
+                    <ul class="no-list blocks two">
+                      <li class="block-1">
+                        <div class="title product-title">Mulching Kit for 42-inch Decks</div>
+                        <ul class="list">
+                          <li>Fits most XT1, XT2 and RZT Models with a 42-inch Cutting Deck (2015 - )</li>
+                          <li>Includes two mulching blades, molded plug, mounting hardware and instructions</li>
+                          <li>Installs easily</li>
+                          <li>Returns the natural nutrients to the soil to create a greener, healthier lawn</li>
+                          <li>Turns your ordinary grass clippings into finely ground mulch</li>
+                        </ul>
+                      </li>
+                      <li class="block-2">
+                        <img src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw73e17fb7/products/19A70041100.jpg?sw=1000&sh=1000&sm=fit" alt="">
+                        <a href="#" class="button">View Full Details</a>
+                      </li>
+                    </ul>
+                  </li>
+
+
+                  <li class="product product-2">
+                    <div class="title bg-black">Morbi mollis ultricies massa mollis eleifend</div>
+                    <ul class="no-list blocks two">
+                      <li class="block-1">
+                        <div class="title product-title">Mulching Kit for 42-inch Decks</div>
+                        <ul class="list">
+                          <li>Fits most XT1, XT2 and RZT Models with a 42-inch Cutting Deck (2015 - )</li>
+                          <li>Includes two mulching blades, molded plug, mounting hardware and instructions</li>
+                          <li>Installs easily</li>
+                          <li>Returns the natural nutrients to the soil to create a greener, healthier lawn</li>
+                          <li>Turns your ordinary grass clippings into finely ground mulch</li>
+                        </ul>
+                      </li>
+                      <li class="block-2">
+                        <img src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw73e17fb7/products/19A70041100.jpg?sw=1000&sh=1000&sm=fit" alt="">
+                        <a href="#" class="button">View Full Details</a>
+                      </li>
+                    </ul>
+                  </li>
+
+
+                  <li class="product product-3">
+                    <div class="title bg-black">Morbi mollis ultricies massa mollis eleifend</div>
+                    <ul class="no-list blocks two">
+                      <li class="block-1">
+                        <div class="title product-title">Mulching Kit for 42-inch Decks</div>
+                        <ul class="list">
+                          <li>Fits most XT1, XT2 and RZT Models with a 42-inch Cutting Deck (2015 - )</li>
+                          <li>Includes two mulching blades, molded plug, mounting hardware and instructions</li>
+                          <li>Installs easily</li>
+                          <li>Returns the natural nutrients to the soil to create a greener, healthier lawn</li>
+                          <li>Turns your ordinary grass clippings into finely ground mulch</li>
+                        </ul>
+                      </li>
+                      <li class="block-2">
+                        <img src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw73e17fb7/products/19A70041100.jpg?sw=1000&sh=1000&sm=fit" alt="">
+                        <a href="#" class="button">View Full Details</a>
+                      </li>
+                    </ul>
+                  </li>
+
+
+                  <li class="product product-4 full-link">
+                    <a href="#">
+                      <div class="title bg-black">Featured Video</div>
+                      <div class="img-wrapper">
+                        <img src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/BCSH_STG/on/demandware.static/-/Sites-cubcadet-Library/default/dw7794c3f7/Knowledge_Center/help-center/how-to-use-a-leaf-collection-system_1100x572.jpg?sw=1116" alt="">
+                      </div>
+                      <div class="block">
+                        <div class="title">How to Use a Leaf Collection System</div>
+                        <p>The Cub Cadet Leaf Collection System will help make cleaning up your yard a breeze with your riding lawn mower. Follow these safety and operating tips to ensure you get the most out of your leaf collection system.</p>
+                      </div>
+                    </a>
+                  </li>
+
+
+                  <li class="product product-5 full-link">
+                    <a href="/en_US/knowledge-center/knowledge-how-to-maintain-your-hydraulic-log-splitter.html">
+                      <div class="title bg-black">Featured Article</div>
+                      <div class="img-wrapper">
+                        <img src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dwd4468393/images/product-line-browse/Main-Carousel/LogSplitter_ProdLineBrow_Hero_LS25_Desktop_1015x630.jpg" alt="">
+                      </div>
+                      <div class="block">
+                        <div class="title">How to Maintain Your Hydraulic Log Splitter</div>
+                        <p>A properly maintained hydraulic log splitter will allow you to split cord after cord of wood safely and efficiently. Use the following log splitter maintenance tips to ensure your machine continues to run smoothly and efficiently all year long.</p>
+                      </div>
+                    </a>
+                  </li>
+
+
+                  <li class="product product-6 full-link">
+                    <a href="#">
+                      <div class="block">
+                        <div class="title">Cub Cadet® Extended Warranty</div>
+                        <p>Our extended warranty provides peace of mind by adding an additional two years of product protection after the original warranty expires. Eligible Cub Cadet products include residential walk-behind mowers (push and self-propelled), snow blowers and ride-on mowers (garden, lawn and residential zero-turn).</p>
+                        <p href="#" class="button">CHECK YOUR PRODUCT ELIGIBILITY</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>

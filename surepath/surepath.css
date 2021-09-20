@@ -1,3 +1,12 @@
+.container.content-asset-container {
+  max-width: 100%;
+  padding: 0;
+}
+
+.content-page-image {
+  height: auto;
+}
+
 .mtd-page .wrapper {
   max-width: 1400px;
   margin-left: auto;
@@ -16,11 +25,44 @@
 .mtd-page .button {
   background: #ffc20f;
 }
+.mtd-page .bg-yellow:hover,
+.mtd-page .button:hover {
+  border-color: #000;
+  background: #ffc20f;
+  color: #1f1f1f;
+}
+.mtd-page .bg-troy-red {
+  background: #c00;
+  color: #fff;
+}
+.mtd-page .bg-troy-red h3 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.mtd-page .bg-mtd-green {
+  background: #008540;
+  color: #fff;
+}
+.mtd-page .bg-mtd-green h3 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.mtd-page .bg-red,
+.mtd-page .button.troy-red {
+  background: #c00;
+  color: #fff;
+}
+.mtd-page .mtd-green,
+.mtd-page .button.mtd-green {
+  background: #008540;
+  color: #fff;
+}
 .mtd-page .bg-grey {
   background: #efefef;
 }
 .mtd-page .yellow {
   color: #ffc20f;
+}
+.mtd-page .troy-red {
+  color: #c00;
 }
 .mtd-page .bg-black {
   background: #000;
@@ -46,6 +88,16 @@
   border-color: #000;
   background: #ffc20f;
   color: #1f1f1f;
+}
+.mtd-page .button.mtd-green:hover {
+  border-color: #000;
+  background: #008540;
+  color: #fff;
+}
+.mtd-page .button.troy-red:hover {
+  border-color: #000;
+  background: #c00;
+  color: #fff;
 }
 .mtd-page .no-list {
   list-style: none;
@@ -181,6 +233,17 @@
     display: block;
   }
 }
+.hero.content-page-image {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .mtd-page .quotes > .block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -429,12 +492,11 @@
   color: #fff;
   font-size: 1.5rem;
 }
+.mtd-page .section-10 .wrapper p {
+  margin: 0 auto 30px auto;
+}
 .mtd-page .section-10 h3 {
   font-size: 1.875rem;
-}
-.mtd-page .section-10 p {
-  font-size: 1.5rem;
-  margin: 0;
 }
 .mtd-page .section-10 .blocks .block {
   display: -webkit-box;
@@ -453,6 +515,9 @@
 .mtd-page .section-10 .content {
   text-align: left;
   padding: 40px 50px 20px 50px;
+}
+.mtd-page .section-10 .content p {
+  max-width: 100%;
 }
 .mtd-page .section-11 h2 {
   font-size: 3rem;

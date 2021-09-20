@@ -1,31 +1,37 @@
 @import "../foundation/";
 
-.mtd-page {
-  &--header {
-    background: #efefef;
-    //padding-bottom: 30px;
+footer {
+  margin-top: 0;
+}
 
-    .wrapper {
-      padding: 30px 20px;
+.hero.content-page-image {
+  background: #efefef;
+  padding: 0;
 
-      h1 {
-        text-transform: uppercase;
-        text-align: center;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-        border-bottom: 1px solid #4b4b4b;
-        font-weight: 500;
-        font-size: rem(46px);
-      }
-
-      p {
-        color: #707070;
-        margin-bottom: 0;
-      }
-    }
+  h1.page-title {
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #4b4b4b;
+    font-weight: 500;
+    font-size: rem(46px);
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 20px 0 20px;
   }
 
-  &--img {
+  p {
+    color: #707070;
+    margin-bottom: 0;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px 20px 20px;
+  }
+
+  .hero--img {
     max-height: 90px;
     overflow: hidden;
 
@@ -34,6 +40,17 @@
       height: 100%;
       object-fit: cover;
       //object-position: center;
+    }
+  }
+}
+
+.mtd-page {
+  &--header {
+    background: #efefef;
+    //padding-bottom: 30px;
+
+    .wrapper {
+      padding: 30px 20px;
     }
   }
 
@@ -176,6 +193,30 @@
           > img {
             transform: scale(1.03);
             //opacity: 0.8;
+          }
+        }
+      }
+
+      &.mtd-full-link {
+        &:hover {
+          background: #008540;
+          color: #fff;
+          cursor: pointer;
+
+          * {
+            color: #fff;
+          }
+        }
+      }
+
+      &.troy-full-link {
+        &:hover {
+          background: #c00;
+          color: #fff;
+          cursor: pointer;
+
+          * {
+            color: #fff;
           }
         }
       }
