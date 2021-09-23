@@ -1,3 +1,17 @@
+.hide {
+  position: fixed;
+  left: -100000px;
+  top: -100000px;
+  display: none;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
 .container.content-asset-container {
   max-width: 100%;
   padding: 0;
