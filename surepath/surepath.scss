@@ -127,7 +127,7 @@
   }
 
   .section-3 {
-    padding: 30px;
+    padding: 30px 20px;
 
     h3 {
       font-size: rem(48px);
@@ -180,6 +180,12 @@
           padding: 14px 90px;
         }
       }
+    }
+
+    #surepath-video-container {
+      display: none;
+      width: 100%;
+      height: 100%;
     }
   }
 
@@ -261,7 +267,7 @@
   }
 
   .section-7 {
-    padding: 60px 0;
+    padding: 60px 20px;
   }
 
   .section-8 {
@@ -531,15 +537,17 @@
     }
 
     .section-7 {
-      padding: 20px 0;
+      padding: 20px;
 
-      .wrapper {
-        .quotes {
-          flex-direction: column;
+      .quotes {
+        flex-direction: column;
 
-          > .block {
-            width: 100%;
-            padding: 20px 0;
+        > .block {
+          width: 100%;
+          padding: 0;
+
+          &.block-2 {
+            padding-top: 20px;
           }
         }
       }

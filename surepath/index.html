@@ -1401,9 +1401,13 @@
             <section class="section-1 hero">
               <h1 class="visually-hidden">SurePath</h1>
 
-              <img sizes="(max-width: 3200px) 100vw, 3200px" srcset="
+              <img class="desktop" sizes="(max-width: 3200px) 100vw, 3200px" srcset="
             /on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/surepath/hero.png 1600w,
             /on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/surepath/hero@2x.png 3200w" src="/on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/surepath/hero@2x.png" alt="">
+
+              <img class="mobile" sizes="(max-width: 768px) 100vw, 768px" srcset="
+                        /on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/surepath/hero-mobile.png 375w,
+                        /on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/surepath/hero-mobile@2x.png 768w" src="/on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/surepath/hero-mobile@2x.png" alt="">
             </section>
 
             <section class="section-2 bg-black">
@@ -1416,7 +1420,7 @@
             <section class="section-3">
               <ul class="blocks two no-list">
                 <li class="block block-1">
-                  <a href="#">
+                  <a href="#" id="play-surepath-video">
                     <div class="img-wrapper">
                       <div class="layered">
                         <div>&#8227;</div>
@@ -1424,6 +1428,17 @@
                       <img src="/on/demandware.static/-/Sites-cubcadet-Library/default/vfeca51bf5ff02b801fde993942a9a9b78a945b77/images/surepath/temp-video.png" alt="">
                     </div>
                   </a>
+                  <div class="video-wrapper" id="surepath-video-container">
+                    <iframe width="560" height="315" src="" title="YouTube video player" id="surepath-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <script>
+                    document.querySelector("#play-surepath-video").addEventListener("click", function (e) {
+                      e.preventDefault();
+                      document.querySelector("#play-surepath-video").style.display = "none";
+                      document.querySelector("#surepath-video").src = "https://www.youtube.com/embed/Ks6b512nxuo?rel=0&autoplay=1&enablejsapi=1&modestbranding=1&controls=0";
+                      document.querySelector("#surepath-video-container").style.display = "block";
+                    });
+                  </script>
                 </li>
                 <li class="block block-2 bg-yellow">
                   <div class="content">
@@ -1443,7 +1458,10 @@
             </section>
 
             <section class="section-5 animate-this">
-              <img class="desktop" src="/on/demandware.static/-/Sites-cubcadet-Library/default/vfeca51bf5ff02b801fde993942a9a9b78a945b77/images/surepath/horizontal_stripe_graphic_v2.png" alt="">
+              <img class="desktop" sizes="(max-width: 3200px) 100vw, 3200px" srcset="
+            /on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/surepath/horizontal_stripe_graphic_v2.png 1600w,
+            /on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/surepath/horizontal_stripe_graphic_v2@2x.png 3200w" src="/on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/surepath/horizontal_stripe_graphic_v2@2x.png" alt="">
+
               <img class="mobile" src="/on/demandware.static/-/Sites-cubcadet-Library/default/vfeca51bf5ff02b801fde993942a9a9b78a945b77/images/surepath/vertical_stripe_graphic_v2.png" alt="">
             </section>
 
@@ -1469,72 +1487,71 @@
             </section>
 
             <section class="section-7">
-              <div class="wrapper">
-                <ul class="blocks two no-list quotes">
-                  <li class="block block-1">
-                    <ul class="blocks two no-list quote">
-                      <li class="block block-1 bg-yellow">
-                        <figure class="">
-                          <ul class="blocks three no-list">
-                            <li class="block-1 icon">&ldquo;</li>
-                            <li class="block-2 blockquote">
-                              <blockquote>
-                                Guys in my position are always looking for ways to save money and time…SurePath has helped us do that.
-                              </blockquote>
-                            </li>
-                            <li class="block-3 icon">&rdquo;</li>
-                          </ul>
-                          <figcaption>
-                            <p><b>JASON STEWART</b></p>
-                            <p>Ground Superintendent</p>
-                            <p>Brickyard Crossing</p>
-                          </figcaption>
-                        </figure>
-                      </li>
-                      <li class="block block-2 quote-img">
-                        <img src="/on/demandware.static/-/Sites-cubcadet-Library/default/vfeca51bf5ff02b801fde993942a9a9b78a945b77/images/surepath/SurePath1547_rt1_BW_LR.jpg" alt="">
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="block block-2">
-                    <ul class="blocks two no-list quote">
-                      <li class="block block-1 bg-yellow">
-                        <figure class="">
-                          <ul class="blocks three no-list">
-                            <li class="block-1 icon">&ldquo;</li>
-                            <li class="block-2 blockquote">
-                              <blockquote>
-                                It takes me maybe 5 minutes to take a new person out, show them how to use it and then I’m out of the picture.
-                              </blockquote>
-                            </li>
-                            <li class="block-3 icon">&rdquo;</li>
-                          </ul>
-                          <figcaption>
-                            <p><b>WILLIAM HOKE</b></p>
-                            <p>Equipment Manager</p>
-                            <p>Brickyard Crossing</p>
-                          </figcaption>
-                        </figure>
-                      </li>
-                      <li class="block block-2 quote-img">
-                        <img src="/on/demandware.static/-/Sites-cubcadet-Library/default/vfeca51bf5ff02b801fde993942a9a9b78a945b77/images/surepath/LOWRESSurePath1590_BW.jpg" alt="">
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
+              <ul class="blocks two no-list quotes">
+                <li class="block block-1">
+                  <ul class="blocks two no-list quote">
+                    <li class="block block-1 bg-yellow">
+                      <figure class="">
+                        <ul class="blocks three no-list">
+                          <li class="block-1 icon">&ldquo;</li>
+                          <li class="block-2 blockquote">
+                            <blockquote>
+                              Guys in my position are always looking for ways to save money and time…SurePath has helped us do that.
+                            </blockquote>
+                          </li>
+                          <li class="block-3 icon">&rdquo;</li>
+                        </ul>
+                        <figcaption>
+                          <p><b>JASON STEWART</b></p>
+                          <p>Ground Superintendent</p>
+                          <p>Brickyard Crossing</p>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li class="block block-2 quote-img">
+                      <img src="/on/demandware.static/-/Sites-cubcadet-Library/default/vfeca51bf5ff02b801fde993942a9a9b78a945b77/images/surepath/SurePath1547_rt1_BW_LR.jpg" alt="">
+                    </li>
+                  </ul>
+                </li>
+                <li class="block block-2">
+                  <ul class="blocks two no-list quote">
+                    <li class="block block-1 bg-yellow">
+                      <figure class="">
+                        <ul class="blocks three no-list">
+                          <li class="block-1 icon">&ldquo;</li>
+                          <li class="block-2 blockquote">
+                            <blockquote>
+                              It takes me maybe 5 minutes to take a new person out, show them how to use it and then I’m out of the picture.
+                            </blockquote>
+                          </li>
+                          <li class="block-3 icon">&rdquo;</li>
+                        </ul>
+                        <figcaption>
+                          <p><b>WILLIAM HOKE</b></p>
+                          <p>Equipment Manager</p>
+                          <p>Brickyard Crossing</p>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li class="block block-2 quote-img">
+                      <img src="/on/demandware.static/-/Sites-cubcadet-Library/default/vfeca51bf5ff02b801fde993942a9a9b78a945b77/images/surepath/LOWRESSurePath1590_BW.jpg" alt="">
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </section>
 
             <a name="calculator" id="calculator"></a>
-            <section class="section-8 bg-grey">
+            <section class="section-8 bg-grey hide">
               <div class="wrapper">
                 <h2>See what a PRO Z™ SurePath™ could do for you.</h2>
                 <p>Select the values that most align with your operation to calculate your potential time savings and revenue enhancement using a SurePath mower.*</p>
               </div>
               <div class="wrapper calculator">
-                <p><input type="range" min="1" max="100" value="50" class="slider" id="range-1"></p>
-                <p><input type="range" min="1" max="100" value="50" class="slider" id="range-2"></p>
-                <p><input type="range" min="1" max="100" value="50" class="slider" id="range-3"></p>
+                <p><input type="range" min="1" max="100" value="50" class="calculator-slider" id="range-1"></p>
+                <p><input type="range" min="1" max="100" value="50" class="calculator-slider" id="range-2"></p>
+                <p><input type="range" min="1" max="100" value="50" class="calculator-slider" id="range-3"></p>
+                <p><input type="range" min="1" max="100" value="50" class="calculator-slider" id="range-4"></p>
                 <p><input type="text" id="total-input-1"></p>
                 <p><input type="text" id="total-input-2"></p>
                 <p><input type="text" id="total-input-3"></p>
@@ -1543,31 +1560,27 @@
                   let rangeOne = document.querySelector("#range-1");
                   let rangeTwo = document.querySelector("#range-2");
                   let rangeThree = document.querySelector("#range-3");
+                  let rangeFour = document.querySelector("#range-4");
                   let totalInput1 = document.querySelector("#total-input-1");
                   let totalInput2 = document.querySelector("#total-input-2");
                   let totalInput3 = document.querySelector("#total-input-3");
 
-                  rangeOne.addEventListener("change", () => {
-                    console.log("rangeOne change: ", rangeOne.value);
-                    getTotal(parseInt(rangeOne.value), parseInt(rangeTwo.value), parseInt(rangeThree.value));
 
+                  document.querySelectorAll(".calculator-slider").forEach(function (el) {
+                    el.addEventListener("change", () => {
+                      //console.log("rangeThree change: ", rangeThree.value);
+                      getTotal(parseInt(rangeOne.value), parseInt(rangeTwo.value), parseInt(rangeThree.value), parseInt(rangeFour.value));
+                    });
                   });
 
-                  rangeTwo.addEventListener("change", () => {
-                    console.log("rangeTwo change: ", rangeTwo.value);
-                    getTotal(parseInt(rangeOne.value), parseInt(rangeTwo.value), parseInt(rangeThree.value));
-                  });
-
-                  rangeThree.addEventListener("change", () => {
-                    console.log("rangeThree change: ", rangeThree.value);
-                    getTotal(parseInt(rangeOne.value), parseInt(rangeTwo.value), parseInt(rangeThree.value));
-                  });
-
-                  const getTotal = (one = 0, two = 50, three = 50) => {
-                    console.log("getTotal: ", (one + two + three));
-                    totalInput1.value = (one + two) + three;
-                    totalInput2.value = (one - two) + three;
-                    totalInput3.value = one + (two * three);
+                  const getTotal = (one = 0, two = 50, three = 50, four = 50) => {
+                    console.log("one: ", one);
+                    console.log("two: ", one);
+                    console.log("three: ", one);
+                    console.log("four: ", one);
+                    totalInput1.value = Math.round((one + two) + three / four);
+                    totalInput2.value = Math.round((one - two) + three * four);
+                    totalInput3.value = Math.round(one + (two * three) + four);
                   }
 
                   getTotal();
@@ -1997,7 +2010,7 @@
             </section>
 
             <a id="notify-me"></a>
-            <section class="section-12 bg-yellow hide">
+            <section class="section-12 bg-yellow">
               <div class="wrapper">
                 <h2>Sign Up to Get Notified</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse cursus vulputate mi vel dictum. Vivamus varius diam in luctus luctus. Sed quis facilisis arcu. Vivamus tincidunt metus et est semper, efficitur egestas ex facilisis. Curabitur laoreet congue erat vitae finibus. In massa ipsum, consectetur eu rhoncus nec, maximus vitae ligula. In bibendum purus id arcu faucibus, quis placerat nisl consequat. Suspendisse accumsan ligula in justo ultricies dignissim. Sed ornare, nisl eget volutpat congue, libero lectus tempor diam, ac pellentesque ligula sem a elit. Praesent placerat, urna in iaculis malesuada, neque dolor vehicula nunc, quis dignissim magna lectus ut tortor.
@@ -2044,52 +2057,49 @@
                 <h2>FAQs</h2>
 
                 <ul class="faqs no-list">
-                  <li class="question" id="question-1">Phasellus ultrices elit sed congue vulputate?<span>&#10006;</span></li>
-                  <li class="answer" id="answer-1">
-                    <p>Nullam nunc massa, faucibus et metus ac, vulputate dignissim dolor. Duis eget orci auctor, dignissim mi non, hendrerit lorem. Maecenas diam nisi, luctus nec massa sed, venenatis finibus dui. Nulla id ligula ut enim rhoncus vehicula eget vel diam. Suspendisse tempus, dui at placerat cursus, mauris lorem suscipit massa, nec ultrices erat mi in lacus. Aliquam id eros dignissim, efficitur justo id, commodo risus. In eu ultrices sem. Ut vitae felis non ipsum auctor euismod eu ut leo. Aliquam congue sodales quam, a molestie leo porta eget. Etiam nibh lorem, varius nec massa vitae, tincidunt faucibus enim. Fusce cursus, diam id sagittis bibendum, mauris nulla luctus nisl, nec molestie est mauris ut elit.</p>
+                  <li class="question">Are there additional costs for GPS connection?<span>&#10006;</span></li>
+                  <li class="answer">
+                    <p>The first year of GPS coverage is included in the original SurePath™ purchase price, based off activation date. Additional technology package costs will be incremental for additional years, billed annually.</p>
                   </li>
-                  <li class="question" id="question-2">Nam maximus interdum ligula, at posuere felis?<span>&#10006;</span></li>
-                  <li class="answer" id="answer-2">
-                    <p>Fusce condimentum nec mauris id tempor. Duis vitae blandit augue, et consequat diam. Nunc porta a quam ut finibus. Etiam eu lectus egestas diam pulvinar ornare vitae non odio. Nunc dapibus egestas massa. Mauris pulvinar interdum ante vitae accumsan. Cras facilisis mattis ante id scelerisque. Mauris at consectetur neque. Praesent interdum nisi ac sapien tristique pellentesque. Nam ut ex tellus. Aenean in lorem lacinia, sollicitudin lorem ac, scelerisque erat. Sed suscipit eu orci ultrices elementum. Praesent viverra vestibulum nisl. Suspendisse odio augue, posuere sed tempus ac, ornare sed sapien.</p>
+                  <li class="question">Does weather affect usage?<span>&#10006;</span></li>
+                  <li class="answer">
+                    <p>With RTK-GPM satellite coverage, certain extreme weather conditions will impact connectivity. However, mowing would not be possible in most of those extreme conditions anyway.</p>
+                  </li>
+                  <li class="question">What if I have GPS connection issues?<span>&#10006;</span></li>
+                  <li class="answer">
+                    <p>If your SurePath™ unit experiences GPS connection issues, the indicator lights on the GPM will switch from green to either yellow or red. Yellow indicates that you’re losing some connectivity and either need to slow the mower’s speed or transition to manual mowing. If flashing red, connectivity has been completely lost and you will need to switch to manual mowing. If the lights flash blue and then green, the system is attempting to reacquire a signal. Once it does, the indicator lights will switch to a solid green. You can then hit auto-reconnect/re-engage with line-set to get back to the previous cut line.</p>
+                  </li>
+                  <li class="question">Is SurePath available in all states?<span>&#10006;</span></li>
+                  <li class="answer">
+                    <p>Cub Cadet® SurePath™ is available in states with HP-RTK network or the local state satellite network. This includes:</p>
+                    <p>We are continuing to expand our coverage with additional states</p>
+                  </li>
+                  <li class="question">Can I get this fitted or mounted on a different mower?<span>&#10006;</span></li>
+                  <li class="answer">
+                    <p>SurePath™ is a new, exclusive model with unique and innovative components. This technology is not available to be retrofitted or mounted on different mowers.</p>
+                  </li>
+                  <li class="question">What is the warranty?<span>&#10006;</span></li>
+                  <li class="answer">
+                    <p>Cub Cadet® SurePath™ is covered by the same warranty as the PRO Z 900 Series:</p>
+                  </li>
+                  <li class="question">Is maintenance any different from a non-SurePath unit?<span>&#10006;</span></li>
+                  <li class="answer">
+                    <p>Your local Cub Cadet® dealer will be able to provide the same high-quality service and maintenance support for SurePath™ units. Routine daily maintenance remains important for optimal performance, which includes keeping dirt and debris clean from engine, fuse box area and power steering component.</p>
                   </li>
                 </ul>
               </div>
+              <script>
+                var divs = document.querySelectorAll('.question').forEach(function (el) {
+                  el.addEventListener('click', function () {
+                    this.classList.toggle("active");
+                    this.nextElementSibling.classList.toggle("active");
+                  });
+                });
+              </script>
             </section>
 
           </div>
 
-          <script>
-            /*
-                        if (!('IntersectionObserver' in window)) {
-                          console.log('No IntersectionObserver Suport');
-                          let x = document.querySelectorAll(".animate-this"), i;
-                          for (i = 0; i < x.length; i++) {
-                            entry.target.classList.add("animate-run");
-                          }
-            
-                        } else {
-                          const observer = new IntersectionObserver(function (entries) {
-                            entries.forEach(function (entry) {
-                              if (entry.intersectionRatio > 0) {
-                                entry.target.classList.add("animate-run");
-                                observer.unobserve(entry.target);
-                              }
-                            });
-                          });
-            
-                          let x = document.querySelectorAll(".animate-this"), i;
-                          for (i = 0; i < x.length; i++) {
-                            observer.observe(x[i]);
-                          }
-                        }
-            */
-            var divs = document.querySelectorAll('.question').forEach(function (el) {
-              el.addEventListener('click', function () {
-                this.classList.toggle("active");
-                this.nextElementSibling.classList.toggle("active");
-              });
-            });
-          </script>
           <!-- END PAGE BUILD -->
         </div>
 
