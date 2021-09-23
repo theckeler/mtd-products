@@ -1535,13 +1535,17 @@
                 <p><input type="range" min="1" max="100" value="50" class="slider" id="range-1"></p>
                 <p><input type="range" min="1" max="100" value="50" class="slider" id="range-2"></p>
                 <p><input type="range" min="1" max="100" value="50" class="slider" id="range-3"></p>
-                <p><input type="text" id="total-input"></p>
+                <p><input type="text" id="total-input-1"></p>
+                <p><input type="text" id="total-input-2"></p>
+                <p><input type="text" id="total-input-3"></p>
 
                 <script>
                   let rangeOne = document.querySelector("#range-1");
                   let rangeTwo = document.querySelector("#range-2");
                   let rangeThree = document.querySelector("#range-3");
-                  let totalInput = document.querySelector("#total-input");
+                  let totalInput1 = document.querySelector("#total-input-1");
+                  let totalInput2 = document.querySelector("#total-input-2");
+                  let totalInput3 = document.querySelector("#total-input-3");
 
                   rangeOne.addEventListener("change", () => {
                     console.log("rangeOne change: ", rangeOne.value);
@@ -1561,7 +1565,9 @@
 
                   const getTotal = (one = 0, two = 50, three = 50) => {
                     console.log("getTotal: ", (one + two + three));
-                    totalInput.value = (one + two + three);
+                    totalInput1.value = (one + two) + three;
+                    totalInput2.value = (one - two) + three;
+                    totalInput3.value = one + (two * three);
                   }
 
                   getTotal();
