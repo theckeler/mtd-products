@@ -1433,7 +1433,7 @@
                         </div>
 
                       </div>
-                      <a aria-label="Close" class="close" data-dismiss="modal">✕</a>
+                      <a aria-label="Close" id="modal-close" class="close" data-dismiss="modal">✕</a>
                     </div>
                     <div class="modal-body">
                       <div class="modal-ew">
@@ -1545,6 +1545,7 @@
                 const allEl = document.querySelectorAll(".check-eligibility");
 
                 if (w <= 1024) {
+                  document.querySelector("#modal-close").click();
                   if (allEl[0].hasAttribute("data-target")) {
                     allEl.forEach(function (el) {
                       el.removeAttribute("data-target");
