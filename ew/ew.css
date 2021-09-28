@@ -534,7 +534,7 @@
     overflow: hidden;
   }
   .mtd-page section.section-modal.active {
-    max-height: 1000px;
+    max-height: 600px;
   }
   .mtd-page section.section-modal .modal {
     display: block !important;

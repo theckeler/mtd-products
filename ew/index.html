@@ -1415,7 +1415,7 @@
                   <li class="block block-2">
                     <h1>Cub Cadet<sup>®</sup> Extended Warranty</h1>
                     <p>Our extended warranty provides peace of mind by adding an additional two years of product protection after the original warranty expires. Eligible Cub Cadet products include residential walk-behind mowers (push and self-propelled), snow blowers and ride-on mowers (garden, lawn and residential zero-turn).</p>
-                    <a href="#check-eligibility-section" class="button bg-black check-eligibility" data-target="#ew-modal" data-toggle="modal">CHECK YOUR PRODUCT ELIGIBILITY</a>
+                    <a class="button bg-black check-eligibility" data-target="#ew-modal" data-toggle="modal">CHECK YOUR PRODUCT ELIGIBILITY</a>
                   </li>
                 </ul>
             </section>
@@ -1508,7 +1508,7 @@
             <section class="section-5 bg-grey">
               <div class="wrapper">
                 <h2>Lorem ipsum dolor sit amet</h2>
-                <a href="#check-eligibility-section" class="button check-eligibility" data-target="#ew-modal" data-toggle="modal">CHECK YOUR PRODUCT ELIGIBILITY</a>
+                <a class="button check-eligibility" data-target="#ew-modal" data-toggle="modal">CHECK YOUR PRODUCT ELIGIBILITY</a>
               </div>
             </section>
 
@@ -1565,10 +1565,10 @@
               }
               const addClickEvent = (e) => {
                 const modalSection = document.querySelector(".section-modal");
-                modalSection.classList.add("active");
                 setTimeout(function () {
-                  window.scrollTo({ top: modalSection.offsetTop, left: 0, behavior: 'smooth' });
-                }, 500);
+                  modalSection.classList.add("active");
+                  window.scrollTo({ top: (modalSection.offsetTop - 20), left: 0, behavior: 'smooth' });
+                }, 400);
               }
 
               window.addEventListener("resize", displayWindowSize);
