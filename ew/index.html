@@ -1535,7 +1535,7 @@
 
             <section class="section-7">
               <div class="wrapper">
-                <a href="#check-eligibility-section" class="button check-eligibility" data-target="#ew-modal" data-toggle="modal">CHECK YOUR PRODUCT ELIGIBILITY</a>
+                <a class="button check-eligibility" data-target="#ew-modal" data-toggle="modal">CHECK YOUR PRODUCT ELIGIBILITY</a>
               </div>
             </section>
 
@@ -1543,11 +1543,9 @@
               const displayWindowSize = () => {
                 let w = window.innerWidth;
                 const allEl = document.querySelectorAll(".check-eligibility");
-                // console.log("allEl:", allEl);
 
                 if (w <= 1024) {
                   if (allEl[0].hasAttribute("data-target")) {
-                    console.log("remove");
                     allEl.forEach(function (el) {
                       el.removeAttribute("data-target");
                       el.removeAttribute("data-toggle");
@@ -1557,7 +1555,6 @@
                 } else {
                   if (!(allEl[0].hasAttribute("data-target"))) {
                     document.querySelector(".section-modal").classList.remove("active");
-                    console.log("add");
                     allEl.forEach(function (el) {
                       el.setAttribute("data-target", "#ew-modal");
                       el.setAttribute("data-toggle", "modal");
@@ -1566,9 +1563,12 @@
                   }
                 }
               }
-              const addClickEvent = () => {
-                console.log("click");
-                document.querySelector(".section-modal").classList.add("active");
+              const addClickEvent = (e) => {
+                const modalSection = document.querySelector(".section-modal");
+                modalSection.classList.add("active");
+                setTimeout(function () {
+                  window.scrollTo({ top: modalSection.offsetTop, left: 0, behavior: 'smooth' });
+                }, 500);
               }
 
               window.addEventListener("resize", displayWindowSize);

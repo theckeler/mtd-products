@@ -20,6 +20,10 @@
 
   a.button {
     display: inline-block;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .section-1 {
@@ -81,6 +85,10 @@
     p {
       font-size: rem(16px);
       line-height: 1.8;
+    }
+
+    img {
+      max-width: 370px;
     }
 
     .circle {
@@ -191,33 +199,6 @@
     text-align: center;
   }
 
-  section.section-modal.active {
-    .modal {
-      display: block !important;
-      opacity: 1;
-      position: relative;
-
-      .modal-dialog {
-        transform: none;
-        min-height: auto;
-        margin: 0;
-
-        &:before {
-          display: none;
-        }
-      }
-
-      .modal-header {
-        display: none;
-      }
-
-      .modal-content {
-        background: transparent;
-        padding: 30px;
-      }
-    }
-  }
-
   .modal {
     .modal-dialog {
       max-width: 1200px;
@@ -317,10 +298,62 @@
         }
       }
     }
+
+    .section-2,
+    .section-4 {
+      .blocks {
+        flex-direction: column;
+
+        .block {
+          width: 100%;
+
+          &:nth-child(n) {
+            padding: 20px 0;
+          }
+        }
+      }
+    }
+
+    section.section-modal {
+      max-height: 0;
+      overflow: hidden;
+
+      &.active {
+        max-height: 1000px;
+      }
+
+      .modal {
+        display: block !important;
+        opacity: 1;
+        position: relative;
+
+        .modal-dialog {
+          transform: none;
+          min-height: auto;
+          margin: 0;
+
+          &:before {
+            display: none;
+          }
+        }
+
+        .modal-header {
+          display: none;
+        }
+
+        .modal-content {
+          background: transparent;
+          padding: 30px;
+        }
+      }
+    }
   }
 }
 
 @media only screen and (max-width: 768px) {
   .mtd-page {
+    a.button {
+      display: block;
+    }
   }
 }

@@ -268,6 +268,9 @@
 .mtd-page a.button {
   display: inline-block;
 }
+.mtd-page a.button:hover {
+  cursor: pointer;
+}
 .mtd-page .section-1 {
   margin-top: 10px;
   overflow: hidden;
@@ -326,6 +329,9 @@
 .mtd-page .section-2 p {
   font-size: 1rem;
   line-height: 1.8;
+}
+.mtd-page .section-2 img {
+  max-width: 370px;
 }
 .mtd-page .section-2 .circle {
   width: 275px;
@@ -423,27 +429,6 @@
 .mtd-page .section-7 {
   text-align: center;
 }
-.mtd-page section.section-modal.active .modal {
-  display: block !important;
-  opacity: 1;
-  position: relative;
-}
-.mtd-page section.section-modal.active .modal .modal-dialog {
-  -webkit-transform: none;
-          transform: none;
-  min-height: auto;
-  margin: 0;
-}
-.mtd-page section.section-modal.active .modal .modal-dialog:before {
-  display: none;
-}
-.mtd-page section.section-modal.active .modal .modal-header {
-  display: none;
-}
-.mtd-page section.section-modal.active .modal .modal-content {
-  background: transparent;
-  padding: 30px;
-}
 .mtd-page .modal .modal-dialog {
   max-width: 1200px;
 }
@@ -528,5 +513,53 @@
   }
   .mtd-page .section-1 .blocks .block.block-2 {
     padding: 0;
+  }
+  .mtd-page .section-2 .blocks,
+.mtd-page .section-4 .blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mtd-page .section-2 .blocks .block,
+.mtd-page .section-4 .blocks .block {
+    width: 100%;
+  }
+  .mtd-page .section-2 .blocks .block:nth-child(n),
+.mtd-page .section-4 .blocks .block:nth-child(n) {
+    padding: 20px 0;
+  }
+  .mtd-page section.section-modal {
+    max-height: 0;
+    overflow: hidden;
+  }
+  .mtd-page section.section-modal.active {
+    max-height: 1000px;
+  }
+  .mtd-page section.section-modal .modal {
+    display: block !important;
+    opacity: 1;
+    position: relative;
+  }
+  .mtd-page section.section-modal .modal .modal-dialog {
+    -webkit-transform: none;
+            transform: none;
+    min-height: auto;
+    margin: 0;
+  }
+  .mtd-page section.section-modal .modal .modal-dialog:before {
+    display: none;
+  }
+  .mtd-page section.section-modal .modal .modal-header {
+    display: none;
+  }
+  .mtd-page section.section-modal .modal .modal-content {
+    background: transparent;
+    padding: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mtd-page a.button {
+    display: block;
   }
 }
