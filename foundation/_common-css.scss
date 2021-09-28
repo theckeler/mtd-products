@@ -42,12 +42,6 @@
   .bg-yellow,
   .button {
     background: #ffc20f;
-
-    &:hover {
-      border-color: #000;
-      background: #ffc20f;
-      color: #1f1f1f;
-    }
   }
 
   .bg-troy-red {
@@ -268,6 +262,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 101;
+  }
+
+  .line {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
   }
 }
 
