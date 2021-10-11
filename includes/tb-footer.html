@@ -1,0 +1,310 @@
+<footer>
+    <div class="upper-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12">
+                    <hr />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="middle-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-5">
+                    <div class="footer-btns-group">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7 d-flex flex-wrap flex-lg-nowrap">
+
+                </div>
+                <div class="col-12">
+                    <hr />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lower-footer">
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script type="text/javascript">
+        if (monetateData.setPageType == "unknown") {
+            monetateData.trackUnknownPage = function () {
+                window.monetateQ.push(["setPageType", monetateData.setPageType]);
+
+                if (monetateData.addCartRows) window.monetateQ.push(["addCartRows", monetateData.addCartRows]);
+                if (monetateData.breadCrumbs) window.monetateQ.push(["addBreadcrumbs", monetateData.breadCrumbs]);
+
+                window.monetateQ.push(["trackData"]);
+            };
+            monetateData.trackUnknownPage();
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- dwMarker="linclude" dwTemplateTitle="/default/monetate/modules.isml (int_monetate)" dwTemplateURL="http://localhost:60606/target=/int_monetate/cartridge/templates/default/monetate/modules.isml" -->
+
+
+
+
+    <!-- dwMarker="linclude" dwTemplateTitle="/default//components/content/contentAsset.isml (org_mtd_ma)" dwTemplateURL="http://localhost:60606/target=/org_mtd_ma/cartridge/templates/default//components/content/contentAsset.isml" -->
+
+
+    <!-- dwMarker="dw-object-rinclude" data="{&quot;TemplateURL&quot;:&quot;http://localhost:60606/target=/org_mtd_ma/cartridge/templates/default//components/content/contentAssetInc.isml&quot;,&quot;IsController&quot;:true,&quot;PipelineURL&quot;:&quot;http://localhost:60606/target=/org_mtd_ma/cartridge/controllers/Page.js&amp;start=Include&quot;,&quot;PageProcessingTime&quot;:11,&quot;PageCacheExpires&quot;:&quot;10/01/2021 11:09 am&quot;,&quot;TemplateTitle&quot;:&quot;/default//components/content/contentAssetInc.isml (org_mtd_ma)&quot;,&quot;PipelineTitle&quot;:&quot;Page-Include (org_mtd_ma)&quot;}" -->
+    <!-- dwMarker="rinclude" dwPipelineTitle="Page-Include (org_mtd_ma)" dwPipelineURL="http://localhost:60606/target=/org_mtd_ma/cartridge/controllers/Page.js&amp;start=Include" dwIsController="true" dwTemplateTitle="/default//components/content/contentAssetInc.isml (org_mtd_ma)" dwTemplateURL="http://localhost:60606/target=/org_mtd_ma/cartridge/templates/default//components/content/contentAssetInc.isml" -->
+    <div class="content-asset">
+        <!-- dwMarker="content" dwContentID="445e5bfeed8fca7d28a08fa3d3" -->
+        <style type='text/css'>
+            .embeddedServiceHelpButton .helpButton .uiButton {
+                background-color: #CC0000;
+                font-family: "Salesforce Sans", sans-serif;
+            }
+
+            .embeddedServiceHelpButton .helpButton .uiButton:focus {
+                outline: 1px solid #CC0000;
+            }
+
+            @font-face {
+                font-family: 'Salesforce Sans';
+                src: url('https://c1.sfdcstatic.com/etc/clientlibs/sfdc-aem-master/clientlibs_base/fonts/SalesforceSans-Regular.woff') format('woff'),
+                    url('https://c1.sfdcstatic.com/etc/clientlibs/sfdc-aem-master/clientlibs_base/fonts/SalesforceSans-Regular.ttf') format('truetype');
+            }
+        </style>
+
+
+
+        <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+        <script type='text/javascript'>
+            var initESW = function (gslbBaseURL) {
+                embedded_svc.settings.displayHelpButton = true; //Or false
+                embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
+
+
+
+                embedded_svc.settings.defaultMinimizedText = 'CHAT WITH US'; //(Defaults to Chat with an Expert)
+                //embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
+
+
+
+                //embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
+                //embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
+
+
+
+                // Settings for Chat
+                //embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+                // Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
+                // Returns a valid button ID.
+                //};
+                //embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
+                //embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
+                //embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
+
+
+
+                embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+                embedded_svc.settings.entryFeature = 'LiveAgent';
+
+
+
+
+
+                //the snippet of code below does 3 things: matches to salesforce contacts exactly on email, creates a new contact if no match found, and links the chat to the matched or created contact
+
+                embedded_svc.settings.extraPrechatInfo = [{
+                    "entityFieldMaps": [{
+                        "doCreate": true,
+                        "doFind": false,
+                        "fieldName": "LastName",
+                        "isExactMatch": false,
+                        "label": "Last Name"
+                    }, {
+                        "doCreate": true,
+                        "doFind": false,
+                        "fieldName": "FirstName",
+                        "isExactMatch": false,
+                        "label": "First Name"
+                    }, {
+                        "doCreate": true,
+                        "doFind": true,
+                        "fieldName": "Email",
+                        "isExactMatch": true,
+                        "label": "Email"
+                    }, {
+                        "doCreate": true,
+                        "doFind": false,
+                        "fieldName": "Phone",
+                        "isExactMatch": false,
+                        "label": "Phone"
+                    }],
+                    "entityName": "Contact",
+                    "saveToTranscript": "Contact",
+                    "showOnCreate": true
+                }];
+                //the snippet below leverages a custom label to set the brand logo on the survey page
+                embedded_svc.settings.extraPrechatFormDetails = [
+                    {
+                        label: 'brandLogo', value: 'troyBiltLogo.jpg', displayToAgent: false
+                    }];
+                embedded_svc.settings.autoOpenPostChat = true;
+
+                //the urls for salesforce, gslbBaseUrl, baseLiveAgentContactURL, DeploymentId, buttonId, baseLiveAgentURL, eswLiveAgentDevName all change in different salesforce environments. When an embedded service is generated from the target environment these are populated
+
+
+
+
+
+
+                embedded_svc.init(
+                    'https://mtdproducts.my.salesforce.com',
+                    'https://support.troybilt.com/',
+                    gslbBaseURL,
+                    '00DA0000000hHew',
+                    'TroyBilt_Chat',
+                    {
+                        baseLiveAgentContentURL: 'https://c.la2-c2-ia2.salesforceliveagent.com/content',
+                        deploymentId: '5722G000000blJi',
+                        buttonId: '573A0000000TNuc',
+                        baseLiveAgentURL: 'https://d.la2-c2-ia2.salesforceliveagent.com/chat',
+                        eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I2G000000XZBZUA4_16ff96594a4',
+                        isOfflineSupportEnabled: false
+                    }
+                );
+            };
+
+
+
+            if (!window.embedded_svc) {
+                var s = document.createElement('script');
+                s.setAttribute('src', 'https://mtdproducts.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+                s.onload = function () {
+                    initESW(null);
+                };
+                document.body.appendChild(s);
+            } else {
+                initESW('https://service.force.com');
+            }
+        </script>
+    </div> <!-- End content-asset -->
+
+
+
+
+</footer>
+
+
+
+
+<script>pageContext = { "locale": "en_US" };</script>
+<!-- dwMarker="linclude" dwTemplateTitle="/default/monetate/monetateuserinfo.isml (int_monetate)" dwTemplateURL="http://localhost:60606/target=/int_monetate/cartridge/templates/default/monetate/monetateuserinfo.isml" -->
+
+
+
+
+
+
+</div>
+<div class="error-messaging"></div>
+<div class="modal-background"></div>
+<!-- dwMarker="linclude" dwTemplateTitle="/default//components/content/contentAsset.isml (org_mtd_ma)" dwTemplateURL="http://localhost:60606/target=/org_mtd_ma/cartridge/templates/default//components/content/contentAsset.isml" -->
+
+
+
+<!--[if lt IE 10]>
+<script>//common/scripts.isml</script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-troybilt-Site/-/en_US/v1632431776488/js/main.js"></script>
+
+
+<script defer type="text/javascript" src="/on/demandware.static/Sites-troybilt-Site/-/en_US/v1632431776488/lib/jquery.zoom.min.js"></script>
+
+
+
+<!-- dwMarker="velocity" dwInline="true" dwTemplateTitle="/default//common/scripts.isml (org_mtd)" dwTemplateURL="http://localhost:60606/target=/org_mtd/cartridge/templates/default//common/scripts.isml" dwScript="/ (int_handlerframework/cartridge/scripts/hookProxy/templateProxy.js)" dwScriptURL="http://localhost:60606/target=/int_handlerframework/cartridge/scripts/hookProxy/templateProxy.js/cartridge/scripts/" -->
+<!-- dwMarker="velocity" dwInline="true" dwScript="/ (int_marketing_cloud/cartridge/scripts/tracking/dataLayer.js)" dwScriptURL="http://localhost:60606/target=/int_marketing_cloud/cartridge/scripts/tracking/dataLayer.js/cartridge/scripts/" -->
+<!-- Marketing Cloud Analytics - cached -->
+<!-- dwMarker="dw-object-rinclude" data="{&quot;IsController&quot;:true,&quot;PipelineURL&quot;:&quot;http://localhost:60606/target=/int_handlerframework/cartridge/controllers/HandlerInclude.js&amp;start=CachedHook&quot;,&quot;PageProcessingTime&quot;:4,&quot;PageCacheExpires&quot;:&quot;10/01/2021 11:09 am&quot;,&quot;PipelineTitle&quot;:&quot;HandlerInclude-CachedHook (int_handlerframework)&quot;}" -->
+<!-- dwMarker="rinclude" dwPipelineTitle="HandlerInclude-CachedHook (int_handlerframework)" dwPipelineURL="http://localhost:60606/target=/int_handlerframework/cartridge/controllers/HandlerInclude.js&amp;start=CachedHook" dwIsController="true" -->
+<script type="text/javascript">
+    try {
+        _etmc.push(['setOrgId', "10959299"]);
+    } catch (e) { console.error(e); }
+</script>
+<!-- End Marketing Cloud Analytics - cached -->
+<!-- dwMarker="velocity" dwInline="true" dwTemplateTitle="/default//common/scripts.isml (org_mtd)" dwTemplateURL="http://localhost:60606/target=/org_mtd/cartridge/templates/default//common/scripts.isml" dwScript="/ (int_handlerframework/cartridge/scripts/hookProxy/templateProxy.js)" dwScriptURL="http://localhost:60606/target=/int_handlerframework/cartridge/scripts/hookProxy/templateProxy.js/cartridge/scripts/" -->
+<!-- dwMarker="velocity" dwInline="true" dwScript="/ (int_marketing_cloud/cartridge/scripts/tracking/dataLayer.js)" dwScriptURL="http://localhost:60606/target=/int_marketing_cloud/cartridge/scripts/tracking/dataLayer.js/cartridge/scripts/" -->
+<!-- Marketing Cloud Analytics - noncached -->
+<!-- dwMarker="dw-object-rinclude" data="{&quot;IsController&quot;:true,&quot;PipelineURL&quot;:&quot;http://localhost:60606/target=/int_handlerframework/cartridge/controllers/HandlerInclude.js&amp;start=NonCachedHook&quot;,&quot;PageProcessingTime&quot;:3,&quot;PipelineTitle&quot;:&quot;HandlerInclude-NonCachedHook (int_handlerframework)&quot;}" -->
+<!-- dwMarker="rinclude" dwPipelineTitle="HandlerInclude-NonCachedHook (int_handlerframework)" dwPipelineURL="http://localhost:60606/target=/int_handlerframework/cartridge/controllers/HandlerInclude.js&amp;start=NonCachedHook" dwIsController="true" -->
+<script type="text/javascript">
+    try {
+        _etmc.push(['setUserInfo', { "email": "aecUr6uECsV1l6Wb227dhJlboa" }]);
+        _etmc.push(['trackPageView', { "item": "financing-plans" }]);
+    } catch (e) { console.error(e); }
+</script>
+<!-- End Marketing Cloud Analytics - noncached -->
+
+
+<![endif]-->
+<!-- dwMarker="dw-object-rinclude" data="{&quot;TemplateURL&quot;:&quot;http://localhost:60606/target=/org_mtd/cartridge/templates/default//common/consent.isml&quot;,&quot;IsController&quot;:true,&quot;PipelineURL&quot;:&quot;http://localhost:60606/target=/org_mtd/cartridge/controllers/ConsentTracking.js&amp;start=Check&quot;,&quot;PageProcessingTime&quot;:11,&quot;TemplateTitle&quot;:&quot;/default//common/consent.isml (org_mtd)&quot;,&quot;PipelineTitle&quot;:&quot;ConsentTracking-Check (org_mtd)&quot;}" --><!-- dwMarker="rinclude" dwPipelineTitle="ConsentTracking-Check (org_mtd)" dwPipelineURL="http://localhost:60606/target=/org_mtd/cartridge/controllers/ConsentTracking.js&amp;start=Check" dwIsController="true" dwTemplateTitle="/default//common/consent.isml (org_mtd)" dwTemplateURL="http://localhost:60606/target=/org_mtd/cartridge/templates/default//common/consent.isml" --><span class="api-true  tracking-consent"
+    data-caOnline="false"
+    data-ctPreference="false"
+    data-url="/on/demandware.store/Sites-troybilt-Site/en_US/ConsentTracking-GetContent?cid=tracking_hint"
+    data-reject="/on/demandware.store/Sites-troybilt-Site/en_US/ConsentTracking-SetSession?consent=false"
+    data-accept="/on/demandware.store/Sites-troybilt-Site/en_US/ConsentTracking-SetSession?consent=true"
+    data-acceptText="Yes"
+    data-rejectText="No"
+    data-heading="Tracking Consent"
+    ></span>
+
+<!-- dwMarker="linclude" dwTemplateTitle="/default/common/localeModal.isml (org_mtd_ma)" dwTemplateURL="http://localhost:60606/target=/org_mtd_ma/cartridge/templates/default/common/localeModal.isml" -->
+<span class="locale-change"
+    data-acceptText="Continue"
+    data-rejectText="Cancel"
+    data-heading="Change Country?"
+    data-body="Are you sure you want to change countries? You will lose the items in your cart."
+    ></span>
+
+<!-- Demandware Analytics code 1.0 (body_end-analytics-tracking-asynch.js) -->
+<script type="text/javascript">//<!--
+    /* <![CDATA[ */
+    function trackPage() {
+        try {
+            var trackingUrl = "https://staging-na01-mtd.demandware.net/on/demandware.store/Sites-troybilt-Site/en_US/__Analytics-Start";
+            var dwAnalytics = dw.__dwAnalytics.getTracker(trackingUrl);
+            if (typeof dw.ac == "undefined") {
+                dwAnalytics.trackPageView();
+            } else {
+                dw.ac.setDWAnalytics(dwAnalytics);
+            }
+        } catch (err) { };
+    }
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript" src="/on/demandware.static/Sites-troybilt-Site/-/en_US/v1632431776488/internal/jscript/dwanalytics-21.9.js" async="async" onload="trackPage()"></script>
+<!-- Demandware Active Data (body_end-active_data.js) -->
+<script src="/on/demandware.static/Sites-troybilt-Site/-/en_US/v1632431776488/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script><!-- CQuotient Activity Tracking (body_end-cquotient.js) -->
+<script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
+</body>
+
+</html>
