@@ -1,0 +1,149 @@
+@import "../foundation/";
+
+.mtd-page {
+  .section-1 {
+    padding: 40px 20px;
+
+    .wrapper {
+      max-width: 1200px;
+    }
+
+    .blocks {
+      align-items: center;
+
+      .block {
+        padding: 30px 40px;
+
+        &.block-1 {
+          position: relative;
+          min-width: 340px;
+
+          &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 90%;
+            background: #707070;
+          }
+        }
+      }
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+  }
+
+  .section-2 {
+    h2 {
+      width: 100%;
+      color: #fff;
+      font-size: 28px;
+      padding: 16px;
+      font-weight: 600;
+    }
+
+    .block {
+      display: flex;
+      padding: 30px;
+      text-align: center;
+    }
+
+    img {
+      max-width: 180px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      padding: 0 20px;
+
+      &:first-of-type {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .section-3,
+  .section-4 {
+    .wrapper {
+      padding: 40px 20px;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        position: relative;
+        font-size: 20px;
+        line-height: 1.6;
+        padding: 10px 0;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: -40px;
+          top: 16px;
+          //transform: translateY(-50%);
+          width: 20px;
+          height: 20px;
+          border-radius: 100%;
+          background: #ffc20f;
+        }
+      }
+    }
+  }
+
+  .section-4 {
+    ul li::before {
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42' height='41.584'%3E%3Cg data-name='Group 2648' transform='translate(-296 -2115.416)'%3E%3Ccircle data-name='Ellipse 272' cx='19' cy='19' r='19' transform='translate(296 2119)' fill='%23ffc20f'/%3E%3Cg data-name='Group 2647'%3E%3Cpath data-name='Path 924' d='m315.927 2138.068-5.4-6.005-3.756 3.548 10.358 10.508c8.911-19.851 20.866-30.7 20.866-30.7-10.4 3.951-22.068 22.649-22.068 22.649Z' fill='%231a1818'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+      background-size: cover;
+      border-radius: 0;
+    }
+  }
+
+  .section-6 {
+    margin-top: 60px;
+
+    .wrapper {
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .button {
+      display: inline-block;
+      background: #000;
+      color: #fff;
+      padding: 12px 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .mtd-page {
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mtd-page {
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mtd-page {
+  }
+}
