@@ -1,5 +1,13 @@
 @import "../foundation/";
 
+.hero.slant-down.content-page-image {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+}
+
 .mtd-page {
   sup {
     //font-size: rem(12px);

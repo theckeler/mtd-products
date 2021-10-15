@@ -1,10 +1,20 @@
+// SETUP:
 //document.querySelectorAll(".enterSerialNumber-modal")[1].remove();
 document.querySelector(".hero.slant-down.content-page-image").remove();
 const moveMe = document.querySelector(".enterSerialNumber-modal");
 var fragment = document.createDocumentFragment();
 fragment.appendChild(moveMe);
 document.querySelector("#modalMoveHere").appendChild(fragment);
+const modal = document.querySelector(".section-modal");
 
+//REMOVE before moving to staging:
+document
+  .querySelector("#enterSerialNumber")
+  .addEventListener("click", function (e) {
+    console.log("enterSerialNumber click");
+  });
+
+// FAQs:
 var divs = document.querySelectorAll(".question").forEach(function (el) {
   el.addEventListener("click", function () {
     this.classList.toggle("active");
@@ -12,28 +22,35 @@ var divs = document.querySelectorAll(".question").forEach(function (el) {
   });
 });
 
+// Modal:
 const displayWindowSize = () => {
   let w = window.innerWidth;
   const allEl = document.querySelectorAll(".check-eligibility");
 
   if (w <= 1024) {
-    document.querySelector("#modal-close").click();
-    if (allEl[0].hasAttribute("data-target")) {
-      allEl.forEach(function (el) {
-        el.removeAttribute("data-target");
-        el.removeAttribute("data-toggle");
-        el.addEventListener("click", addClickEvent);
-      });
-    }
+    console.log("mobile");
+    modal.classList.add("modal-mobile");
+    modal.classList.remove("modal-desktop");
+    // document.querySelector("#modal-close").click();
+    // if (allEl[0].hasAttribute("data-target")) {
+    //   allEl.forEach(function (el) {
+    //     el.removeAttribute("data-target");
+    //     el.removeAttribute("data-toggle");
+    //     el.addEventListener("click", addClickEvent);
+    //   });
+    // }
   } else {
-    if (!allEl[0].hasAttribute("data-target")) {
-      document.querySelector(".section-modal").classList.remove("active");
-      allEl.forEach(function (el) {
-        el.setAttribute("data-target", "#ew-modal");
-        el.setAttribute("data-toggle", "modal");
-        el.removeEventListener("click", addClickEvent);
-      });
-    }
+    console.log("desktop");
+    modal.classList.add("modal-desktop");
+    modal.classList.remove("modal-mobile");
+    // if (!allEl[0].hasAttribute("data-target")) {
+    //   document.querySelector(".section-modal").classList.remove("active");
+    //   allEl.forEach(function (el) {
+    //     el.setAttribute("data-target", "#ew-modal");
+    //     el.setAttribute("data-toggle", "modal");
+    //     el.removeEventListener("click", addClickEvent);
+    //   });
+    // }
   }
 };
 const addClickEvent = (e) => {

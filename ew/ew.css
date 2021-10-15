@@ -64,6 +64,9 @@
   background: #008540;
   color: #fff;
 }
+.mtd-page .bg-dark-grey {
+  background: #4b4b4b;
+}
 .mtd-page .bg-grey {
   background: #efefef;
 }
@@ -248,6 +251,14 @@
     display: block;
   }
 }
+.hero.slant-down.content-page-image {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+}
+
 .mtd-page .circle {
   display: -webkit-box;
   display: -ms-flexbox;
