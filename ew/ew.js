@@ -1,3 +1,9 @@
+document.querySelectorAll(".enterSerialNumber-modal")[1].remove();
+const moveMe = document.querySelector(".enterSerialNumber-modal");
+var fragment = document.createDocumentFragment();
+fragment.appendChild(moveMe);
+document.querySelector("#modalMoveHere").appendChild(fragment);
+
 var divs = document.querySelectorAll(".question").forEach(function (el) {
   el.addEventListener("click", function () {
     this.classList.toggle("active");

@@ -1400,9 +1400,59 @@
           <link rel="stylesheet" href="http://127.0.0.1:5500/ew/ew.min.css" />
 
         -->
-          <link rel="stylesheet" href="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v99fafdfb72063868a03830a553a4206685e8d747/stylesheets/ew.min.css" />
+          <div class="modal fade enterSerialNumber-modal modal-1" id="enterSerialNumberModal" tabindex="-1" role="dialog" aria-labelledby="enterSerialNumber" action-get-delivery-zipcode="/on/demandware.store/Sites-cubcadet-Site/en_US/ExtendedWarranty-EnterSerialNumber" data-event-type="" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+                </div>
+                <div class="modal-body">
+                  <center>
+                    <div class="form-group required">
+                      <div class="pagination-steps mt-4 mb-3 ">
+                        <div class="pagination-step step-1 active">
+                          1
+                        </div>
+                        <div class="pagination-step step-2">
+                          2
+                        </div>
+                        <div class="pagination-step step-3">
+                          3
+                        </div>
+                      </div>
+                      <form action="/on/demandware.store/Sites-cubcadet-Site/en_US/ExtendedWarranty-LookupSerialNumber" id="submitSerialNumber" method="POST" name="dwfrm_eligibilityCheck">
+                        <!-- dwMarker="form" dwPipelineTitle="ExtendedWarranty-LookupSerialNumber (int_extendedwarranty)" dwIsController="true" dwPipelineURL="http://localhost:60606/target=/int_extendedwarranty/cartridge/controllers/ExtendedWarranty.js&amp;start=LookupSerialNumber" -->
+                        <h6>Enter Your Machine's Serial Number</h6>
+                        <div class="container">
+                          <div class="col-lg-4 col-md-12 d-flex justify-content-center">
+                            <input autofocus="" required="" type="text" class="form-control" id="serialNumber" name="serialNumber" value="" autocomplete="nofill" maxlength="2147483647" pattern="\d[A-Za-z][0-3]\d\d[A-Za-z]([A-Za-z]|\d)\d{4}">
+                            <button type="submit" class="btn btn-secondary">Next</button>
+                          </div>
+                        </div>
+                        <div class="showHowToFind"> How do I find my serial number?</div>
+                        <div id="moreSerialInfo" class="hide" style="display: none;">
+                          <!-- dwMarker="slot" dwContentID="extended-warranty-serial-number" dwContext="global"-->
+                          <!-- dwMarker="rinclude" dwPipelineTitle="Internal" dwIsController="false" dwTemplateTitle="/default/slots/content/contentAssetBody.isml (org_mtd_ma)" dwTemplateURL="http://localhost:60606/target=/org_mtd_ma/cartridge/templates/default/slots/content/contentAssetBody.isml" -->
+                          <div class="row">
+                            <div class="col 6">
+                              <img src="https://mtdproducts.secure.force.com/ProductRegistration/resource/1619086108000/CmsTemp/ProductRegistration/img/cub-cadet-US-model-plate.jpg">
+                            </div>
+                            <div class="col 6">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis ligula non mi faucibus facilisis. Vestibulum a sem sed ligula faucibus ornare. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin et tellus et urna rutrum rutrum vel ultrices lacus.&nbsp;
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </center>
+                </div>
+                <div class="modal-footer">
+                </div>
+              </div>
+            </div>
+          </div>
 
-          <script defer type="text/javascript" src="https://staging-na01-mtd.demandware.net/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1634148267864/js/aftermarket.js"></script>
+          <link rel="stylesheet" href="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v99fafdfb72063868a03830a553a4206685e8d747/stylesheets/ew.min.css" />
 
           <div class="ew mtd-page">
 
@@ -1423,30 +1473,8 @@
             </section>
 
             <a name="check-eligibility-section" id="check-eligibility-section"></a>
-            <section class="section-modal bg-grey">
-              <div aria-hidden="true" class="modal fade" id="ew-modal" style="display: none">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <div class="bg-yellow">
-                        <div class="circle bg-white">
-                          <img src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/ew/ew-logo.svg" alt="">
-                          </li>
-                        </div>
+            <section class="section-modal bg-grey" id="modalMoveHere">
 
-                      </div>
-                      <a aria-label="Close" id="modal-close" class="close" data-dismiss="modal">✕</a>
-                    </div>
-                    <div class="modal-body">
-                      <div class="modal-ew">
-                        <p><strong>EW STUFF</strong></p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla ligula ex, id blandit nulla venenatis nec. Curabitur consequat enim justo, et molestie ante volutpat sed. In maximus, velit sed malesuada efficitur, ante massa viverra elit, eu pulvinar mi velit vel nunc. Vivamus non aliquet nulla. Praesent sodales ligula eget viverra tristique. Nulla vulputate, leo vitae congue commodo, nunc nisi varius erat, pellentesque egestas lacus purus quis magna. Vestibulum erat velit, imperdiet non sodales at, condimentum pretium neque. Vivamus orci enim, eleifend ac rutrum ultricies, gravida non sapien.</p>
-                        <p>Mauris congue luctus tortor, a varius purus vehicula vitae. Cras rutrum tellus at commodo elementum. Fusce vel urna ultricies, consequat mauris sed, tincidunt turpis. Nullam eu quam nunc. Aenean porta egestas suscipit. Donec tempor nulla ut tempus commodo. Donec quis sagittis quam. Suspendisse sagittis lacus tincidunt libero elementum porttitor. Nam justo leo, elementum non mauris feugiat, varius venenatis orci. Nulla vitae fringilla enim. Suspendisse auctor rhoncus vulputate. Nullam vel neque purus.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </section>
 
             <section class="section-2">
@@ -1624,6 +1652,8 @@
           </div>
         </div>
 
+        <script async src="./ew.js" type="text/javascript"></script>
+
         <!-- END PAGE BUILD -->
 
         <!--#region BOTTOM  -->
@@ -1633,7 +1663,8 @@
       </div>
 
     </div>
-    <div class="modal fade enterSerialNumber-modal" id="enterSerialNumberModal" tabindex="-1" role="dialog" aria-labelledby="enterSerialNumber" action-get-delivery-zipcode="/on/demandware.store/Sites-cubcadet-Site/en_US/ExtendedWarranty-EnterSerialNumber">
+
+    <div class="modal fade enterSerialNumber-modal modal-2" id="enterSerialNumberModal" tabindex="-1" role="dialog" aria-labelledby="enterSerialNumber" action-get-delivery-zipcode="/on/demandware.store/Sites-cubcadet-Site/en_US/ExtendedWarranty-EnterSerialNumber">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -1698,6 +1729,7 @@
         </div>
       </div>
     </div>
+
     <footer>
       <div class="upper-footer-md container">
         <div class="row">
