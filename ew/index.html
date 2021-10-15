@@ -11,9 +11,9 @@
     <script>
       //common/scripts.isml
     </script>
-    <script defer type="text/javascript" src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1631120851162/js/main.js"></script>
-    <script defer type="text/javascript" src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1631120851162/lib/jquery.zoom.min.js"></script>
-    <script defer type="text/javascript" src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1631120851162/js/productTile.js"></script>
+    <script defer type="text/javascript" src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1634148267864/js/main.js"></script>
+    <script defer type="text/javascript" src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1634148267864/lib/jquery.zoom.min.js"></script>
+    <script defer type="text/javascript" src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1634148267864/js/productTile.js"></script>
     <script defer type="text/javascript" src="https://www.cubcadet.com/apps.bazaarvoice.com/deployments/cubcadet/main_site/production/en_US/bv.js"></script>
     <!-- Marketing Cloud Analytics - cached -->
     <script type="text/javascript">
@@ -87,8 +87,8 @@
     <link rel="apple-touch-icon-precomposed" href="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/default/dwcda26ce7/images/surepath/favicons/cub-57.png" />
     <meta name="msapplication-TileColor" content="#333" />
     <meta name="msapplication-TileImage" content="/on/demandware.static/Sites-cubcadet-Site/-/default/dwd63aa622/images/surepath/favicons/cub-144.png" />
-    <link rel="stylesheet" href="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1631120851162/css/global.css" />
-    <link rel="stylesheet" href="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1631120851162/css/homePage.css" />
+    <link rel="stylesheet" href="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1634148267864/css/global.css" />
+    <link rel="stylesheet" href="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1634148267864/css/homePage.css" />
     <!-- Marketing Cloud Analytics -->
     <script type="text/javascript" src="//10959303.collect.igodigital.com/collect.js"></script>
     <!-- End Marketing Cloud Analytics -->
@@ -1402,6 +1402,8 @@
         -->
           <link rel="stylesheet" href="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v99fafdfb72063868a03830a553a4206685e8d747/stylesheets/ew.min.css" />
 
+          <script defer type="text/javascript" src="https://staging-na01-mtd.demandware.net/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1634148267864/js/aftermarket.js"></script>
+
           <div class="ew mtd-page">
 
             <section class="section-1 bg-yellow">
@@ -1414,8 +1416,8 @@
                   </li>
                   <li class="block block-2">
                     <h1>Cub Cadet<sup>®</sup> Extended Warranty</h1>
-                    <p>Our extended warranty provides peace of mind by adding an additional two years of product protection after the original warranty expires. Eligible Cub Cadet products include residential walk-behind mowers (push and self-propelled), snow blowers and ride-on mowers (garden, lawn and residential zero-turn).</p>
-                    <a class="button bg-black check-eligibility" data-target="#ew-modal" data-toggle="modal">CHECK YOUR PRODUCT ELIGIBILITY</a>
+                    <p>Our Extended Warranty provides peace of mind by adding an additional two years of product protection after the original warranty expires. Eligible Cub Cadet products include residential walk-behind mowers (push and self-propelled), snow blowers and ride-on mowers (garden, lawn and residential zero-turn).</p>
+                    <a class="button bg-black" id="enterSerialNumber">CHECK YOUR PRODUCT ELIGIBILITY</a>
                   </li>
                 </ul>
             </section>
@@ -1450,7 +1452,6 @@
             <section class="section-2">
               <div class="wrapper">
                 <h2>Why Purchase an Extended Warranty?</h2>
-                <p>Here are the benefits and features of the new extended warranty plan.</p>
                 <ul class="blocks no-list three">
                   <li class="block block-1">
                     <div class="circle bg-grey">
@@ -1489,15 +1490,15 @@
                     <ul class="no-list">
                       <li class="content">
                         <h2>Transferrable Warranty</h2>
-                        <p>The Cub Cadet extended warranty can be sold to customers up to two years after the sale of their unit. Please reference the instructions on the Dealer Community for how to process the transfer.</p>
+                        <p>The Cub Cadet Extended Warranty can be purchased up to two years after the sale of their unit.</p>
                       </li>
                       <li class="content">
                         <h2>Financing Made Easy</h2>
-                        <p>The Cub Cadet extended warranty can be financed when a customer finances their Cub Cadet product.</p>
+                        <p>The Cub Cadet Extended Warranty can be financed with your Cub Cadet unit.</p>
                       </li>
                       <li class="content">
                         <h2>No Deductible</h2>
-                        <p>There’s no deductible under the Cub Cadet extended warranty.</p>
+                        <p>There’s no deductible under the Cub Cadet Extended Warranty.</p>
                       </li>
                     </ul>
                   </li>
@@ -1507,8 +1508,8 @@
 
             <section class="section-5 bg-grey">
               <div class="wrapper">
-                <h2>Secure an extended warranty today</h2>
-                <a class="button check-eligibility" data-target="#ew-modal" data-toggle="modal">CHECK YOUR PRODUCT ELIGIBILITY</a>
+                <h2>Secure an Extended Warranty today</h2>
+                <a class="button" id="enterSerialNumber">CHECK YOUR PRODUCT ELIGIBILITY</a>
               </div>
             </section>
 
@@ -1569,56 +1570,56 @@
                 </ul>
               </div>
               <script>
-                var divs = document.querySelectorAll('.question').forEach(function (el) {
-                  el.addEventListener('click', function () {
-                    this.classList.toggle("active");
-                    this.nextElementSibling.classList.toggle("active");
-                  });
-                });
+                // var divs = document.querySelectorAll('.question').forEach(function (el) {
+                //   el.addEventListener('click', function () {
+                //     this.classList.toggle("active");
+                //     this.nextElementSibling.classList.toggle("active");
+                //   });
+                // });
               </script>
             </section>
 
             <section class="section-7">
               <div class="wrapper">
-                <a class="button check-eligibility" data-target="#ew-modal" data-toggle="modal">CHECK YOUR PRODUCT ELIGIBILITY</a>
+                <a class="button" id="enterSerialNumber">CHECK YOUR PRODUCT ELIGIBILITY</a>
               </div>
             </section>
 
             <script>
-              const displayWindowSize = () => {
-                let w = window.innerWidth;
-                const allEl = document.querySelectorAll(".check-eligibility");
+              // const displayWindowSize = () => {
+              //   let w = window.innerWidth;
+              //   const allEl = document.querySelectorAll(".check-eligibility");
 
-                if (w <= 1024) {
-                  document.querySelector("#modal-close").click();
-                  if (allEl[0].hasAttribute("data-target")) {
-                    allEl.forEach(function (el) {
-                      el.removeAttribute("data-target");
-                      el.removeAttribute("data-toggle");
-                      el.addEventListener("click", addClickEvent);
-                    });
-                  }
-                } else {
-                  if (!(allEl[0].hasAttribute("data-target"))) {
-                    document.querySelector(".section-modal").classList.remove("active");
-                    allEl.forEach(function (el) {
-                      el.setAttribute("data-target", "#ew-modal");
-                      el.setAttribute("data-toggle", "modal");
-                      el.removeEventListener("click", addClickEvent);
-                    })
-                  }
-                }
-              }
-              const addClickEvent = (e) => {
-                const modalSection = document.querySelector(".section-modal");
-                setTimeout(function () {
-                  modalSection.classList.add("active");
-                  window.scrollTo({ top: (modalSection.offsetTop - 20), left: 0, behavior: 'smooth' });
-                }, 400);
-              }
+              //   if (w <= 1024) {
+              //     document.querySelector("#modal-close").click();
+              //     if (allEl[0].hasAttribute("data-target")) {
+              //       allEl.forEach(function (el) {
+              //         el.removeAttribute("data-target");
+              //         el.removeAttribute("data-toggle");
+              //         el.addEventListener("click", addClickEvent);
+              //       });
+              //     }
+              //   } else {
+              //     if (!(allEl[0].hasAttribute("data-target"))) {
+              //       document.querySelector(".section-modal").classList.remove("active");
+              //       allEl.forEach(function (el) {
+              //         el.setAttribute("data-target", "#ew-modal");
+              //         el.setAttribute("data-toggle", "modal");
+              //         el.removeEventListener("click", addClickEvent);
+              //       })
+              //     }
+              //   }
+              // }
+              // const addClickEvent = (e) => {
+              //   const modalSection = document.querySelector(".section-modal");
+              //   setTimeout(function () {
+              //     modalSection.classList.add("active");
+              //     window.scrollTo({ top: (modalSection.offsetTop - 20), left: 0, behavior: 'smooth' });
+              //   }, 400);
+              // }
 
-              window.addEventListener("resize", displayWindowSize);
-              displayWindowSize();
+              // window.addEventListener("resize", displayWindowSize);
+              // displayWindowSize();
             </script>
           </div>
         </div>
@@ -1631,6 +1632,71 @@
 
       </div>
 
+    </div>
+    <div class="modal fade enterSerialNumber-modal" id="enterSerialNumberModal" tabindex="-1" role="dialog" aria-labelledby="enterSerialNumber" action-get-delivery-zipcode="/on/demandware.store/Sites-cubcadet-Site/en_US/ExtendedWarranty-EnterSerialNumber">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+          </div>
+          <div class="modal-body">
+            <center>
+              <div class="form-group required">
+                <div class="pagination-steps mt-4 mb-3 ">
+                  <div class="pagination-step step-1 active">
+                    1
+                  </div>
+
+                  <div class="pagination-step step-2">
+                    2
+                  </div>
+
+                  <div class="pagination-step step-3">
+                    3
+                  </div>
+                </div>
+                <form action="/on/demandware.store/Sites-cubcadet-Site/en_US/ExtendedWarranty-LookupSerialNumber" id="submitSerialNumber" method="POST" name="dwfrm_eligibilityCheck">
+                  <!-- dwMarker="form" dwPipelineTitle="ExtendedWarranty-LookupSerialNumber (int_extendedwarranty)" dwIsController="true" dwPipelineURL="http://localhost:60606/target=/int_extendedwarranty/cartridge/controllers/ExtendedWarranty.js&amp;start=LookupSerialNumber" -->
+                  <h6>Enter Your Machine's Serial Number</h6>
+                  <div class="container">
+                    <div class="col-lg-4 col-md-12 d-flex justify-content-center">
+                      <input autofocus="" required="" type="text" class="form-control" id="serialNumber" name="serialNumber" value="" autocomplete="nofill" maxlength="2147483647" pattern="\d[A-Za-z][0-3]\d\d[A-Za-z]([A-Za-z]|\d)\d{4}">
+                      <button type="submit" class="btn btn-secondary">Next</button>
+                    </div>
+                  </div>
+
+                  <div class="showHowToFind"> How do I find my serial number?</div>
+
+                  <div id="moreSerialInfo" class="hide">
+                    <!-- dwMarker="slot" dwContentID="extended-warranty-serial-number" dwContext="global"-->
+
+
+
+
+
+                    <!-- dwMarker="rinclude" dwPipelineTitle="Internal" dwIsController="false" dwTemplateTitle="/default/slots/content/contentAssetBody.isml (org_mtd_ma)" dwTemplateURL="http://localhost:60606/target=/org_mtd_ma/cartridge/templates/default/slots/content/contentAssetBody.isml" -->
+                    <div class="row">
+                      <div class="col 6">
+                        <img src="https://mtdproducts.secure.force.com/ProductRegistration/resource/1619086108000/CmsTemp/ProductRegistration/img/cub-cadet-US-model-plate.jpg">
+                      </div>
+                      <div class="col 6">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis ligula non mi faucibus facilisis. Vestibulum a sem sed ligula faucibus ornare. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin et tellus et urna rutrum rutrum vel ultrices lacus.&nbsp;
+                      </div>
+                    </div>
+
+
+
+
+                  </div>
+                </form>
+              </div>
+            </center>
+          </div>
+
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
     </div>
     <footer>
       <div class="upper-footer-md container">
@@ -2146,9 +2212,9 @@
     <div class="modal-background"></div>
     <!--[if lt IE 10]>
 <script>//common/scripts.isml</script>
-<script defer type="text/javascript" src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1631120851162/js/main.js"></script>
-<script defer type="text/javascript" src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1631120851162/lib/jquery.zoom.min.js"></script>
-    <script defer type="text/javascript" src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1631120851162/js/productTile.js"></script>    <script defer type="text/javascript" src="//apps.bazaarvoice.com/deployments/cubcadet/main_site/production/en_US/bv.js"></script>
+<script defer type="text/javascript" src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1634148267864/js/main.js"></script>
+<script defer type="text/javascript" src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1634148267864/lib/jquery.zoom.min.js"></script>
+    <script defer type="text/javascript" src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1634148267864/js/productTile.js"></script>    <script defer type="text/javascript" src="//apps.bazaarvoice.com/deployments/cubcadet/main_site/production/en_US/bv.js"></script>
 <!-- Marketing Cloud Analytics - cached -->
     <script type="text/javascript">
       try {
@@ -2206,9 +2272,9 @@
       /* ]]> */
     // -->
     </script>
-    <script type="text/javascript" src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1631120851162/internal/jscript/dwanalytics-20.5.1.js" async="async" onload="trackPage()"></script>
+    <script type="text/javascript" src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1634148267864/internal/jscript/dwanalytics-20.5.1.js" async="async" onload="trackPage()"></script>
     <!-- Demandware Active Data (body_end-active_data.js) -->
-    <script src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1631120851162/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script>
+    <script src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1634148267864/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script>
     <!-- CQuotient Activity Tracking (body_end-cquotient.js) -->
     <script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
 
