@@ -1,4 +1,5 @@
 document.querySelectorAll(".enterSerialNumber-modal")[1].remove();
+document.querySelector(".hero.slant-down.content-page-image").remove();
 const moveMe = document.querySelector(".enterSerialNumber-modal");
 var fragment = document.createDocumentFragment();
 fragment.appendChild(moveMe);
