@@ -2,9 +2,10 @@
 //document.querySelectorAll(".enterSerialNumber-modal")[1].remove();
 document.querySelector(".hero.slant-down.content-page-image").remove();
 const moveMe = document.querySelector(".enterSerialNumber-modal");
+const modalParent = document.querySelector("#modalMoveHere");
 var fragment = document.createDocumentFragment();
 fragment.appendChild(moveMe);
-document.querySelector("#modalMoveHere").appendChild(fragment);
+modalParent.appendChild(fragment);
 const modal = document.querySelector(".section-modal");
 
 //REMOVE before moving to staging:
@@ -12,6 +13,8 @@ document
   .querySelector("#enterSerialNumber")
   .addEventListener("click", function (e) {
     console.log("enterSerialNumber click");
+    modalParent.querySelector(".modal").style.display = "block";
+    modalParent.querySelector(".modal").classList.add("show");
   });
 
 // FAQs:
