@@ -1,12 +1,14 @@
 // SETUP:
 //document.querySelectorAll(".enterSerialNumber-modal")[1].remove();
-document.querySelector(".hero.slant-down.content-page-image").remove();
+//document.querySelector(".hero.slant-down.content-page-image").remove();
 const moveMe = document.querySelector(".enterSerialNumber-modal");
 const modalParent = document.querySelector("#modalMoveHere");
 var fragment = document.createDocumentFragment();
 fragment.appendChild(moveMe);
 modalParent.appendChild(fragment);
 const modal = document.querySelector(".section-modal");
+const makeFakeDivForTesting = document.createElement("div");
+makeFakeDivForTesting.classList.add("modal-backdrop", "show", "fade");
 
 //REMOVE before moving to staging:
 document
@@ -15,6 +17,7 @@ document
     console.log("enterSerialNumber click");
     modalParent.querySelector(".modal").style.display = "block";
     modalParent.querySelector(".modal").classList.add("show");
+    document.querySelector("body").append(makeFakeDivForTesting);
   });
 
 // FAQs:
