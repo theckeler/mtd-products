@@ -1,6 +1,6 @@
 // SETUP:
 //document.querySelectorAll(".enterSerialNumber-modal")[1].remove();
-//document.querySelector(".hero.slant-down.content-page-image").remove();
+document.querySelector(".hero.slant-down.content-page-image").remove();
 const moveMe = document.querySelector(".enterSerialNumber-modal");
 const modalParent = document.querySelector("#modalMoveHere");
 var fragment = document.createDocumentFragment();

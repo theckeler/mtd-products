@@ -209,7 +209,8 @@
 
   .modal {
     .modal-dialog {
-      max-width: 1200px;
+      top: 40px;
+      max-width: 800px;
 
       .modal-header {
         padding: 0;
@@ -254,7 +255,8 @@
           font-size: rem(24px);
 
           &:after {
-            display: none;
+            //display: none;
+            content: "\2715";
           }
         }
       }
@@ -275,6 +277,13 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .modal-backdrop {
+    display: none;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
   .mtd-page {
     .section-1 {
       max-height: none;

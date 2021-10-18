@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .hide {
   position: fixed;
   left: -100000px;
@@ -441,7 +442,8 @@
   text-align: center;
 }
 .mtd-page .modal .modal-dialog {
-  max-width: 1200px;
+  top: 40px;
+  max-width: 800px;
 }
 .mtd-page .modal .modal-dialog .modal-header {
   padding: 0;
@@ -489,7 +491,7 @@
   font-size: 1.5rem;
 }
 .mtd-page .modal .modal-dialog .modal-header .close:after {
-  display: none;
+  content: "✕";
 }
 
 @media only screen and (max-width: 1200px) {
@@ -501,6 +503,13 @@
   }
 }
 @media only screen and (max-width: 1024px) {
+  .modal-backdrop {
+    display: none;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
   .mtd-page .section-1 {
     max-height: none;
     background: linear-gradient(to bottom, #ffc20f 0, #ffc20f 145px, #fff 145px, #fff 100%);
