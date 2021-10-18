@@ -59,6 +59,9 @@ const displayWindowSize = () => {
     // }
   }
 };
+
+
+
 const addClickEvent = (e) => {
   const modalSection = document.querySelector(".section-modal");
   setTimeout(function () {

@@ -256,7 +256,13 @@
 
           &:after {
             //display: none;
-            content: "\2715";
+            background-image: none;
+            content: "✕";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
           }
         }
       }
@@ -332,12 +338,12 @@
     }
 
     section.section-modal {
-      max-height: 0;
-      overflow: hidden;
+      //max-height: 0;
+      //overflow: hidden;
       // transition: all 0.3ms ease-in-out;
 
       &.active {
-        max-height: 600px;
+        // max-height: 600px;
       }
 
       .modal {

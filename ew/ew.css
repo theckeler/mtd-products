@@ -491,7 +491,14 @@
   font-size: 1.5rem;
 }
 .mtd-page .modal .modal-dialog .modal-header .close:after {
+  background-image: none;
   content: "✕";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -548,13 +555,6 @@
   .mtd-page .section-2 .blocks .block:nth-child(n),
 .mtd-page .section-4 .blocks .block:nth-child(n) {
     padding: 20px 0;
-  }
-  .mtd-page section.section-modal {
-    max-height: 0;
-    overflow: hidden;
-  }
-  .mtd-page section.section-modal.active {
-    max-height: 600px;
   }
   .mtd-page section.section-modal .modal {
     display: block !important;
