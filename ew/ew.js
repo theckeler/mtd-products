@@ -60,8 +60,6 @@ const displayWindowSize = () => {
   }
 };
 
-
-
 const addClickEvent = (e) => {
   const modalSection = document.querySelector(".section-modal");
   setTimeout(function () {
@@ -76,3 +74,11 @@ const addClickEvent = (e) => {
 
 window.addEventListener("resize", displayWindowSize);
 displayWindowSize();
+
+var divs = document.querySelector(".showHowToFind").forEach(function (el) {
+  el.addEventListener("click", function () {
+    this.classList.toggle("active");
+    this.nextElementSibling.classList.toggle("hide");
+    this.style.display = "block";
+  });
+});
