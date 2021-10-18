@@ -347,7 +347,7 @@
       }
 
       .modal {
-        display: block !important;
+        // display: block !important;
         opacity: 1;
         position: relative;
 
@@ -355,6 +355,9 @@
           transform: none;
           min-height: auto;
           margin: 0;
+          width: 100%;
+          max-width: 100%;
+          top: 0;
 
           &:before {
             display: none;

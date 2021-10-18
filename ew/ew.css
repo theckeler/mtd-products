@@ -557,7 +557,6 @@
     padding: 20px 0;
   }
   .mtd-page section.section-modal .modal {
-    display: block !important;
     opacity: 1;
     position: relative;
   }
@@ -566,6 +565,9 @@
             transform: none;
     min-height: auto;
     margin: 0;
+    width: 100%;
+    max-width: 100%;
+    top: 0;
   }
   .mtd-page section.section-modal .modal .modal-dialog:before {
     display: none;
