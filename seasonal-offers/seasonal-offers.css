@@ -40,12 +40,6 @@
 .mtd-page .button {
   background: #ffc20f;
 }
-.mtd-page .bg-yellow:hover,
-.mtd-page .button:hover {
-  border-color: #000;
-  background: #ffc20f;
-  color: #1f1f1f;
-}
 .mtd-page .bg-troy-red {
   background: #c00;
   color: #fff;
@@ -69,6 +63,9 @@
 .mtd-page .button.mtd-green {
   background: #008540;
   color: #fff;
+}
+.mtd-page .bg-dark-grey {
+  background: #4b4b4b;
 }
 .mtd-page .bg-grey {
   background: #efefef;
@@ -239,6 +236,12 @@
           transform: translate(-50%, -50%);
   z-index: 101;
 }
+.mtd-page .line {
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+}
 
 @media only screen and (max-width: 768px) {
   .mtd-page .desktop {
@@ -247,4 +250,9 @@
   .mtd-page .mobile {
     display: block;
   }
+}
+.hero.slant-down.content-page-image {
+  width: 0;
+  height: 0;
+  overflow: hidden;
 }

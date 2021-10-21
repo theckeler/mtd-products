@@ -1,4 +1,7 @@
+<!--#region TOP  -->
+<!--
 <base href="https://staging-na01-mtd.demandware.net" target="_blank">
+-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -388,7 +391,7 @@
               <div class="col-12">
                 <div class="navbar-header brand">
                   <a href="/en_US/home" title="Cub Cadet Home">
-                    <img class="icon logo" src="/on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/for-dev/logo.svg" alt="Cub Cadet" />
+                    <img class="icon logo" src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/for-dev/logo.svg" alt="Cub Cadet" />
                   </a>
                 </div>
                 <div class="navbar-header">
@@ -411,7 +414,7 @@
                       </div>
                       <a href="#" class="search-button">
                         <img class="icon icon-close" src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/default/dw6ff802c2/images/surepath/svg-icons/icon-close.svg" alt="Close" />
-                        <img class="icon icon-search" src="/on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/for-dev/icon-search.svg" alt="Search" />
+                        <img class="icon icon-search" src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/for-dev/icon-search.svg" alt="Search" />
                         <span class="search-button-label">Search</span>
                       </a>
                     </div>
@@ -1389,24 +1392,38 @@
       </header>
       <div id="main">
         <div class="container content-asset-container">
-
-          <!-- START PAGE BUILD: -->
+          <!--#endregion -->
           <!--
-      <link rel="stylesheet" href="/on/demandware.static/-/Sites-cubcadet-Library/default/vfeca51bf5ff02b801fde993942a9a9b78a945b77/stylesheets/surepath.min.css" />
+               <link rel="stylesheet" href="http://127.0.0.1:5500/right-part-pledge/rpp.min.css" />
+                <link rel="stylesheet" href="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v6ebea7b53c0b5ccffdff1d46b14c323198d3ec0e/stylesheets/rpp.min.css" />
+        -->
+          <!-- START PAGE BUILD: -->
 
-          <link rel="stylesheet" href="http://127.0.0.1:5500/surepath/surepath.min.css" />
-          -->
-          <link rel="stylesheet" href="http://127.0.0.1:5500/surepath/ew.min.css" />
+         
+              <link rel="stylesheet" href="./rpp.min.css" />
 
-          <div class="ew mtd-page">
+          <div class="rpp mtd-page">
 
-
-
+            <div id="like_button_container"></div>
 
 
           </div>
 
+
+          <!-- Load React. -->
+          <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+          <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+          <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+          <!-- Load our React component. -->
+          <script src="like_button.js"></script>
+
           <!-- END PAGE BUILD -->
+
+          <!--#region BOTTOM  -->
+
+
+
         </div>
 
       </div>
@@ -1995,3 +2012,4 @@
   </body>
 
 </html>
+<!--#endregion -->

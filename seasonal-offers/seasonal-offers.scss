@@ -1,6 +1,18 @@
 @import "../foundation/";
 
+.hero.slant-down.content-page-image {
+  // display: none;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
 .mtd-page {
+}
+
+@media only screen and (max-width: 1200px) {
+  .mtd-page {
+  }
 }
 
 @media only screen and (max-width: 1024px) {

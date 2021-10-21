@@ -1,5 +1,13 @@
 @import "../foundation/";
 
+.hero.slant-down.content-page-image {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
 .mtd-page {
   .section-1 {
     padding: 40px 20px;
@@ -97,7 +105,6 @@
           position: absolute;
           left: -40px;
           top: 16px;
-          //transform: translateY(-50%);
           width: 20px;
           height: 20px;
           border-radius: 100%;
@@ -140,6 +147,43 @@
 
 @media only screen and (max-width: 1024px) {
   .mtd-page {
+    .blocks {
+      flex-direction: column;
+
+      .block,
+      &.three > .block {
+        padding: 20px 0;
+        width: 100%;
+      }
+    }
+
+    .section-1 {
+      padding: 20px 0;
+
+      .blocks {
+        .block {
+          padding: 20px 0;
+          &.block-1 {
+            text-align: center;
+            border-bottom: 1px solid #707070;
+          }
+        }
+      }
+
+      img {
+        width: 100%;
+        max-width: 340px;
+        height: auto;
+      }
+
+      h2 {
+        // text-align: center;
+      }
+    }
+
+    .blocks .block.block-1::after {
+      display: none;
+    }
   }
 }
 
