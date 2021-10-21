@@ -1,0 +1,667 @@
+import React from "react";
+function Footer() {
+  return (
+    <>
+      <div class="upper-footer-md container">
+        <div class="row">
+          <div
+            class="
+                footer-controls
+                col-sm-12 col-md-6 col-lg-4
+                offset-lg-1
+                order-md-1
+              "
+          >
+            <div class="footer-email-signup">
+              <div class="content-asset">
+                <div class="container">
+                  <form
+                    data-url="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/MCSubscription-FooterSubscribe"
+                    id="email-subscribe-form"
+                    autocomplete="on"
+                  >
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="form-group">
+                          <label for="email-signup">
+                            Sign up for Emails from Cub Cadet
+                            <br />
+                            <span class="legal">
+                              Sign up to receive communication on services,
+                              products and special offers. You may unsubscribe
+                              at any time. Please refer to our
+                              <a
+                                class="footer-link"
+                                href="https://www.cubcadet.com/en_US/privacy-and-security/privacy-policy.html"
+                              >
+                                Privacy Policy
+                              </a>
+                              .
+                            </span>
+                          </label>
+                          <div class="input-group">
+                            <input
+                              aria-label="Join our Email List"
+                              class="form-control"
+                              data-missing-msg="Please fill out this field."
+                              data-missing-type="Required Field:"
+                              id="email-signup"
+                              name="hpEmailSignUp"
+                              pattern="^[\w.%+-]+@[\w.-]+\.[\w]{2,6}$"
+                              placeholder="Enter Your Email Address"
+                              type="email"
+                              autocomplete="email"
+                            />
+                            <span class="input-group-btn">
+                              <button class="btn btn-secondary" type="submit">
+                                Go
+                              </button>
+                            </span>
+                            <div class="invalid-feedback">&nbsp;</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="footer-btns-group">
+              <div class="content-asset">
+                <a
+                  class="footer-button finance-options display-body font-bold"
+                  href="https://www.cubcadet.com/en_US/financing"
+                  title="Go to Finance Options"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    id="svg10"
+                    version="1.1"
+                    viewBox="0 0 24 24"
+                    height="24"
+                    width="24"
+                  >
+                    <defs id="defs14" />
+                    <g
+                      //style="fill: none; fill-rule: evenodd"
+                      id="g8"
+                      transform="translate(1,1)"
+                    >
+                      <circle
+                        // style="stroke: #ffc20f"
+                        id="circle2"
+                        r="11"
+                        cy="11"
+                        cx="11"
+                      />
+                      <g
+                        id="text6"
+                        //style="fill: #ffffff"
+                        aria-label="$"
+                      >
+                        <path
+                          id="path823"
+                          d="m 14.704,12.32 q 0,1.168 -0.816,1.984 -0.736,0.768 -1.92,0.992 V 16 H 10.256 V 15.296 Q 7.9839998,14.928 7.2959998,12.624 l 1.808,-0.496 q 0.288,0.96 1.1520002,1.248 v -2.352 q -1.2800002,-0.336 -1.9200002,-0.848 -0.848,-0.688 -0.848,-1.84 0,-1.104 0.864,-1.824 0.736,-0.624 1.9040002,-0.8 v -0.88 h 1.712 V 5.68 q 1.392,0.24 2.352,1.552 l -1.392,1.152 q -0.4,-0.544 -0.96,-0.816 v 1.936 q 2.736,0.8 2.736,2.816 z M 10.256,7.6 q -0.8160002,0.224 -0.8160002,0.736 0,0.448 0.8160002,0.736 z m 2.48,4.768 q 0,-0.544 -0.768,-0.848 v 1.856 q 0.768,-0.256 0.768,-1.008 z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                  <span>Finance Options</span>
+                </a>
+                <a
+                  class="footer-button find-a-dealer display-body font-bold"
+                  href="https://www.cubcadet.com/en_US/servicelocator"
+                  title="Go to Service Locator"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="24"
+                    viewBox="0 0 16 24"
+                  >
+                    <g
+                      fill="none"
+                      fill-rule="evenodd"
+                      transform="translate(1 1)"
+                    >
+                      <path
+                        stroke="#FFC20F"
+                        d="M0 6.923C0 3.089 3.13 0 6.986 0 10.87 0 14 3.09 14 6.923 14 9.726 8.522 19.424 6.986 23 5.478 19.452 0 9.726 0 6.923z"
+                      />
+                      <circle cx="7" cy="6" r="3" fill="#FFF" />
+                    </g>
+                  </svg>
+                  <span>Find Service</span>
+                </a>
+              </div>
+            </div>
+            <div class="content-asset">
+              <ul class="social-links">
+                <li>
+                  <a
+                    class="social-icon facebook"
+                    title="Go to Facebook"
+                    href="https://www.facebook.com/cubcadet/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span></span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="social-icon instragram"
+                    title="Go to Instagram"
+                    href="https://www.instagram.com/cubcadet_usa/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span></span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="social-icon twitter"
+                    title="Go to Twitter"
+                    href="https://twitter.com/CubCadet_USA"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span></span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="social-icon youtube"
+                    title="Go to YouTube"
+                    href="https://www.youtube.com/user/CubCadetRidingMowers"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-container col-md-6 col-lg-7 order-md-0">
+            <div class="footer-item">
+              <div class="content-asset">
+                <h3 class="footer-category-heading">About Us</h3>
+                <ul class="footer-col">
+                  <li>
+                    <a
+                      class="footer-link"
+                      href="https://www.cubcadet.com/en_US/about-us.html"
+                    >
+                      Our Story
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="footer-link"
+                      href="https://www.cubcadet.com/en_US/knowledge-center.html"
+                    >
+                      How-To Articles
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="footer-link"
+                      href="https://www.cubcadet.com/en_US/built-in-america.html"
+                    >
+                      Built In America
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="footer-link"
+                      href="https://www.cubcadet.com/en_US/seasonal-offers.html"
+                    >
+                      Special Offers
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="footer-link"
+                      href="https://www.cubcadet.com/en_US/current-news/"
+                    >
+                      News
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="footer-link"
+                      href="https://www.cubcadet.com/en_US/financing"
+                    >
+                      Financing
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="footer-link"
+                      href="https://www.cubcadet.com/en_US/engine-advantage.html"
+                    >
+                      Our Engine Advantage
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-item">
+              <div class="content-asset">
+                <h3 class="footer-category-heading">Owner's Center</h3>
+                <ul class="footer-col">
+                  <li>
+                    <a
+                      class="footer-link"
+                      href="https://www.cubcadet.com/en_US/product-recalls.html"
+                    >
+                      Product Recalls
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="footer-link"
+                      href="https://www.cubcadet.com/en_US/operatorsmanuals"
+                      title="Go to Operator's Manuals"
+                    >
+                      Operator's Manuals
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="footer-link"
+                      href="https://www.cubcadet.com/en_US/content-asset-page-includes/registration.html"
+                    >
+                      Product Registration
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="locate-store footer-link"
+                      href="https://www.cubcadet.com/en_US/servicelocator"
+                      title="Go to Service Locator"
+                    >
+                      Service Locator
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="footer-link"
+                      href="https://www.cubcadet.com/en_US/service-and-parts#part-finder"
+                    >
+                      Find a Part
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="footer-link"
+                      href="https://www.cubcadet.com/en_US/service-and-parts#diagrams"
+                    >
+                      Lookup Parts via Diagram
+                    </a>
+                  </li>
+                  <li>
+                    <a class="footer-link" href="https://cubcadetgear.us/">
+                      Cub Cadet Gear
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-item">
+              <div class="content-asset">
+                <h3 class="footer-category-heading">Independent Dealers</h3>
+                <ul class="footer-col">
+                  <li>
+                    <a
+                      class="footer-link"
+                      href="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&amp;horizontalView=true&amp;isForm=true&amp;rid=dealers"
+                    >
+                      Find a Dealer
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="footer-link"
+                      href="https://www.cubcadet.com/en_US/dealer-delivery-or-pick-up.html"
+                    >
+                      Dealer Delivery or Pick-Up
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="footer-link"
+                      href="https://www.cubcadet.com/en_US/become-a-dealer.html"
+                    >
+                      Become a Dealer
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="footer-link"
+                      href="https://www.cubcadet.com/en_US/dealer-advantage.html"
+                    >
+                      Dealer Advantage
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-item">
+              <div class="content-asset">
+                <h3 class="footer-category-heading">Customer Service</h3>
+                <ul class="footer-col">
+                  <li>
+                    <a
+                      class="footer-link"
+                      data-target="#call-modal"
+                      data-toggle="modal"
+                      href="index.html#"
+                      title="Click for details"
+                      rel="noreferrer"
+                    >
+                      (877) 428 2349
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="footer-link"
+                      href="https://www.cubcadet.com/en_US/track-my-order"
+                      title="Go to Track Order"
+                    >
+                      Track Order
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="footer-link"
+                      href="https://www.cubcadet.com/en_US/account"
+                      title="Go to My Account"
+                    >
+                      My Account
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="footer-link"
+                      href="https://support.cubcadet.com/s/"
+                      title="Go to Cub Cadet Support site"
+                    >
+                      FAQs &amp; Support
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="footer-link"
+                      href="https://www.mtdproducts.com/en_US/product-safety/"
+                      title="Product Safety"
+                    >
+                      Product Safety
+                    </a>
+                  </li>
+                </ul>
+                <div
+                  aria-hidden="true"
+                  class="modal fade"
+                  id="call-modal"
+                  // style="display: none"
+                >
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <div>
+                          <h4 class="modal-title">
+                            We are experiencing high call volumes.
+                          </h4>
+                        </div>
+                        <button
+                          aria-label="Close"
+                          class="close"
+                          data-dismiss="modal"
+                          type="button"
+                        >
+                          <span aria-hidden="true"></span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                          <strong>
+                            We are available Monday - Friday, 8:30 am - 5:00 pm
+                            EST.
+                          </strong>
+                          To speak with an agent, you might experience longer
+                          than normal hold times. We apologize for the
+                          inconvenience.
+                        </p>
+                        <p>
+                          <a
+                            aria-label="Click to Call"
+                            class="btn btn-secondary"
+                            href="tel:877-428-2349"
+                            title="Call Us"
+                          >
+                            Call 1-877-428-2349
+                          </a>
+                        </p>
+                        <p>
+                          <button
+                            class="btn btn-outline-secondary"
+                            id="header-live-chat"
+                            type="button"
+                          >
+                            <svg
+                              height="20"
+                              viewbox="0 0 20 20"
+                              width="20"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M4.012 1C2.909 1 2 1.939 2 3.077v9.232c0 1.139.909 2.077 2.012 2.077h1.271L4.9 18.238a.696.696 0 0 0 .378.694c.255.126.56.074.76-.132l4.29-4.414h6.65c1.103 0 2.012-.938 2.012-2.077V3.077C18.99 1.94 18.08 1 16.977 1H4.012zm0 1.385h12.965c.384 0 .671.296.671.692v9.232c0 .396-.287.692-.67.692h-6.93a.657.657 0 0 0-.475.202l-3.151 3.239.265-2.683a.707.707 0 0 0-.17-.53.661.661 0 0 0-.493-.228H4.012c-.383 0-.67-.296-.67-.692V3.077c0-.396.287-.692.67-.692zm2.012 4.154c-.618 0-1.118.517-1.118 1.154 0 .637.5 1.154 1.118 1.154.617 0 1.117-.517 1.117-1.154 0-.637-.5-1.154-1.117-1.154zm4.478 0c-.618 0-1.118.517-1.118 1.154 0 .637.5 1.154 1.118 1.154.617 0 1.117-.517 1.117-1.154 0-.637-.5-1.154-1.117-1.154zm4.464 0c-.618 0-1.118.517-1.118 1.154 0 .637.5 1.154 1.118 1.154.617 0 1.117-.517 1.117-1.154 0-.637-.5-1.154-1.117-1.154z"
+                                fill="#FFC20F"
+                                fill-rule="nonzero"
+                              ></path>
+                            </svg>
+                            Start a live chat
+                          </button>
+                        </p>
+                        <section class="hlinks">
+                          <h5 class="modal-title">Helpful links.</h5>
+                          <div class="hlinks">
+                            <ul>
+                              <li>
+                                <a
+                                  href="https://www.cubcadet.com/en_US/service-and-parts#part-finder"
+                                  title="Find a part"
+                                >
+                                  Find a part
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  href="https://www.cubcadet.com/en_US/operatorsmanuals"
+                                  title="Find a product manual"
+                                >
+                                  Find a product manual
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  href="https://www.cubcadet.com/en_US/servicelocator"
+                                  title="Find a service center"
+                                >
+                                  Find a service center
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  href="https://www.cubcadet.com/en_US/knowledge-center.html"
+                                  title="Find an article"
+                                >
+                                  Find an article
+                                </a>
+                              </li>
+                              <li>
+                                <a href="href=" title="Track my order">
+                                  Track my order
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </section>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-info container">
+        <div class="footer-info-links">
+          <div class="footer-logo">
+            <picture>
+              <source
+                srcset="
+                    /on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/for-dev/built-in-america-desktop.png,
+                    /on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/for-dev/built-in-america-desktop-2x.png 2x
+                  "
+                media="(min-width: 767px)"
+              />
+              <img
+                srcset="
+                    /on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/for-dev/built-in-america-mobile.png,
+                    /on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/for-dev/built-in-america-mobile-2x.png 2x
+                  "
+                alt="Built in America Badge"
+              />
+            </picture>
+          </div>
+          <div class="footer-site-links col-lg-6">
+            <div class="content-asset">
+              <h6>Global Sites</h6>
+              <ul>
+                <li class="site-link">
+                  <a href="https://www.cubcadet.ca">Canada</a>
+                </li>
+                <li class="site-link">
+                  <a href="https://eu.cubcadet.com/en/">Europe</a>
+                </li>
+                <li class="site-link">
+                  <a href="http://www.cubcadet.com.au/">Australia</a>
+                </li>
+                <li class="site-link">
+                  <a href="http://www.cubcadet.cn/">China</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button class="back-to-top" title="Back to top">
+            <img
+              class="icon icon-back-to-top-arrow"
+              src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/default/dw99f86a55/images/surepath/svg-icons/icon-back-to-top-arrow.svg"
+              alt=""
+            />
+            <span class="btt-text">TOP</span>
+          </button>
+          <div class="col-md-12 col-lg-6 copyright-notice">
+            <div class="content-asset">
+              <div class="copyright">
+                <div class="terms-privacy-links">
+                  <span class="copyright-text">
+                    &copy; 2021 Cubcadet. All Rights Reserved.
+                  </span>
+                  <span>
+                    <a href="https://www.cubcadet.com/en_US/privacy-and-security/privacy-policy.html">
+                      Privacy Policy
+                    </a>
+                  </span>
+                  <span>
+                    <a href="https://www.cubcadet.com/en_US/terms-of-use.html">
+                      Terms of Use
+                    </a>
+                  </span>
+                  <span>
+                    <a href="https://www.cubcadet.com/en_US/online-store-policies.html">
+                      Online Store Policies
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="disclaimer-text">
+          <div class="content-asset">
+            <p class="access">&nbsp;</p>
+            <p class="access">
+              If you experience any problems accessing this website, please call
+              us at for assistance.
+            </p>
+            <div class="disclaimers">
+              <p>
+                <strong>Engine Disclaimer: </strong>The engine horsepower
+                information is provided by the engine manufacturer to be used
+                for comparison purposes only. See your local Cub Cadet Dealer
+                for warranty details.<strong>Pricing Disclaimer:</strong>
+                Posted price is in USD Dollars and is&nbsp;manufacturer's
+                suggested sale price. Models and pricing may vary by location.
+                Taxes, freight, set-up&nbsp;and delivery not included. Optional
+                equipment, accessories and attachments sold separately. See your
+                retailer for details.&nbsp;<strong>Image Disclaimer:</strong>
+                Products may vary from depicted model image in design, required
+                attachments, safety features and non-functional appearance, and
+                may not reflect dealer inventory or unit specifications.
+                <strong>Specifications Disclaimer:</strong> Specifications
+                subject to change without notice. Images may not reflect
+                retailer inventory and/or unit specifications.
+                <strong>Operator's Manual Disclaimer:</strong> The operator's
+                manual posted is for general information and use. To ensure the
+                download of the operator's manual specific to your unit, we
+                require a model and serial number.&nbsp;
+                <strong>Speed Disclaimer: </strong>Actual vehicle speed varies
+                based on load, use and environmental conditions.
+                <strong>Battery Disclaimer: </strong>Battery and battery powered
+                product performance varies with load, use and environmental
+                conditions.
+                <strong>Software Disclaimer:</strong> Software available on
+                Company websites is provided on an &quot;as is&quot; basis
+                without any warranty of any kind, either express or implied. The
+                download and use of any software is done at the user's own
+                risk.&nbsp;<strong>Professional Products:</strong> Cub Cadet
+                commercial products are intended for professional use.
+                <strong>UTV:</strong> Cub Cadet Utility Vehicles (UTV) are
+                intended for off-road use by adults only. Please see the
+                operator&rsquo;s manual and the warning labels posted on the
+                vehicle itself for more details.
+                <strong>Email disclaimer: </strong>Sign up to receive
+                communication on services, products and special offers. You may
+                unsubscribe at any time. Please refer to our
+                <a
+                  class="footer-link"
+                  href="https://www.cubcadet.com/en_US/privacy-and-security/privacy-policy.html"
+                >
+                  Privacy Policy
+                </a>
+                .
+              </p>
+              <p>
+                *When compared to the same engine without IntelliPower&trade;
+                feature, improvements vary depending on engine models and
+                specific operating conditions.
+              </p>
+              <p>
+                *A-weighted sound level per ISO-5395-1, 95% confidence comparing
+                XT1 Enduro Series LT42, Ultima ZT1 42 and CC30.*
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Footer;
