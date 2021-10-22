@@ -1,5 +1,14 @@
 @import "../../../foundation/";
 
+.hero.slant-down.content-page-image {
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .mtd-page {
   padding: 100px 0;
 }

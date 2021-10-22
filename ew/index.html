@@ -1397,69 +1397,6 @@
         <div class="container content-asset-container">
           <!--#endregion -->
 
-          <div class="modal fade enterSerialNumber-modal modal-1" id="enterSerialNumberModal" tabindex="-1" role="dialog" aria-labelledby="enterSerialNumber" action-get-delivery-zipcode="/on/demandware.store/Sites-cubcadet-Site/en_US/ExtendedWarranty-EnterSerialNumber" data-event-type="" aria-hidden="true" style="display: none;">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
-                </div>
-                <div class="modal-body">
-                  <center>
-                    <div class="form-group required">
-                      <div class="pagination-steps mt-4 mb-3 ">
-                        <div class="pagination-step step-1 active">
-                          1
-                        </div>
-                        <div class="pagination-step step-2">
-                          2
-                        </div>
-                        <div class="pagination-step step-3">
-                          3
-                        </div>
-                      </div>
-                      <form action="/on/demandware.store/Sites-cubcadet-Site/en_US/ExtendedWarranty-LookupSerialNumber" id="submitSerialNumber" method="POST" name="dwfrm_eligibilityCheck">
-                        <!-- dwMarker="form" dwPipelineTitle="ExtendedWarranty-LookupSerialNumber (int_extendedwarranty)" dwIsController="true" dwPipelineURL="http://localhost:60606/target=/int_extendedwarranty/cartridge/controllers/ExtendedWarranty.js&amp;start=LookupSerialNumber" -->
-                        <h6>Enter Your Machine's Serial Number</h6>
-                        <div class="container">
-                          <div class="col-lg-4 col-md-12 d-flex justify-content-center">
-                            <input autofocus="" required="" type="text" class="form-control" id="serialNumber" name="serialNumber" value="" autocomplete="nofill" maxlength="2147483647" pattern="\d[A-Za-z][0-3]\d\d[A-Za-z]([A-Za-z]|\d)\d{4}">
-                            <button type="submit" class="btn btn-secondary">Next</button>
-                          </div>
-                        </div>
-                        <div class="showHowToFind"> How do I find my serial number?</div>
-                        <div id="moreSerialInfo" class="hide" style="display: none;">
-                          <!-- dwMarker="slot" dwContentID="extended-warranty-serial-number" dwContext="global"-->
-                          <!-- dwMarker="rinclude" dwPipelineTitle="Internal" dwIsController="false" dwTemplateTitle="/default/slots/content/contentAssetBody.isml (org_mtd_ma)" dwTemplateURL="http://localhost:60606/target=/org_mtd_ma/cartridge/templates/default/slots/content/contentAssetBody.isml" -->
-                          <div class="row">
-                            <div class="col 6">
-                              <img src="https://mtdproducts.secure.force.com/ProductRegistration/resource/1619086108000/CmsTemp/ProductRegistration/img/cub-cadet-US-model-plate.jpg">
-                            </div>
-                            <div class="col 6">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis ligula non mi faucibus facilisis. Vestibulum a sem sed ligula faucibus ornare. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin et tellus et urna rutrum rutrum vel ultrices lacus.&nbsp;
-                            </div>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </center>
-                </div>
-                <div class="modal-footer">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="hero slant-down content-page-image">
-            <h1 class="page-title">null</h1>
-          </div>
-          <!-- 
-<link rel="stylesheet" href="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v99fafdfb72063868a03830a553a4206685e8d747/stylesheets/ew.min.css" />
--->
-          <!-- START PAGE BUILD: -->
-
-
-          <link rel="stylesheet" href="./ew.min.css" />
-
           <style>
             .hide {
               position: fixed;
@@ -1473,16 +1410,16 @@
               white-space: nowrap;
               height: 0;
               width: 0;
-              opacity: 0;
+              opacity: 0
             }
 
             .container.content-asset-container {
               max-width: 100%;
-              padding: 0;
+              padding: 0
             }
 
             .content-page-image {
-              height: auto;
+              height: auto
             }
 
             .mtd-page .wrapper {
@@ -1490,80 +1427,80 @@
               margin-left: auto;
               margin-right: auto;
               padding-right: 20px;
-              padding-left: 20px;
+              padding-left: 20px
             }
 
             .mtd-page ul {
-              margin-bottom: 0;
+              margin-bottom: 0
             }
 
             .mtd-page img {
               width: 100%;
-              height: auto;
+              height: auto
             }
 
             .mtd-page .bg-yellow,
             .mtd-page .button {
-              background: #ffc20f;
+              background: #ffc20f
             }
 
             .mtd-page .bg-troy-red {
               background: #c00;
-              color: #fff;
+              color: #fff
             }
 
             .mtd-page .bg-troy-red h3 {
-              border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+              border-bottom: 1px solid rgba(255, 255, 255, .4)
             }
 
             .mtd-page .bg-mtd-green {
               background: #008540;
-              color: #fff;
+              color: #fff
             }
 
             .mtd-page .bg-mtd-green h3 {
-              border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+              border-bottom: 1px solid rgba(255, 255, 255, .4)
             }
 
             .mtd-page .bg-red,
             .mtd-page .button.troy-red {
               background: #c00;
-              color: #fff;
+              color: #fff
             }
 
             .mtd-page .mtd-green,
             .mtd-page .button.mtd-green {
               background: #008540;
-              color: #fff;
+              color: #fff
             }
 
             .mtd-page .bg-dark-grey {
-              background: #4b4b4b;
+              background: #4b4b4b
             }
 
             .mtd-page .bg-grey {
-              background: #efefef;
+              background: #efefef
             }
 
             .mtd-page .yellow {
-              color: #ffc20f;
+              color: #ffc20f
             }
 
             .mtd-page .troy-red {
-              color: #c00;
+              color: #c00
             }
 
             .mtd-page .bg-black {
-              background: #000;
+              background: #000
             }
 
             .mtd-page .clip-corner {
               -webkit-clip-path: polygon(0 44px, 44px 0, 100% 0, 100% 100%, 0 100%);
-              clip-path: polygon(0 44px, 44px 0, 100% 0, 100% 100%, 0 100%);
+              clip-path: polygon(0 44px, 44px 0, 100% 0, 100% 100%, 0 100%)
             }
 
             .mtd-page .title {
-              font-weight: bold;
+              font-weight: bold
             }
 
             .mtd-page .button {
@@ -1574,55 +1511,54 @@
               text-transform: uppercase;
               text-decoration: none;
               font-weight: 700;
-              border: 2px solid transparent;
+              border: 2px solid transparent
             }
 
             .mtd-page .button:hover {
               border-color: #000;
               background: #ffc20f;
-              color: #1f1f1f;
+              color: #1f1f1f
             }
 
             .mtd-page .button.mtd-green:hover {
               border-color: #000;
               background: #008540;
-              color: #fff;
+              color: #fff
             }
 
             .mtd-page .button.troy-red:hover {
               border-color: #000;
               background: #c00;
-              color: #fff;
+              color: #fff
             }
 
             .mtd-page .no-list {
               list-style: none;
-              padding: 0;
+              padding: 0
             }
 
             .mtd-page .list {
-              list-style: disc;
+              list-style: disc
             }
 
             .mtd-page .blocks {
               display: -webkit-box;
               display: -ms-flexbox;
-              display: flex;
+              display: flex
             }
 
             .mtd-page .blocks.two>.block {
-              width: 50%;
+              width: 50%
             }
 
             .mtd-page .blocks.three>.block {
-              width: 33%;
+              width: 33%
             }
 
             .mtd-page .video-wrapper {
               position: relative;
               padding-bottom: 56.25%;
-              /* 16:9 */
-              height: 0;
+              height: 0
             }
 
             .mtd-page .video-wrapper iframe {
@@ -1630,7 +1566,7 @@
               top: 0;
               left: 0;
               width: 100%;
-              height: 100%;
+              height: 100%
             }
 
             .mtd-page .img-wrapper {
@@ -1638,17 +1574,17 @@
               width: 100%;
               max-width: 100%;
               min-height: 100%;
-              overflow: hidden;
+              overflow: hidden
             }
 
             .mtd-page .img-wrapper>img {
-              -webkit-transition: all 0.2s ease-in-out;
-              transition: all 0.2s ease-in-out;
+              -webkit-transition: all .2s ease-in-out;
+              transition: all .2s ease-in-out;
               position: absolute;
               width: 100%;
               height: 100%;
               -o-object-fit: cover;
-              object-fit: cover;
+              object-fit: cover
             }
 
             .mtd-page .visually-hidden {
@@ -1659,25 +1595,25 @@
               overflow: hidden;
               position: absolute;
               white-space: nowrap;
-              width: 1px;
+              width: 1px
             }
 
             .mtd-page .desktop {
-              display: block;
+              display: block
             }
 
             .mtd-page .mobile {
-              display: none;
+              display: none
             }
 
             .mtd-page .faqs-container {
-              padding: 60px 0;
+              padding: 60px 0
             }
 
             .mtd-page .faqs-container h2 {
               font-size: 3rem;
               text-align: center;
-              margin-bottom: 30px;
+              margin-bottom: 30px
             }
 
             .mtd-page .faqs-container .question {
@@ -1687,7 +1623,7 @@
               position: relative;
               font-size: 1.375rem;
               padding: 32px 0;
-              font-weight: 700;
+              font-weight: 700
             }
 
             .mtd-page .faqs-container .question span {
@@ -1706,30 +1642,30 @@
               transform: rotate(45deg);
               -webkit-transform-origin: center;
               transform-origin: center;
-              -webkit-transition: all 0.2s;
-              transition: all 0.2s;
-              margin-left: auto;
+              -webkit-transition: all .2s;
+              transition: all .2s;
+              margin-left: auto
             }
 
             .mtd-page .faqs-container .question:hover {
-              cursor: pointer;
+              cursor: pointer
             }
 
             .mtd-page .faqs-container .question.active span {
               -webkit-transform: rotate(0);
-              transform: rotate(0);
+              transform: rotate(0)
             }
 
             .mtd-page .faqs-container .answer {
               overflow: hidden;
               max-height: 0;
               border-bottom: 1px solid #d9d9d9;
-              -webkit-transition: max-height 0.2s;
-              transition: max-height 0.2s;
+              -webkit-transition: max-height .2s;
+              transition: max-height .2s
             }
 
             .mtd-page .faqs-container .answer.active {
-              max-height: 1000px;
+              max-height: 1000px
             }
 
             .mtd-page .layered {
@@ -1738,23 +1674,23 @@
               left: 50%;
               -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
-              z-index: 101;
+              z-index: 101
             }
 
             .mtd-page .line {
               display: block;
               height: 1px;
               width: 100%;
-              background: #ccc;
+              background: #ccc
             }
 
             @media only screen and (max-width: 768px) {
               .mtd-page .desktop {
-                display: none;
+                display: none
               }
 
               .mtd-page .mobile {
-                display: block;
+                display: block
               }
             }
 
@@ -1763,7 +1699,7 @@
               width: 0 !important;
               height: 0 !important;
               overflow: hidden !important;
-              opacity: 0 !important;
+              opacity: 0 !important
             }
 
             .mtd-page .circle {
@@ -1776,27 +1712,27 @@
               -webkit-box-align: center;
               -ms-flex-align: center;
               align-items: center;
-              border-radius: 100%;
+              border-radius: 100%
             }
 
             .mtd-page .circle img {
               width: 100%;
               max-width: 230px;
-              height: auto;
+              height: auto
             }
 
             .mtd-page a.button {
-              display: inline-block;
+              display: inline-block
             }
 
             .mtd-page a.button:hover {
-              cursor: pointer;
+              cursor: pointer
             }
 
             .mtd-page .section-1 {
               margin-top: 10px;
               overflow: hidden;
-              max-height: 280px;
+              max-height: 280px
             }
 
             .mtd-page .section-1 .circle {
@@ -1812,72 +1748,72 @@
               width: 400px;
               height: 400px;
               padding: 30px;
-              border-radius: 100%;
+              border-radius: 100%
             }
 
             .mtd-page .section-1 .circle img {
               width: 100%;
               max-width: 230px;
-              height: auto;
+              height: auto
             }
 
             .mtd-page .section-1 .blocks {
               -webkit-box-align: center;
               -ms-flex-align: center;
-              align-items: center;
+              align-items: center
             }
 
             .mtd-page .section-1 .blocks .block {
               -webkit-transform: translateY(-60px);
-              transform: translateY(-60px);
+              transform: translateY(-60px)
             }
 
             .mtd-page .section-1 .blocks .block-2 {
               padding: 40px;
-              text-align: center;
+              text-align: center
             }
 
             .mtd-page .section-1 .blocks .block-2 a.button {
-              color: #fff;
+              color: #fff
             }
 
             .mtd-page .section-1 .blocks .block-2 a.button:hover {
               background: #000;
-              color: #ffc20f;
+              color: #ffc20f
             }
 
             .mtd-page .section-2 {
               padding: 70px 0 40px 0;
-              text-align: center;
+              text-align: center
             }
 
             .mtd-page .section-2 h2 {
-              font-size: 2.625rem;
+              font-size: 2.625rem
             }
 
             .mtd-page .section-2 h3 {
-              font-size: 2rem;
+              font-size: 2rem
             }
 
             .mtd-page .section-2 p {
               font-size: 1rem;
-              line-height: 1.8;
+              line-height: 1.8
             }
 
             .mtd-page .section-2 img {
-              max-width: 370px;
+              max-width: 370px
             }
 
             .mtd-page .section-2 .circle {
               width: 275px;
               height: 275px;
-              margin-bottom: 14px;
+              margin-bottom: 14px
             }
 
             .mtd-page .section-2 .blocks {
               -webkit-box-align: center;
               -ms-flex-align: center;
-              align-items: center;
+              align-items: center
             }
 
             .mtd-page .section-2 .blocks .block {
@@ -1891,38 +1827,38 @@
               -webkit-box-align: center;
               -ms-flex-align: center;
               align-items: center;
-              padding: 0 40px;
+              padding: 0 40px
             }
 
             .mtd-page .section-2 .blocks .block:first-of-type {
-              padding-left: 0;
+              padding-left: 0
             }
 
             .mtd-page .section-2 .blocks .block:last-of-type {
-              padding-right: 0;
+              padding-right: 0
             }
 
             .mtd-page .section-2 .blocks .block.block-2 img {
-              margin: 50px 0;
+              margin: 50px 0
             }
 
             .mtd-page .section-4 {
-              padding: 50px 0;
+              padding: 50px 0
             }
 
             .mtd-page .section-4 h2 {
-              font-size: 1.75rem;
+              font-size: 1.75rem
             }
 
             .mtd-page .section-4 p {
               font-size: 1rem;
-              line-height: 1.8;
+              line-height: 1.8
             }
 
             .mtd-page .section-4 .blocks {
               -webkit-box-align: center;
               -ms-flex-align: center;
-              align-items: center;
+              align-items: center
             }
 
             .mtd-page .section-4 .blocks .block {
@@ -1936,24 +1872,24 @@
               -webkit-box-align: center;
               -ms-flex-align: center;
               align-items: center;
-              padding: 0 30px;
+              padding: 0 30px
             }
 
             .mtd-page .section-4 .blocks .block:first-of-type {
-              padding-left: 0;
+              padding-left: 0
             }
 
             .mtd-page .section-4 .blocks .block:last-of-type {
-              padding-right: 0;
+              padding-right: 0
             }
 
             .mtd-page .section-4 .blocks .block.block-2 img {
-              margin: 50px 0;
+              margin: 50px 0
             }
 
             .mtd-page .section-4 .content {
               padding-left: 50px;
-              position: relative;
+              position: relative
             }
 
             .mtd-page .section-4 .content:before {
@@ -1966,32 +1902,50 @@
               display: block;
               position: absolute;
               left: 0;
-              top: 6px;
+              top: 6px
             }
 
             .mtd-page .section-5 {
               padding: 40px 0;
-              text-align: center;
+              text-align: center
             }
 
             .mtd-page .section-5 h2 {
               font-size: 3rem;
-              line-height: 1.2;
+              line-height: 1.2
             }
 
             .mtd-page .section-7 {
-              text-align: center;
+              text-align: center
+            }
+
+            .mtd-page .section-8 {
+              padding: 40px 20px
+            }
+
+            .mtd-page .section-8 .wrapper p {
+              font-weight: 700;
+              text-align: center
+            }
+
+            .mtd-page .section-8 .wrapper p:nth-of-type(1) {
+              font-size: 36px;
+              margin-bottom: 20px
+            }
+
+            .mtd-page .section-8 .wrapper p:nth-of-type(2) {
+              font-size: 26px
             }
 
             .mtd-page .modal .modal-dialog {
               top: 40px;
-              max-width: 800px;
+              max-width: 800px
             }
 
             .mtd-page .modal .modal-dialog .modal-header {
               padding: 0;
               overflow: hidden;
-              max-height: 200px;
+              max-height: 200px
             }
 
             .mtd-page .modal .modal-dialog .modal-header .bg-yellow {
@@ -2003,19 +1957,19 @@
               justify-content: center;
               width: 100%;
               background: -webkit-gradient(linear, left top, left bottom, from(#ffc20f), color-stop(50%, #ffc20f), color-stop(50%, rgba(255, 194, 15, 0)), to(rgba(255, 194, 15, 0)));
-              background: linear-gradient(to bottom, #ffc20f 0%, #ffc20f 50%, rgba(255, 194, 15, 0) 50%, rgba(255, 194, 15, 0) 100%);
+              background: linear-gradient(to bottom, #ffc20f 0%, #ffc20f 50%, rgba(255, 194, 15, 0) 50%, rgba(255, 194, 15, 0) 100%)
             }
 
             .mtd-page .modal .modal-dialog .modal-header .bg-yellow .circle {
               -webkit-transform: translateY(-60px);
               transform: translateY(-60px);
               width: 280px;
-              height: 280px;
+              height: 280px
             }
 
             .mtd-page .modal .modal-dialog .modal-header .bg-yellow .circle img {
               margin-top: 40px;
-              max-width: 160px;
+              max-width: 160px
             }
 
             .mtd-page .modal .modal-dialog .modal-header .close {
@@ -2035,7 +1989,7 @@
               background: #fff;
               border-radius: 100%;
               color: #000;
-              font-size: 1.5rem;
+              font-size: 1.5rem
             }
 
             .mtd-page .modal .modal-dialog .modal-header .close:after {
@@ -2046,59 +2000,59 @@
               left: 50%;
               -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
-              font-size: 20px;
+              font-size: 20px
             }
 
             @media only screen and (max-width: 1200px) {
               .mtd-page h1 {
-                font-size: 2.25rem;
+                font-size: 2.25rem
               }
 
               .mtd-page p {
-                font-size: 0.875rem;
+                font-size: 0.875rem
               }
             }
 
             @media only screen and (max-width: 1024px) {
               .modal-open {
-                overflow: auto !important;
+                overflow: auto !important
               }
 
               .modal-backdrop {
                 display: none;
                 width: 0;
                 height: 0;
-                overflow: hidden;
+                overflow: hidden
               }
 
               .mtd-page .section-1 {
                 max-height: none;
-                background: linear-gradient(to bottom, #ffc20f 0, #ffc20f 145px, #fff 145px, #fff 100%);
+                background: linear-gradient(to bottom, #ffc20f 0, #ffc20f 145px, #fff 145px, #fff 100%)
               }
 
               .mtd-page .section-1 .circle {
                 width: 240px;
-                height: 240px;
+                height: 240px
               }
 
               .mtd-page .section-1 .blocks {
                 -webkit-box-orient: vertical;
                 -webkit-box-direction: normal;
                 -ms-flex-direction: column;
-                flex-direction: column;
+                flex-direction: column
               }
 
               .mtd-page .section-1 .blocks .block {
                 -webkit-transform: translateY(-20px);
-                transform: translateY(-20px);
+                transform: translateY(-20px)
               }
 
               .mtd-page .section-1 .blocks .block.block-1 {
-                max-height: 300px;
+                max-height: 300px
               }
 
               .mtd-page .section-1 .blocks .block.block-2 {
-                padding: 0;
+                padding: 0
               }
 
               .mtd-page .section-2 .blocks,
@@ -2106,22 +2060,22 @@
                 -webkit-box-orient: vertical;
                 -webkit-box-direction: normal;
                 -ms-flex-direction: column;
-                flex-direction: column;
+                flex-direction: column
               }
 
               .mtd-page .section-2 .blocks .block,
               .mtd-page .section-4 .blocks .block {
-                width: 100%;
+                width: 100%
               }
 
               .mtd-page .section-2 .blocks .block:nth-child(n),
               .mtd-page .section-4 .blocks .block:nth-child(n) {
-                padding: 20px 0;
+                padding: 20px 0
               }
 
               .mtd-page section.section-modal .modal {
                 opacity: 1;
-                position: relative;
+                position: relative
               }
 
               .mtd-page section.section-modal .modal .modal-dialog {
@@ -2131,26 +2085,26 @@
                 margin: 0;
                 width: 100%;
                 max-width: 100%;
-                top: 0;
+                top: 0
               }
 
               .mtd-page section.section-modal .modal .modal-dialog:before {
-                display: none;
+                display: none
               }
 
               .mtd-page section.section-modal .modal .modal-header {
-                display: none;
+                display: none
               }
 
               .mtd-page section.section-modal .modal .modal-content {
                 background: transparent;
-                padding: 30px;
+                padding: 30px
               }
             }
 
             @media only screen and (max-width: 768px) {
               .mtd-page a.button {
-                display: block;
+                display: block
               }
             }
           </style>
@@ -2306,6 +2260,13 @@
               </div>
             </section>
 
+            <section class="section-8 bg-yellow">
+              <div class="wrapper">
+                <p>Still Have Extended Warranty Questions?</p>
+                <p>We’re happy to help! Call a customer service specialist at 877-428-2349 8am-5pm EST.</p>
+              </div>
+            </section>
+
             <script>
               // SETUP:
               document.querySelector(".hero.slant-down.content-page-image").remove();
@@ -2360,11 +2321,13 @@
               window.addEventListener("resize", displayWindowSize);
               displayWindowSize();
 
-              document.querySelector(".showHowToFind").addEventListener("click", function (e) {
-                e.classList.toggle("active");
-                e.nextElementSibling.classList.toggle("hide");
-                e.nextElementSibling.style.cssText = "display:block !important";
+              document.querySelector(".showHowToFind").addEventListener("click", function () {
+                this.classList.toggle("active");
+                this.nextElementSibling.classList.toggle("hide");
+                this.nextElementSibling.style.cssText = "display:block !important";
               });
+
+
             </script>
           </div>
         </div>
