@@ -5,7 +5,7 @@ ReactDOM.render(<App />, document.getElementById("app"));
 
 // import Header from "./templates/Header";
 // import Footer from "./templates/Footer";
-// import Head from "./templates/Head";
+import Head from "./templates/Head";
 // ReactDOM.render(<Header />, document.getElementById("header"));
 // ReactDOM.render(<Footer />, document.getElementById("footer"));
-// ReactDOM.render(<Head />, document.getElementById("head"));
+ReactDOM.render(<Head />, document.getElementById("head"));

@@ -158,6 +158,12 @@
         width: 33%;
       }
     }
+
+    &.four {
+      > .block {
+        width: 25%;
+      }
+    }
   }
 
   .video-wrapper {

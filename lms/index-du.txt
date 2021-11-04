@@ -164,5 +164,5 @@
             </tbody>
         </table>
     </div>
-    <div id="mainimagecon05"></div>
+    <img src="/clientimg/mtdproducts/welcome/Surepath%20Stripes1.jpg" style="width: 1400px; height: 576px;">
 </div>
