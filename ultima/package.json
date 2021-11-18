@@ -11,7 +11,7 @@
     "webpack",
     "react"
   ],
-  "author": "Sandesh Chapagain",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "^17.0.2",

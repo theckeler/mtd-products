@@ -68,9 +68,26 @@
   }
 
   .section-3 {
+    .wrapper h2 {
+      color: #fff;
+      margin-bottom: em(20px);
+      display: block;
+    }
+
+    .blocks .block > div {
+      font-size: rem(25px);
+      padding: em(40px) em(10px);
+      clip-path: polygon(em(20px) 0%, 100% 0, 100% 100%, 0 100%, 0% em(20px));
+    }
+  }
+
+  .section-3,
+  .section-4 {
+    padding: em(60px) 0;
+
     .blocks {
       .block {
-        margin: 0 em(60px);
+        margin: 0 em(20px);
 
         &:first-of-type {
           margin-left: 0;
@@ -80,20 +97,78 @@
           margin-right: 0;
         }
 
-        .bg-grey {
-          padding: em(30px);
+        > div {
           width: 100%;
           display: flex;
           flex-direction: column;
           height: 100%;
           justify-content: center;
           align-items: center;
-          font-size: rem(25px);
           text-align: center;
+
+          strong {
+            font-size: rem(40px);
+            //color: #fff;
+          }
 
           span {
             //  display: block;
             //   width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .section-4 {
+    .blocks .block > div {
+      p {
+        font-size: rem(18px);
+        line-height: 1.7;
+        padding: em(40px) em(30px);
+        // margin-top: em(20px);
+        // background: chartreuse;
+      }
+    }
+  }
+
+  .section-5 {
+    padding: em(40px) em(30px);
+    margin-top: 0;
+    margin-bottom: 0;
+
+    .quotes {
+      align-items: center;
+
+      .quote {
+        // background: #000;
+        display: flex;
+        padding: em(40px);
+
+        > div {
+          &.quotation-mark {
+            font-size: em(150px);
+            //padding: 0;
+            color: #fff;
+            line-height: 0.6;
+            display: flex;
+            padding: 10px;
+
+            &.bottom {
+              align-items: flex-end;
+            }
+          }
+
+          p {
+            margin-bottom: 0;
+            line-height: 1.7;
+            font-size: rem(18px);
+
+            &:nth-child(2) {
+              display: block;
+              margin-top: em(20px);
+              font-size: rem(22px);
+            }
           }
         }
       }
@@ -114,6 +189,12 @@
         padding: em(40px);
         //min-height: 600px;
       }
+    }
+  }
+
+  .section-7 {
+    p {
+      text-align: center;
     }
   }
 
@@ -159,6 +240,22 @@
 
   .section-10 {
     padding: em(60px) 0;
+  }
+
+  .section-11 {
+    a {
+      padding: em(10px);
+      text-decoration: none;
+
+      &:hover {
+        background: #efefef;
+        color: #000;
+      }
+    }
+
+    .block {
+      padding: em(10px);
+    }
   }
 }
 

@@ -130,6 +130,9 @@
 .mtd-page .blocks.three > .block {
   width: 33%;
 }
+.mtd-page .blocks.four > .block {
+  width: 25%;
+}
 .mtd-page .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -440,6 +443,7 @@
 }
 .mtd-page .section-7 {
   text-align: center;
+  margin-bottom: 40px;
 }
 .mtd-page .section-8 {
   margin-top: 60px;
