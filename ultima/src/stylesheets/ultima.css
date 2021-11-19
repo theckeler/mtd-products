@@ -355,6 +355,10 @@
 .mtd-page .section-4 .blocks .block > div strong {
   font-size: 2.5rem;
 }
+.mtd-page .section-4 .blocks .block {
+  -webkit-clip-path: polygon(1.25em 0%, 100% 0, 100% 100%, 0 100%, 0% 1.25em);
+          clip-path: polygon(1.25em 0%, 100% 0, 100% 100%, 0 100%, 0% 1.25em);
+}
 .mtd-page .section-4 .blocks .block > div p {
   font-size: 1.125rem;
   line-height: 1.7;
@@ -370,13 +374,18 @@
       -ms-flex-align: center;
           align-items: center;
 }
+.mtd-page .section-5 .quotes > li {
+  padding: 2.5em;
+}
 .mtd-page .section-5 .quotes .quote {
+  background: rgba(255, 255, 255, 0.2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2.5em;
+  padding: 1.25em;
 }
-.mtd-page .section-5 .quotes .quote > div.quotation-mark {
+.mtd-page .section-5 .quotes .quote > div.quotation-mark,
+.mtd-page .section-5 .quotes .quote > li.quotation-mark {
   font-size: 9.375em;
   color: #fff;
   line-height: 0.6;
@@ -385,17 +394,20 @@
   display: flex;
   padding: 10px;
 }
-.mtd-page .section-5 .quotes .quote > div.quotation-mark.bottom {
+.mtd-page .section-5 .quotes .quote > div.quotation-mark.bottom,
+.mtd-page .section-5 .quotes .quote > li.quotation-mark.bottom {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
 }
-.mtd-page .section-5 .quotes .quote > div p {
+.mtd-page .section-5 .quotes .quote > div p,
+.mtd-page .section-5 .quotes .quote > li p {
   margin-bottom: 0;
   line-height: 1.7;
   font-size: 1.125rem;
 }
-.mtd-page .section-5 .quotes .quote > div p:nth-child(2) {
+.mtd-page .section-5 .quotes .quote > div p:nth-child(2),
+.mtd-page .section-5 .quotes .quote > li p:nth-child(2) {
   display: block;
   margin-top: 1.25em;
   font-size: 1.375rem;

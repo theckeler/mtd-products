@@ -121,13 +121,17 @@
   }
 
   .section-4 {
-    .blocks .block > div {
-      p {
-        font-size: rem(18px);
-        line-height: 1.7;
-        padding: em(40px) em(30px);
-        // margin-top: em(20px);
-        // background: chartreuse;
+    .blocks .block {
+      clip-path: polygon(em(20px) 0%, 100% 0, 100% 100%, 0 100%, 0% em(20px));
+
+      > div {
+        p {
+          font-size: rem(18px);
+          line-height: 1.7;
+          padding: em(40px) em(30px);
+          // margin-top: em(20px);
+          // background: chartreuse;
+        }
       }
     }
   }
@@ -140,12 +144,17 @@
     .quotes {
       align-items: center;
 
-      .quote {
-        // background: #000;
-        display: flex;
+      > li {
         padding: em(40px);
+      }
 
-        > div {
+      .quote {
+        background: rgba(#fff, 0.2);
+        display: flex;
+        padding: em(20px);
+
+        > div,
+        > li {
           &.quotation-mark {
             font-size: em(150px);
             //padding: 0;
