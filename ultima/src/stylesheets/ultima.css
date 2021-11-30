@@ -464,14 +464,48 @@
 .mtd-page .section-10 {
   padding: 3.75em 0;
 }
-.mtd-page .section-11 a {
+.mtd-page .section-11 a.blocks {
+  text-align: left;
   padding: 0.625em;
   text-decoration: none;
 }
-.mtd-page .section-11 a:hover {
+.mtd-page .section-11 a.blocks:hover {
   background: #efefef;
   color: #000;
 }
 .mtd-page .section-11 .block {
   padding: 0.625em;
+}
+.mtd-page .wrapper {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1300px) {
+  .mtd-page .blocks,
+.mtd-page .blocks.three,
+.mtd-page .blocks.two {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mtd-page .blocks > .block,
+.mtd-page .blocks.three > .block,
+.mtd-page .blocks.two > .block {
+    width: 100%;
+  }
+  .mtd-page .blocks.four {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25em;
+  }
+  .mtd-page .blocks.four > .block,
+.mtd-page .blocks.four .block:nth-of-type(n) {
+    margin: 0;
+    width: 100%;
+  }
+  .mtd-page .blocks.four > .block > div,
+.mtd-page .blocks.four .block:nth-of-type(n) > div {
+    padding: 1.875em;
+  }
 }

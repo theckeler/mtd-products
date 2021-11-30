@@ -252,7 +252,8 @@
   }
 
   .section-11 {
-    a {
+    a.blocks {
+      text-align: left;
       padding: em(10px);
       text-decoration: none;
 
@@ -266,10 +267,39 @@
       padding: em(10px);
     }
   }
+
+  .wrapper {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
   .mtd-page {
+    .blocks,
+    .blocks.three,
+    .blocks.two {
+      flex-direction: column;
+
+      > .block {
+        width: 100%;
+      }
+    }
+
+    .blocks.four {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: em(20px);
+
+      > .block,
+      .block:nth-of-type(n) {
+        margin: 0;
+        width: 100%;
+
+        > div {
+          padding: em(30px);
+        }
+      }
+    }
   }
 }
 
