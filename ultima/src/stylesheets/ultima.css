@@ -270,6 +270,7 @@
 }
 .mtd-page section {
   margin-bottom: 3.75em;
+  padding: 2.5em 0;
 }
 .mtd-page section:last-of-type {
   margin-bottom: 0;
@@ -278,6 +279,9 @@
   font-size: 2rem;
   margin-bottom: 0.625em;
   text-align: center;
+}
+.mtd-page .section-1 {
+  padding-top: 0;
 }
 .mtd-page .section-1 .wrapper,
 .mtd-page .section-7 .wrapper {
@@ -378,7 +382,6 @@
   padding: 2.5em;
 }
 .mtd-page .section-5 .quotes .quote {
-  background: rgba(255, 255, 255, 0.2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -476,8 +479,15 @@
 .mtd-page .section-11 .block {
   padding: 0.625em;
 }
+.mtd-page .section-11 .button {
+  display: inline-block;
+}
 .mtd-page .wrapper {
   text-align: center;
+}
+.mtd-page .of-plans .card-deckz {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media only screen and (max-width: 1300px) {

@@ -17,6 +17,7 @@
 
   section {
     margin-bottom: em(60px);
+    padding: em(40px) 0;
 
     &:last-of-type {
       margin-bottom: 0;
@@ -29,6 +30,10 @@
         text-align: center;
       }
     }
+  }
+
+  .section-1 {
+    padding-top: 0;
   }
 
   .section-1,
@@ -149,7 +154,6 @@
       }
 
       .quote {
-        background: rgba(#fff, 0.2);
         display: flex;
         padding: em(20px);
 
@@ -266,10 +270,19 @@
     .block {
       padding: em(10px);
     }
+
+    .button {
+      display: inline-block;
+    }
   }
 
   .wrapper {
     text-align: center;
+  }
+
+  .of-plans .card-deckz {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
