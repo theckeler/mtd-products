@@ -126,8 +126,15 @@
   }
 
   .section-4 {
+    padding: em(20px);
+
+    h2 {
+      text-align: center;
+      padding: em(20px);
+    }
+
     .blocks .block {
-      clip-path: polygon(em(20px) 0%, 100% 0, 100% 100%, 0 100%, 0% em(20px));
+      // clip-path: polygon(em(20px) 0%, 100% 0, 100% 100%, 0 100%, 0% em(20px));
 
       > div {
         p {
@@ -283,6 +290,18 @@
   .of-plans .card-deckz {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .icon {
+    padding: em(20px);
+
+    img {
+      background: #ffc20f;
+    }
+
+    p {
+      margin: em(10px) 0 0 0;
+    }
   }
 }
 

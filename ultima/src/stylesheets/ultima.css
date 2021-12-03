@@ -359,9 +359,12 @@
 .mtd-page .section-4 .blocks .block > div strong {
   font-size: 2.5rem;
 }
-.mtd-page .section-4 .blocks .block {
-  -webkit-clip-path: polygon(1.25em 0%, 100% 0, 100% 100%, 0 100%, 0% 1.25em);
-          clip-path: polygon(1.25em 0%, 100% 0, 100% 100%, 0 100%, 0% 1.25em);
+.mtd-page .section-4 {
+  padding: 1.25em;
+}
+.mtd-page .section-4 h2 {
+  text-align: center;
+  padding: 1.25em;
 }
 .mtd-page .section-4 .blocks .block > div p {
   font-size: 1.125rem;
@@ -488,6 +491,15 @@
 .mtd-page .of-plans .card-deckz {
   margin-left: auto;
   margin-right: auto;
+}
+.mtd-page .icon {
+  padding: 1.25em;
+}
+.mtd-page .icon img {
+  background: #ffc20f;
+}
+.mtd-page .icon p {
+  margin: 0.625em 0 0 0;
 }
 
 @media only screen and (max-width: 1300px) {
