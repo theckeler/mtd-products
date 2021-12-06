@@ -310,7 +310,6 @@
   font-size: 1rem;
 }
 .mtd-page .section-3 .wrapper h2 {
-  color: #fff;
   margin-bottom: 1.25em;
   display: block;
 }
@@ -319,10 +318,6 @@
   padding: 2.5em 0.625em;
   -webkit-clip-path: polygon(1.25em 0%, 100% 0, 100% 100%, 0 100%, 0% 1.25em);
           clip-path: polygon(1.25em 0%, 100% 0, 100% 100%, 0 100%, 0% 1.25em);
-}
-.mtd-page .section-3,
-.mtd-page .section-4 {
-  padding: 3.75em 0;
 }
 .mtd-page .section-3 .blocks .block,
 .mtd-page .section-4 .blocks .block {
@@ -360,7 +355,7 @@
   font-size: 2.5rem;
 }
 .mtd-page .section-4 {
-  padding: 1.25em;
+  padding: 3.75em 1.25em;
 }
 .mtd-page .section-4 h2 {
   text-align: center;
@@ -484,6 +479,25 @@
 }
 .mtd-page .section-11 .button {
   display: inline-block;
+}
+.mtd-page .section-2b .wrapper > .blocks > .block {
+  padding: 1.25em;
+}
+.mtd-page .section-2b .blocks {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.25em;
+}
+.mtd-page .section-2b .blocks .block.content {
+  width: 75%;
+}
+.mtd-page .section-2b .blocks .block.content p {
+  padding: 0 3.75em;
+  text-align: left;
+}
+.mtd-page .section-2b .blocks .block.svg {
+  width: 25%;
 }
 .mtd-page .wrapper {
   text-align: center;

@@ -74,7 +74,7 @@
 
   .section-3 {
     .wrapper h2 {
-      color: #fff;
+      //color: #fff;
       margin-bottom: em(20px);
       display: block;
     }
@@ -88,8 +88,6 @@
 
   .section-3,
   .section-4 {
-    padding: em(60px) 0;
-
     .blocks {
       .block {
         margin: 0 em(20px);
@@ -126,7 +124,7 @@
   }
 
   .section-4 {
-    padding: em(20px);
+    padding: em(60px) em(20px);
 
     h2 {
       text-align: center;
@@ -280,6 +278,31 @@
 
     .button {
       display: inline-block;
+    }
+  }
+
+  .section-2b {
+    .wrapper > .blocks > .block {
+      padding: em(20px);
+    }
+
+    .blocks {
+      align-items: center;
+      padding: em(20px);
+
+      .block {
+        &.content {
+          width: 75%;
+          p {
+            padding: 0 em(60px);
+            text-align: left;
+          }
+        }
+
+        &.svg {
+          width: 25%;
+        }
+      }
     }
   }
 
