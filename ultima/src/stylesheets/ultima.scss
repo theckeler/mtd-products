@@ -12,7 +12,7 @@
 .mtd-page {
   .button.bg-black {
     color: #fff;
-    display: inline-block;
+    // display: inline-block;
   }
 
   section {
@@ -32,10 +32,6 @@
     }
   }
 
-  .section-1 {
-    padding-top: 0;
-  }
-
   .section-1,
   .section-7 {
     .wrapper {
@@ -53,16 +49,33 @@
     }
   }
 
+  .section-1 {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+
+    .wrapper {
+      margin-top: em(80px);
+    }
+  }
+
   .section-2 {
     .block {
+      text-align: center;
+      padding: em(30px);
+
       div {
-        padding: em(50px);
+        // padding: em(50px);
       }
+    }
+
+    .content {
+      padding: em(50px) em(30px);
     }
 
     h2 {
       font-size: rem(24px);
-      margin-top: em(10px);
+      //margin-top: em(10px);
     }
 
     p {
@@ -272,12 +285,22 @@
       }
     }
 
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .block {
       padding: em(10px);
     }
 
     .button {
       display: inline-block;
+    }
+
+    img {
+      border: 1px solid rgba(#000, 0.1);
     }
   }
 
@@ -287,27 +310,47 @@
     }
 
     .blocks {
-      align-items: center;
-      padding: em(20px);
+      // align-items: center;
+      padding: em(30px) 0;
 
       .block {
+        display: flex;
+
+        .blocks {
+          width: 100%;
+          padding: em(30px) em(50px);
+          display: flex;
+          align-items: center;
+        }
+
         &.content {
-          width: 75%;
+          width: 70%;
+
           p {
-            padding: 0 em(60px);
+            //padding: 0 em(60px);
             text-align: left;
+            font-size: rem(24px);
+            line-height: 1.4;
           }
         }
 
         &.svg {
-          width: 25%;
+          width: 30%;
+
+          &.block-1 {
+            padding-right: em(40px);
+          }
+
+          &.block-2 {
+            padding-left: em(40px);
+          }
         }
       }
     }
   }
 
   .wrapper {
-    text-align: center;
+    // text-align: center;
   }
 
   .of-plans .card-deckz {
@@ -354,6 +397,23 @@
           padding: em(30px);
         }
       }
+    }
+
+    .section-2b .blocks .block.svg.block-1 {
+      padding: em(40px) 0;
+    }
+
+    .section-2b .blocks .block.content {
+      width: 100%;
+    }
+
+    .section-2b .blocks .block-2 .blocks {
+      flex-direction: column-reverse;
+    }
+
+    .section-3 .blocks .block,
+    .section-4 .blocks .block {
+      margin: em(20px) 0;
     }
   }
 }
