@@ -367,6 +367,7 @@
 
     p {
       margin: em(10px) 0 0 0;
+      text-align: center;
     }
   }
 }
@@ -380,6 +381,9 @@
   }
 
   .card-deckz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 1rem;
     margin-left: 2rem;
   }
@@ -483,6 +487,10 @@
   .plan-fis {
     padding: 0;
     background: #efefef;
+  }
+
+  .button {
+    display: inline-block;
   }
 }
 
