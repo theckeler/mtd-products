@@ -554,6 +554,101 @@
   margin: 0.625em 0 0 0;
 }
 
+.of-plans {
+  margin: 1.5rem 0 0 0;
+}
+.of-plans .shop-financing {
+  padding-bottom: 2rem;
+  background-size: 402px 240px;
+}
+.of-plans .card-deckz {
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+.of-plans .flo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.of-plans .card-container {
+  margin-bottom: 0rem;
+  margin-right: 1rem;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+.of-plans .card-container:last-child {
+  margin-right: 0;
+}
+.of-plans .card {
+  padding: 0;
+}
+.of-plans .card h3.card-title {
+  font-size: 5.5rem;
+  line-height: 5.5rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+}
+.of-plans .card h4 {
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.of-plans .card h4 sup {
+  font-size: 50%;
+  top: -0.75rem;
+  font-weight: 500;
+}
+.of-plans .card p span {
+  display: block;
+}
+.of-plans .card .card-text {
+  margin-bottom: 1rem;
+}
+.of-plans .card .btn-text {
+  display: block;
+  width: 110px;
+  margin: 0 auto 1.5rem;
+}
+.of-plans .front {
+  background: #ffc20f;
+}
+.of-plans .back {
+  background: #efefef;
+  padding: 1rem 1.25rem;
+}
+.of-plans .card-body {
+  padding: 1rem 0.875rem;
+  text-align: center;
+}
+.of-plans .card-title span {
+  display: block;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+.of-plans .card-text {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.of-plans .btn-details {
+  margin: 0px auto 2rem;
+  display: block;
+}
+.of-plans .card-body {
+  padding: 0;
+  margin-top: 0.25rem;
+}
+.of-plans .plan-fis {
+  padding: 0;
+  background: #efefef;
+}
+
 @media only screen and (max-width: 1300px) {
   .mtd-page .blocks,
 .mtd-page .blocks.three,
