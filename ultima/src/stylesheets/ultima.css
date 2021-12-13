@@ -455,6 +455,7 @@
 }
 .mtd-page .section-9 .wrapper > .blocks > .block .bg-grey .img-container {
   position: relative;
+  margin-bottom: 0.625em;
 }
 .mtd-page .section-9 .wrapper > .blocks > .block .bg-grey .img-container span {
   position: absolute;
@@ -706,5 +707,45 @@
   .mtd-page .section-3 .blocks .block,
 .mtd-page .section-4 .blocks .block {
     margin: 1.25em 0;
+  }
+
+  .of-plans .card-deckz .flo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .mtd-page .section-9 .wrapper > .blocks > .block:nth-child(n) {
+    padding: 0;
+  }
+
+  .mtd-page .section-2b .blocks .block.svg.block-2 {
+    padding: 2.5em 0;
+  }
+
+  .mtd-page .section-9 .wrapper > .blocks > .block .bg-grey,
+.mtd-page .section-2b .blocks .block .blocks,
+.mtd-page .section-5 .quotes > li {
+    padding: 1.25em;
+  }
+
+  .mtd-page .icon,
+.mtd-page .section-2 .block {
+    padding: 0.25em;
+  }
+
+  .mtd-page .section-1 p,
+.mtd-page .section-7 p {
+    font-size: 0.9375rem;
+  }
+
+  .mtd-page .section-5 .quotes .quote > div.quotation-mark,
+.mtd-page .section-5 .quotes .quote > li.quotation-mark {
+    font-size: 2.625rem;
+  }
+
+  .mtd-page .button {
+    margin-top: 1.25em;
   }
 }

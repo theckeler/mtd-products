@@ -249,6 +249,7 @@
 
           .img-container {
             position: relative;
+            margin-bottom: em(10px);
 
             span {
               position: absolute;
@@ -538,6 +539,47 @@
     .section-4 .blocks .block {
       margin: em(20px) 0;
     }
+  }
+
+  .of-plans {
+    .card-deckz {
+      .flo {
+        flex-direction: column;
+      }
+    }
+  }
+
+  .mtd-page .section-9 .wrapper > .blocks > .block:nth-child(n) {
+    padding: 0;
+  }
+
+  .mtd-page .section-2b .blocks .block.svg.block-2 {
+    padding: 2.5em 0;
+  }
+
+  .mtd-page .section-9 .wrapper > .blocks > .block .bg-grey,
+  .mtd-page .section-2b .blocks .block .blocks,
+  .mtd-page .section-5 .quotes > li {
+    padding: em(20px);
+  }
+
+  .mtd-page .icon,
+  .mtd-page .section-2 .block {
+    padding: em(4px);
+  }
+
+  .mtd-page .section-1 p,
+  .mtd-page .section-7 p {
+    font-size: rem(15px);
+  }
+
+  .mtd-page .section-5 .quotes .quote > div.quotation-mark,
+  .mtd-page .section-5 .quotes .quote > li.quotation-mark {
+    font-size: rem(42px);
+  }
+
+  .mtd-page .button {
+    margin-top: em(20px);
   }
 }
 
