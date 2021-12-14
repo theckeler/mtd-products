@@ -1,0 +1,134 @@
+@import "../../../foundation/";
+
+.mtd-page {
+  .button.bg-black {
+    color: #fff;
+    // display: inline-block;
+  }
+
+  section {
+    margin-bottom: em(60px);
+    padding: em(40px) 0;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    > .wrapper {
+      > h2 {
+        font-size: rem(32px);
+        margin-bottom: em(10px);
+        text-align: center;
+      }
+    }
+  }
+
+  .section-9 {
+    .wrapper > .blocks {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      > .block {
+        display: flex;
+        margin-bottom: em(60px);
+        flex-basis: 33.333%;
+        padding-right: em(30px);
+
+        &:nth-child(3n + 3) {
+          padding-right: em(0);
+        }
+
+        // &:nth-child(2n + 2) {
+        //   padding-left: em(30px);
+        // }
+
+        .bg-grey {
+          padding: em(40px);
+
+          .img-container {
+            position: relative;
+            margin-bottom: em(10px);
+
+            span {
+              position: absolute;
+              top: em(10px);
+              left: em(10px);
+              z-index: 1001;
+              display: inline-block;
+              padding: em(10px) em(20px);
+              text-transform: uppercase;
+              font-size: rem(18px);
+              font-weight: 700;
+              background: #333;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .icon {
+    padding: em(4px);
+
+    img {
+      background: #fff;
+    }
+
+    p {
+      font-size: rem(12px);
+      margin: em(10px) 0 0 0;
+      text-align: center;
+    }
+  }
+
+  .button {
+    margin-top: em(10px);
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .mtd-page {
+    .blocks,
+    .blocks.three,
+    .blocks.two {
+      flex-direction: column;
+
+      > .block {
+        width: 100%;
+      }
+    }
+
+    .blocks.four {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: em(20px);
+
+      > .block,
+      .block:nth-of-type(n) {
+        margin: 0;
+        width: 100%;
+
+        > div {
+          padding: em(30px);
+        }
+      }
+    }
+
+    .mtd-page .section-9 .wrapper > .blocks > .block:nth-child(n) {
+      padding: 0;
+    }
+
+    .mtd-page .section-9 .wrapper > .blocks > .block .bg-grey {
+      padding: em(20px);
+    }
+
+    .mtd-page .icon {
+      //  padding: em(4px);
+    }
+
+    .mtd-page .button {
+      margin-top: em(20px);
+    }
+  }
+}
