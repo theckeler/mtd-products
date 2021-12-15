@@ -85,23 +85,9 @@ function Footer() {
                     width="24"
                   >
                     <defs id="defs14" />
-                    <g
-                      //style="fill: none; fillRule: evenodd"
-                      id="g8"
-                      transform="translate(1,1)"
-                    >
-                      <circle
-                        // style="stroke: #ffc20f"
-                        id="circle2"
-                        r="11"
-                        cy="11"
-                        cx="11"
-                      />
-                      <g
-                        id="text6"
-                        //style="fill: #ffffff"
-                        aria-label="$"
-                      >
+                    <g id="g8" transform="translate(1,1)">
+                      <circle id="circle2" r="11" cy="11" cx="11" />
+                      <g id="text6" aria-label="$">
                         <path
                           id="path823"
                           d="m 14.704,12.32 q 0,1.168 -0.816,1.984 -0.736,0.768 -1.92,0.992 V 16 H 10.256 V 15.296 Q 7.9839998,14.928 7.2959998,12.624 l 1.808,-0.496 q 0.288,0.96 1.1520002,1.248 v -2.352 q -1.2800002,-0.336 -1.9200002,-0.848 -0.848,-0.688 -0.848,-1.84 0,-1.104 0.864,-1.824 0.736,-0.624 1.9040002,-0.8 v -0.88 h 1.712 V 5.68 q 1.392,0.24 2.352,1.552 l -1.392,1.152 q -0.4,-0.544 -0.96,-0.816 v 1.936 q 2.736,0.8 2.736,2.816 z M 10.256,7.6 q -0.8160002,0.224 -0.8160002,0.736 0,0.448 0.8160002,0.736 z m 2.48,4.768 q 0,-0.544 -0.768,-0.848 v 1.856 q 0.768,-0.256 0.768,-1.008 z"
@@ -405,12 +391,7 @@ function Footer() {
                     </a>
                   </li>
                 </ul>
-                <div
-                  aria-hidden="true"
-                  className="modal fade"
-                  id="call-modal"
-                  // style="display: none"
-                >
+                <div aria-hidden="true" className="modal fade" id="call-modal">
                   <div className="modal-dialog modal-dialog-centered">
                     <div className="modal-content">
                       <div className="modal-header">
@@ -585,72 +566,6 @@ function Footer() {
                   </span>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div className="disclaimer-text">
-          <div className="content-asset">
-            <p className="access">&nbsp;</p>
-            <p className="access">
-              If you experience any problems accessing this website, please call
-              us at for assistance.
-            </p>
-            <div className="disclaimers">
-              <p>
-                <strong>Engine Disclaimer: </strong>The engine horsepower
-                information is provided by the engine manufacturer to be used
-                for comparison purposes only. See your local Cub Cadet Dealer
-                for warranty details.<strong>Pricing Disclaimer:</strong>
-                Posted price is in USD Dollars and is&nbsp;manufacturer's
-                suggested sale price. Models and pricing may vary by location.
-                Taxes, freight, set-up&nbsp;and delivery not included. Optional
-                equipment, accessories and attachments sold separately. See your
-                retailer for details.&nbsp;<strong>Image Disclaimer:</strong>
-                Products may vary from depicted model image in design, required
-                attachments, safety features and non-functional appearance, and
-                may not reflect dealer inventory or unit specifications.
-                <strong>Specifications Disclaimer:</strong> Specifications
-                subject to change without notice. Images may not reflect
-                retailer inventory and/or unit specifications.
-                <strong>Operator's Manual Disclaimer:</strong> The operator's
-                manual posted is for general information and use. To ensure the
-                download of the operator's manual specific to your unit, we
-                require a model and serial number.&nbsp;
-                <strong>Speed Disclaimer: </strong>Actual vehicle speed varies
-                based on load, use and environmental conditions.
-                <strong>Battery Disclaimer: </strong>Battery and battery powered
-                product performance varies with load, use and environmental
-                conditions.
-                <strong>Software Disclaimer:</strong> Software available on
-                Company websites is provided on an &quot;as is&quot; basis
-                without any warranty of any kind, either express or implied. The
-                download and use of any software is done at the user's own
-                risk.&nbsp;<strong>Professional Products:</strong> Cub Cadet
-                commercial products are intended for professional use.
-                <strong>UTV:</strong> Cub Cadet Utility Vehicles (UTV) are
-                intended for off-road use by adults only. Please see the
-                operator&rsquo;s manual and the warning labels posted on the
-                vehicle itself for more details.
-                <strong>Email disclaimer: </strong>Sign up to receive
-                communication on services, products and special offers. You may
-                unsubscribe at any time. Please refer to our
-                <a
-                  className="footer-link"
-                  href="https://www.cubcadet.com/en_US/privacy-and-security/privacy-policy.html"
-                >
-                  Privacy Policy
-                </a>
-                .
-              </p>
-              <p>
-                *When compared to the same engine without IntelliPower&trade;
-                feature, improvements vary depending on engine models and
-                specific operating conditions.
-              </p>
-              <p>
-                *A-weighted sound level per ISO-5395-1, 95% confidence comparing
-                XT1 Enduro Series LT42, Ultima ZT1 42 and CC30.*
-              </p>
             </div>
           </div>
         </div>

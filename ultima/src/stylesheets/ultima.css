@@ -304,6 +304,9 @@
 .mtd-page .section-2 .block {
   text-align: center;
   padding: 1.875em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .mtd-page .section-2 .content {
   padding: 3.125em 1.875em;
@@ -470,6 +473,10 @@
   background: #333;
   color: #fff;
 }
+.mtd-page .section-9 .wrapper > .blocks > .block .bg-grey .img-container img {
+  position: relative;
+  z-index: 1;
+}
 .mtd-page .section-10 {
   padding: 3.75em 0;
 }
@@ -545,13 +552,18 @@
   margin-left: auto;
   margin-right: auto;
 }
-.mtd-page .icon {
-  padding: 1.25em;
+.mtd-page .icons {
+  margin-bottom: 1.25em;
 }
-.mtd-page .icon img {
+.mtd-page .icons .icon {
+  padding: 0.25em;
+}
+.mtd-page .icons .icon img {
   background: #fff;
 }
-.mtd-page .icon p {
+.mtd-page .icons .icon p {
+  font-size: 0.75rem;
+  line-height: 1.2;
   margin: 0.625em 0 0 0;
   text-align: center;
 }
@@ -664,7 +676,7 @@
   display: inline-block;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1024px) {
   .mtd-page .blocks,
 .mtd-page .blocks.three,
 .mtd-page .blocks.two {
@@ -680,7 +692,7 @@
   }
   .mtd-page .blocks.four {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1.25em;
   }
   .mtd-page .blocks.four > .block,
@@ -747,5 +759,10 @@
 
   .mtd-page .button {
     margin-top: 1.25em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mtd-page .blocks.four {
+    grid-template-columns: 1fr 1fr;
   }
 }

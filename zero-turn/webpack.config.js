@@ -17,7 +17,7 @@ module.exports = {
       ignored: /node_modules/,
       poll: 1000,
     },
-    port: 9000,
+    port: 8000,
     historyApiFallback: true,
   },
   module: {

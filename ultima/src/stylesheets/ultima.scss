@@ -63,10 +63,7 @@
     .block {
       text-align: center;
       padding: em(30px);
-
-      div {
-        // padding: em(50px);
-      }
+      display: flex;
     }
 
     .content {
@@ -264,6 +261,11 @@
               background: #333;
               color: #fff;
             }
+
+            img {
+              position: relative;
+              z-index: 1;
+            }
           }
         }
       }
@@ -359,16 +361,22 @@
     margin-right: auto;
   }
 
-  .icon {
-    padding: em(20px);
+  .icons {
+    margin-bottom: em(20px);
 
-    img {
-      background: #fff;
-    }
+    .icon {
+      padding: em(4px);
 
-    p {
-      margin: em(10px) 0 0 0;
-      text-align: center;
+      img {
+        background: #fff;
+      }
+
+      p {
+        font-size: rem(12px);
+        line-height: 1.2;
+        margin: em(10px) 0 0 0;
+        text-align: center;
+      }
     }
   }
 }
@@ -495,7 +503,7 @@
   }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1024px) {
   .mtd-page {
     .blocks,
     .blocks.three,
@@ -509,7 +517,7 @@
 
     .blocks.four {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: em(20px);
 
       > .block,
@@ -590,6 +598,9 @@
 
 @media only screen and (max-width: 768px) {
   .mtd-page {
+    .blocks.four {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }
 
