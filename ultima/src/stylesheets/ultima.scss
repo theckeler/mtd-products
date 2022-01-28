@@ -369,6 +369,7 @@
 
       img {
         background: #fff;
+        max-width: 120px;
       }
 
       p {
@@ -461,8 +462,15 @@
   }
 
   .back {
+    display: flex;
+    flex-direction: column;
     background: #efefef;
     padding: 1rem 1.25rem;
+    min-height: 340px;
+
+    .btn {
+      margin-top: auto;
+    }
   }
 
   .card-body {

@@ -560,6 +560,7 @@
 }
 .mtd-page .icons .icon img {
   background: #fff;
+  max-width: 120px;
 }
 .mtd-page .icons .icon p {
   font-size: 0.75rem;
@@ -643,8 +644,19 @@
   background: #ffc20f;
 }
 .of-plans .back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: #efefef;
   padding: 1rem 1.25rem;
+  min-height: 340px;
+}
+.of-plans .back .btn {
+  margin-top: auto;
 }
 .of-plans .card-body {
   padding: 1rem 0.875rem;

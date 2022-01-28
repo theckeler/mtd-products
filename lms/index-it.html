@@ -1,168 +1,219 @@
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-    #ctl00_ContentPlaceHolder1_widgetLayout_rptWidgets_ctl02_widgetContainer_ctl00_pnlMyTraining_title {
-        background-color: #f7f7f7;
-    }
+  #ctl00_ContentPlaceHolder1_widgetLayout_rptWidgets_ctl02_widgetContainer_ctl00_pnlMyTraining_title {
+    background-color: #f7f7f7;
+  }
 
-    #ctl00_ContentPlaceHolder1_widgetLayout_rptWidgets_ctl02_widgetContainer_ctl00_pnlMyTraining_footer {
-        background-color: #f7f7f7;
-    }
+  #ctl00_ContentPlaceHolder1_widgetLayout_rptWidgets_ctl02_widgetContainer_ctl00_pnlMyTraining_footer {
+    background-color: #f7f7f7;
+  }
 
-    .Panel_contentMiddle {
-        background-color: #f7f7f7 !important;
-    }
+  .Panel_contentMiddle {
+    background-color: #f7f7f7 !important;
+  }
 
-    .cs-panel-flat .Panel_title,
-    .cs-panel-plain .Panel_title,
-    .cs-panel-gradient .Panel_title {
-        border: none !important;
-    }
+  .cs-panel-flat .Panel_title,
+  .cs-panel-plain .Panel_title,
+  .cs-panel-gradient .Panel_title {
+    border: none !important;
+  }
 
-    .cs-panel-flat .Panel_title,
-    .cs-panel-flat .Panel_content,
-    .cs-panel-flat .Panel_footer,
-    .cs-panel-plain .Panel_title,
-    .cs-panel-plain .Panel_content,
-    .cs-panel-plain .Panel_footer,
-    .cs-panel-gradient .Panel_title,
-    .cs-panel-gradient .Panel_content,
-    .cs-panel-gradient .Panel_footer {
-        border: none !important;
-    }
+  .cs-panel-flat .Panel_title,
+  .cs-panel-flat .Panel_content,
+  .cs-panel-flat .Panel_footer,
+  .cs-panel-plain .Panel_title,
+  .cs-panel-plain .Panel_content,
+  .cs-panel-plain .Panel_footer,
+  .cs-panel-gradient .Panel_title,
+  .cs-panel-gradient .Panel_content,
+  .cs-panel-gradient .Panel_footer {
+    border: none !important;
+  }
 
-    #ctl00_ContentPlaceHolder1_widgetLayout_rptWidgets_ctl03_widgetContainer_ctl00_divCalendar {
-        background-color: #f7f7f7;
-        border: none;
-    }
+  #ctl00_ContentPlaceHolder1_widgetLayout_rptWidgets_ctl03_widgetContainer_ctl00_divCalendar {
+    background-color: #f7f7f7;
+    border: none;
+  }
 
-    #ctl00_ContentPlaceHolder1_widgetLayout_rptWidgets_ctl03_widgetContainer_ctl00_calendar {
-        border-spacing: 0 !important;
-        border-collapse: collapse !important;
-    }
+  #ctl00_ContentPlaceHolder1_widgetLayout_rptWidgets_ctl03_widgetContainer_ctl00_calendar {
+    border-spacing: 0 !important;
+    border-collapse: collapse !important;
+  }
 
-    td.tblhdr,
-    .tblhdr td,
-    div.tblhdr {
-        background: none;
-        background-color: #f7f7f7;
-        border-width: 0px;
-        color: #40527a;
-    }
+  td.tblhdr,
+  .tblhdr td,
+  div.tblhdr {
+    background: none;
+    background-color: #f7f7f7;
+    border-width: 0px;
+    color: #40527a;
+  }
 
-    td.tblhdr,
-    .tblhdr td,
-    div.tblhdr,
-    td,
-    a[href*="javascript:__doPostBack"] {
-        color: #40527a !important;
-    }
+  td.tblhdr,
+  .tblhdr td,
+  div.tblhdr,
+  td,
+  a[href*="javascript:__doPostBack"] {
+    color: #40527a !important;
+  }
 
-    .cs-panel-plain .Panel_titleMiddle div,
-    .cs-panel-plain .Panel_titleMiddle h2 {
-        font-family: "Segoe UI";
-        font-size: 18px !important;
-        color: #40527a;
-        font-weight: bold;
-    }
+  .cs-panel-plain .Panel_titleMiddle div,
+  .cs-panel-plain .Panel_titleMiddle h2 {
+    font-family: "Segoe UI";
+    font-size: 18px !important;
+    color: #40527a;
+    font-weight: bold;
+  }
 
-    #mainheadercon05 {
-        width: 100%;
-        display: flex;
-    }
+  #mainheadercon05 {
+    width: 100%;
+    display: flex;
+  }
 
-    #mainnavcon05 {
-        width: 33%;
-        background-color: #f7f7f7;
-        padding: 1%;
-        display: inline-block;
-        vertical-align: top;
-        align-items: stretch;
-        margin-right: 1%;
-    }
+  #mainnavcon05 {
+    width: 33%;
+    background-color: #f7f7f7;
+    padding: 1%;
+    display: inline-block;
+    vertical-align: top;
+    align-items: stretch;
+    margin-right: 1%;
+  }
 
-    #mainnavcon06 {
-        width: 100%;
-        background-color: #f7f7f7;
-        padding: 4%;
-        display: inline-block;
-        vertical-align: top;
-        align-items: stretch;
-        margin-right: 2%;
-    }
+  #mainnavcon06 {
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 4%;
+    display: inline-block;
+    vertical-align: top;
+    align-items: stretch;
+    margin-right: 2%;
+  }
 
-    #mainimagecon05 {
-        width: 64%;
-        display: inline-block;
-        vertical-align: top;
-        background-image: url(/clientimg/mtdproducts/welcome/header_image_02.jpg);
-        background-size: cover;
-    }
+  #mainimagecon05 {
+    width: 64%;
+    display: inline-block;
+    vertical-align: top;
+    background-image: url(/clientimg/mtdproducts/welcome/header_image_02.jpg);
+    background-size: cover;
+  }
 
-    .image05 {
-        width: 100%;
-    }
+  .image05 {
+    width: 100%;
+  }
 
-    #mainnavtitlecon05 {
-        text-align: left;
-        vertical-align: top;
-        font-family: "Segoe UI";
+  .mainnavlinkcon05 {
+    text-align: left;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+</style>
+
+<ul
+  id="mainheadercon05"
+  style="
+    display: flex;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  "
+>
+  <li
+    id="mainnavcon05"
+    style="max-width: 300px; min-width: 200px; flex-basis: 100%"
+  >
+    <h2
+      id="mainnavtitlecon05"
+      style="
         font-size: 18px;
         color: #40527a;
         font-weight: bold;
-    }
-
-    .mainnavlinkcon05 {
-        text-align: left;
-        font-family: "Segoe UI";
-        font-size: 16px;
-        padding-top: 10px;
         padding-bottom: 10px;
-    }
-</style>
-<div id="mainheadercon05">
-    <div id="mainnavcon05">
-        <!-- Title -->
-        <div id="mainnavtitlecon05">Link esterni</div>
-        <!-- Title -->
-        <table width="100%">
-            <tbody>
-                <tr>
-                    <td width="5%"><img src="/clientimg/mtdproducts/welcome/bullet_02.png" width="16" height="17"></td>
-                    <td width="95%" class="mainnavlinkcon05"><a href="/ui/lms-learner-home/home" style="text-decoration:none; color:#4052A2; font-weight: normal;">Homepage Studente</a></td>
-                </tr>
-                <tr>
-                    <td colspan="2"></td>
-                </tr>
-                <tr>
-                    <td width="5%"><img src="/clientimg/mtdproducts/welcome/bullet_02.png" width="16" height="17"></td>
-                    <td width="95%" class="mainnavlinkcon05"><a href="https://portal.mtdproducts.eu" style="text-decoration:none; color:#4052A2; font-weight: normal;">Portale del concessionario</a></td>
-                </tr>
-                <tr>
-                    <td colspan="2"></td>
-                </tr>
-                <tr>
-                    <td width="5%"><img src="/clientimg/mtdproducts/welcome/bullet_02.png" width="16" height="17"></td>
-                    <td width="95%" class="mainnavlinkcon05"><a href="https://eu.cubcadet.com/it/it/assistenza/manuali-distruzione" style="text-decoration:none; color:#4052A2; font-weight: normal;">Cub Cadet Istruzioni per l'uso</a></td>
-                </tr>
-                <tr>
-                    <td colspan="2"></td>
-                </tr>
-                <tr>
-                    <td width="5%"><img src="/clientimg/mtdproducts/welcome/bullet_02.png" width="16" height="17"></td>
-                    <td width="95%" class="mainnavlinkcon05"><a href="https://robomow.zendesk.com/hc/it/sections/360000465794-Bedienungsanleitung" style="text-decoration:none; color:#4052A2; font-weight: normal;">Robomow Istruzioni per l'uso</a></td>
-                </tr>
-                <tr>
-                    <td colspan="2"></td>
-                </tr>
-                <tr>
-                    <td width="5%"><img src="/clientimg/mtdproducts/welcome/bullet_02.png" width="16" height="17"></td>
-                    <td width="95%" class="mainnavlinkcon05"><a href="https://www.youtube.com/user/robomowofficial" style="text-decoration:none; color:#4052A2; font-weight: normal;">Robomow canale YouTube</a></td>
-                </tr>
-                <tr>
-                    <td colspan="2"></td>
-                </tr>
-            </tbody>
-        </table>
+        border-bottom: 1px solid #c2c2c2;
+      "
+    >
+      Link esterni
+    </h2>
+    <ul style="font-size: 16px; list-style: none; padding: 0; margin: 0">
+      <li style="padding: 10px; border-bottom: 1px solid #c2c2c2">
+        <a
+          href="/ui/lms-learner-home/home"
+          style="
+            display: flex;
+            text-decoration: none;
+            color: #4052a2;
+            font-weight: normal;
+          "
+        >
+          Homepage Studente
+        </a>
+      </li>
+
+      <li style="padding: 10px; border-bottom: 1px solid #c2c2c2">
+        <a
+          href="https://portal.mtdproducts.eu"
+          style="
+            display: flex;
+            text-decoration: none;
+            color: #4052a2;
+            font-weight: normal;
+          "
+        >
+          Portale del Concessionario
+        </a>
+      </li>
+
+      <li style="padding: 10px; border-bottom: 1px solid #c2c2c2">
+        <a
+          href="https://eu.cubcadet.com/it/it/assistenza/manuali-distruzione"
+          style="
+            display: flex;
+            text-decoration: none;
+            color: #4052a2;
+            font-weight: normal;
+          "
+        >
+          Cub Cadet Istruzioni per l'uso
+        </a>
+      </li>
+
+      <li style="padding: 10px; border-bottom: 1px solid #c2c2c2">
+        <a
+          href="https://robomow.zendesk.com/hc/it/sections/360000465794-Bedienungsanleitung"
+          style="
+            display: flex;
+            text-decoration: none;
+            color: #4052a2;
+            font-weight: normal;
+          "
+        >
+          Robomow Istruzioni per l'uso
+        </a>
+      </li>
+
+      <li style="padding: 10px; border-bottom: 1px solid #c2c2c2">
+        <a
+          href="https://www.youtube.com/user/robomowofficial"
+          style="
+            display: flex;
+            text-decoration: none;
+            color: #4052a2;
+            font-weight: normal;
+          "
+        >
+          Robomow Canale YouTube
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li style="padding-left: 10px; flex-basis: 100%">
+    <div style="position: relative; display: flex; width: 100%; height: 100%">
+      <img
+        src="https://mtdproducts.csod.com/clientimg/mtdproducts/welcome/Surepath%20Stripes1.jpg"
+        style="width: 100%; height: 100%; object-fit: cover"
+      />
     </div>
-    <img src="/clientimg/mtdproducts/welcome/Surepath%20Stripes1.jpg" style="width: 1400px; height: 576px;">
-</div>
+  </li>
+</ul>
