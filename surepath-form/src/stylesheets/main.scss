@@ -1,0 +1,133 @@
+@import "../../../foundation/";
+
+.mtd-page {
+  .hero {
+    padding: 0;
+  }
+
+  section {
+  }
+
+  .section-2 {
+    color: #fff;
+    padding: 70px 20px;
+    text-align: center;
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
+  }
+
+  .section-3 {
+    padding: 70px 20px;
+  }
+
+  form {
+    label,
+    input[type="text"],
+    input[type="email"],
+    select {
+      height: auto;
+      width: 100%;
+      padding: 10px;
+    }
+
+    label {
+      text-align: right;
+    }
+
+    input[type="checkbox"] {
+      padding: 10px;
+    }
+
+    label,
+    button {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    button {
+      background: #ffca15;
+      border: 0;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        padding: 4px 10px;
+
+        div {
+          display: flex;
+          flex-basis: 100%;
+          align-items: center;
+          width: 50%;
+          padding: 10px;
+
+          &:nth-child(1) {
+          }
+        }
+
+        &.textarea {
+          align-items: flex-start;
+
+          textarea {
+            width: 100%;
+          }
+        }
+
+        &.checkbox,
+        &.radio,
+        &.submit {
+          padding-left: 50%;
+
+          label {
+            width: auto;
+          }
+
+          button {
+            &:hover {
+              background: #000;
+              color: #fff;
+              cursor: pointer;
+            }
+          }
+        }
+
+        &.radio {
+          div {
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+
+  .wrapper {
+    max-width: 1024px;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 600px) {
+}

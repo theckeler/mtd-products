@@ -238,3 +238,86 @@
     display: block;
   }
 }
+.mtd-page .hero {
+  padding: 0;
+}
+.mtd-page .section-2 {
+  color: #fff;
+  padding: 70px 20px;
+  text-align: center;
+}
+.mtd-page .section-2 h2 {
+  font-size: 3rem;
+}
+.mtd-page .section-2 p {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.mtd-page .section-3 {
+  padding: 70px 20px;
+}
+.mtd-page form label,
+.mtd-page form input[type=text],
+.mtd-page form input[type=email],
+.mtd-page form select {
+  height: auto;
+  width: 100%;
+  padding: 10px;
+}
+.mtd-page form label {
+  text-align: right;
+}
+.mtd-page form input[type=checkbox] {
+  padding: 10px;
+}
+.mtd-page form label,
+.mtd-page form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+.mtd-page form button {
+  background: #ffca15;
+  border: 0;
+  font-weight: 700;
+  font-size: 18px;
+}
+.mtd-page form ul li {
+  display: flex;
+  align-items: center;
+  padding: 4px 10px;
+}
+.mtd-page form ul li div {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  width: 50%;
+  padding: 10px;
+}
+.mtd-page form ul li.textarea {
+  align-items: flex-start;
+}
+.mtd-page form ul li.textarea textarea {
+  width: 100%;
+}
+.mtd-page form ul li.checkbox, .mtd-page form ul li.radio, .mtd-page form ul li.submit {
+  padding-left: 50%;
+}
+.mtd-page form ul li.checkbox label, .mtd-page form ul li.radio label, .mtd-page form ul li.submit label {
+  width: auto;
+}
+.mtd-page form ul li.checkbox button:hover, .mtd-page form ul li.radio button:hover, .mtd-page form ul li.submit button:hover {
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+.mtd-page form ul li.radio div {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+.mtd-page .wrapper {
+  max-width: 1024px;
+  margin: auto;
+}
