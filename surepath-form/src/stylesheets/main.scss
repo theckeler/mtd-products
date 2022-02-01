@@ -41,8 +41,7 @@ footer .disclaimer-text {
 
   form {
     label,
-    input[type="text"],
-    input[type="email"],
+    input,
     select {
       height: auto;
       width: 100%;
@@ -55,6 +54,7 @@ footer .disclaimer-text {
 
     input[type="checkbox"],
     input[type="radio"] {
+      width: auto;
       padding: em(10px);
       margin-right: em(4px);
     }

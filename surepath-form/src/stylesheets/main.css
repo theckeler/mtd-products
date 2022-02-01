@@ -272,8 +272,7 @@ footer .disclaimer-text {
   padding: 4.375em 1.25em;
 }
 .mtd-page form label,
-.mtd-page form input[type=text],
-.mtd-page form input[type=email],
+.mtd-page form input,
 .mtd-page form select {
   height: auto;
   width: 100%;
@@ -284,6 +283,7 @@ footer .disclaimer-text {
 }
 .mtd-page form input[type=checkbox],
 .mtd-page form input[type=radio] {
+  width: auto;
   padding: 0.625em;
   margin-right: 0.25em;
 }
