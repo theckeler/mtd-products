@@ -1,31 +1,42 @@
 @import "../../../foundation/";
 
+.disclaimers {
+  color: #979797;
+  font-size: 0.8125rem;
+}
+
+footer .disclaimer-text {
+  max-width: 100% !important;
+}
+
+.access {
+  font-size: 1.1rem;
+  color: #979797;
+}
+
 .mtd-page {
   .hero {
     padding: 0;
   }
 
-  section {
+  h2 {
+    font-size: rem(48px);
+  }
+
+  p {
+    margin-top: em(20px);
+    font-size: rem(24px);
+    line-height: 1.5;
   }
 
   .section-2 {
     color: #fff;
-    padding: 70px 20px;
+    padding: em(70px) em(20px);
     text-align: center;
-
-    h2 {
-      font-size: 3rem;
-    }
-
-    p {
-      margin-top: 20px;
-      font-size: 1.5rem;
-      line-height: 1.5;
-    }
   }
 
   .section-3 {
-    padding: 70px 20px;
+    padding: em(70px) em(20px);
   }
 
   form {
@@ -35,43 +46,45 @@
     select {
       height: auto;
       width: 100%;
-      padding: 10px;
+      padding: em(10px);
     }
 
     label {
       text-align: right;
     }
 
-    input[type="checkbox"] {
-      padding: 10px;
+    input[type="checkbox"],
+    input[type="radio"] {
+      padding: em(10px);
+      margin-right: em(4px);
     }
 
     label,
     button {
       width: 100%;
-      padding: 10px;
-      font-size: 14px;
+      padding: em(10px);
+      font-size: rem(14px);
     }
 
     button {
       background: #ffca15;
       border: 0;
       font-weight: 700;
-      font-size: 18px;
+      font-size: rem(18px);
     }
 
     ul {
       li {
         display: flex;
         align-items: center;
-        padding: 4px 10px;
+        padding: em(4px) em(10px);
 
         div {
           display: flex;
           flex-basis: 100%;
           align-items: center;
           width: 50%;
-          padding: 10px;
+          padding: em(10px);
 
           &:nth-child(1) {
           }
@@ -92,6 +105,11 @@
 
           label {
             width: auto;
+          }
+
+          span {
+            display: flex;
+            align-items: center;
           }
 
           button {
@@ -115,19 +133,45 @@
   }
 
   .wrapper {
-    max-width: 1024px;
+    max-width: em(1024px);
     margin: auto;
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: em(1024px)) {
+  .mtd-page {
+    form {
+      ul li {
+        flex-direction: column;
+
+        div {
+          width: 100%;
+          padding: 4px 0;
+        }
+
+        &.checkbox,
+        &.radio,
+        &.submit {
+          padding: 10px;
+        }
+      }
+
+      label {
+        text-align: left;
+        padding: 0;
+      }
+    }
+  }
 }
 
-@media only screen and (max-width: 992px) {
-}
+@media only screen and (max-width: em(768px)) {
+  .mtd-page {
+    h2 {
+      font-size: rem(32px);
+    }
 
-@media only screen and (max-width: 768px) {
-}
-
-@media only screen and (max-width: 600px) {
+    p {
+      font-size: rem(16px);
+    }
+  }
 }

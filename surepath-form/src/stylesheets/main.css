@@ -238,24 +238,38 @@
     display: block;
   }
 }
+.disclaimers {
+  color: #979797;
+  font-size: 0.8125rem;
+}
+
+footer .disclaimer-text {
+  max-width: 100% !important;
+}
+
+.access {
+  font-size: 1.1rem;
+  color: #979797;
+}
+
 .mtd-page .hero {
   padding: 0;
 }
-.mtd-page .section-2 {
-  color: #fff;
-  padding: 70px 20px;
-  text-align: center;
-}
-.mtd-page .section-2 h2 {
+.mtd-page h2 {
   font-size: 3rem;
 }
-.mtd-page .section-2 p {
-  margin-top: 20px;
+.mtd-page p {
+  margin-top: 1.25em;
   font-size: 1.5rem;
   line-height: 1.5;
 }
+.mtd-page .section-2 {
+  color: #fff;
+  padding: 4.375em 1.25em;
+  text-align: center;
+}
 .mtd-page .section-3 {
-  padding: 70px 20px;
+  padding: 4.375em 1.25em;
 }
 .mtd-page form label,
 .mtd-page form input[type=text],
@@ -263,37 +277,39 @@
 .mtd-page form select {
   height: auto;
   width: 100%;
-  padding: 10px;
+  padding: 0.625em;
 }
 .mtd-page form label {
   text-align: right;
 }
-.mtd-page form input[type=checkbox] {
-  padding: 10px;
+.mtd-page form input[type=checkbox],
+.mtd-page form input[type=radio] {
+  padding: 0.625em;
+  margin-right: 0.25em;
 }
 .mtd-page form label,
 .mtd-page form button {
   width: 100%;
-  padding: 10px;
-  font-size: 14px;
+  padding: 0.625em;
+  font-size: 0.875rem;
 }
 .mtd-page form button {
   background: #ffca15;
   border: 0;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .mtd-page form ul li {
   display: flex;
   align-items: center;
-  padding: 4px 10px;
+  padding: 0.25em 0.625em;
 }
 .mtd-page form ul li div {
   display: flex;
   flex-basis: 100%;
   align-items: center;
   width: 50%;
-  padding: 10px;
+  padding: 0.625em;
 }
 .mtd-page form ul li.textarea {
   align-items: flex-start;
@@ -307,6 +323,10 @@
 .mtd-page form ul li.checkbox label, .mtd-page form ul li.radio label, .mtd-page form ul li.submit label {
   width: auto;
 }
+.mtd-page form ul li.checkbox span, .mtd-page form ul li.radio span, .mtd-page form ul li.submit span {
+  display: flex;
+  align-items: center;
+}
 .mtd-page form ul li.checkbox button:hover, .mtd-page form ul li.radio button:hover, .mtd-page form ul li.submit button:hover {
   background: #000;
   color: #fff;
@@ -318,6 +338,31 @@
   flex-direction: column;
 }
 .mtd-page .wrapper {
-  max-width: 1024px;
+  max-width: 64em;
   margin: auto;
+}
+
+@media only screen and (max-width: 64em) {
+  .mtd-page form ul li {
+    flex-direction: column;
+  }
+  .mtd-page form ul li div {
+    width: 100%;
+    padding: 4px 0;
+  }
+  .mtd-page form ul li.checkbox, .mtd-page form ul li.radio, .mtd-page form ul li.submit {
+    padding: 10px;
+  }
+  .mtd-page form label {
+    text-align: left;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .mtd-page h2 {
+    font-size: 2rem;
+  }
+  .mtd-page p {
+    font-size: 1rem;
+  }
 }
