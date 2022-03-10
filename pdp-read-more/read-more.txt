@@ -1,0 +1,98 @@
+<div
+  id="read-more-content"
+  style="max-height: 140px; overflow: hidden; position: relative"
+>
+  <!--- place content between here and... -->
+  <p>
+    The PRO PCS 1900 (Power Collection System) is designed and engineered to
+    keep any crew mowing. It features a 19&quot; diameter impeller housing, the
+    largest of any bagger in the market, and a rectangular upper tube design
+    that enables grass to flow through to the bag without plugging. This
+    12-Bushel, three bag collection system will outperform any typical bagging
+    unit.
+  </p>
+
+  <p>
+    Fits all Pro Z 500, 700 and 900&nbsp;models&nbsp;with a 54- or 60- Cutting
+    Deck
+  </p>
+
+  <ul>
+    <li>Part of the&nbsp;PRO PCS 1900 &nbsp;(Power Collection System)</li>
+    <li>12-bushel, three bag collection system</li>
+    <li>19 in&nbsp;diameter impeller housing</li>
+    <li>15 in impeller directs grass into the bags with optimal performance</li>
+    <li>Built-in impeller handles allow for easy removal from the unit</li>
+  </ul>
+
+  <p>
+    Components of&nbsp;PRO PCS 1900&nbsp;(Power Collection System) are sold
+    separately
+  </p>
+
+  <ul>
+    <li>
+      <a href="$url('Product-Show','pid','59A30060150')$"
+        >Three Bag Collection System</a
+      >
+      (59A30060150)
+    </li>
+    <li>
+      <a href="$url('Product-Show','pid','59A30061150')$"
+        >54-in Deck Mounting Kit</a
+      >
+      (59A30061150)
+    </li>
+    <li>
+      <a href="$url('Product-Show','pid','59A30062150')$"
+        >60-in Deck Mounting Kit</a
+      >
+      (59A30062150)
+    </li>
+    <li>
+      <a href="$url('Product-Show','pid','59A30063150')$">Fan-Assist Kit</a>
+      (59A30063150)
+    </li>
+    <li>
+      <a href="$url('Product-Show','pid','59B30037150')$">Frame Weight Kit</a>
+      (59B30037150) is required for all PRO Z lap bar models and is
+      <em>not</em> compatible with PRO Z Steering Wheel Models.
+    </li>
+  </ul>
+  <!--- here. -->
+  <div
+    id="read-more-cover"
+    style="
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+      );
+      height: 60px;
+      width: 100%;
+    "
+  ></div>
+</div>
+<a
+  id="read-more-button"
+  onclick="
+    event.preventDefault();
+    document.querySelector('#read-more-content').style.maxHeight = '10000px';
+    document.querySelector('#read-more-cover').style.display = 'none';
+    document.querySelector('#read-more-button').style.display = 'none';
+    "
+  href="#"
+  style="
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    background: #efefef;
+    padding: 4px 10px;
+    text-decoration: none;
+  "
+  >Read More</a
+>
