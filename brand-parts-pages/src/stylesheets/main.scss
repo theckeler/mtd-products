@@ -1,6 +1,6 @@
 @import "../../../foundation/";
 :root {
-  --craftsman: #cf0013;
+  --yard-man: #cf0013;
   --rem: #f26311;
   --cub-cadet: #ffc000;
   --troybilt: #d70029;
@@ -16,10 +16,6 @@ footer {
 }
 
 .mtd-page {
-  .col {
-    // flex-basis: 25%;
-  }
-
   section {
     padding: em(70px) em(20px);
     text-align: center;
@@ -34,7 +30,11 @@ footer {
   }
 
   .bg-red {
-    background: var(--craftsman);
+    background: var(--yard-man);
+  }
+
+  .bg-yellow {
+    background: var(--yard-man);
   }
 
   .bg-white {
@@ -43,13 +43,13 @@ footer {
 
   .button,
   a:not([href]):not([tabindex]) {
-    background: var(--craftsman);
-    color: var(--white);
+    background: var(--yard-man);
+    color: #000;
 
     &:hover,
     &:focus {
       cursor: pointer;
-      color: var(--white);
+      color: #000;
     }
   }
 
@@ -68,6 +68,7 @@ footer {
     min-height: em(400px);
 
     svg {
+      width: 100%;
       max-width: em(480px);
       position: relative;
       z-index: 1;
@@ -101,6 +102,7 @@ footer {
     }
 
     a {
+      color: #000;
       font-size: rem(12px);
       margin-top: em(10px);
     }
@@ -172,6 +174,7 @@ footer {
       display: flex;
       flex-direction: column;
       height: 100%;
+      color: #000;
       text-decoration: none;
 
       &:hover {
@@ -199,6 +202,7 @@ footer {
           padding: em(10px);
           font-size: rem(12px);
           line-height: 1.4;
+          font-weight: normal;
         }
 
         .button {
@@ -207,8 +211,8 @@ footer {
           padding: em(8px);
 
           &:hover {
-            background: var(--craftsman);
-            color: var(--white);
+            background: var(--yard-man);
+            color: #000;
           }
         }
       }
@@ -222,8 +226,8 @@ footer {
 
       &:hover {
         .title {
-          background: var(--craftsman);
-          color: #fff;
+          background: var(--yard-man);
+          color: #000;
         }
       }
 
@@ -250,6 +254,54 @@ footer {
       }
     }
   }
+
+  .part_num-container {
+    position: relative;
+
+    .part_num {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--yard-man);
+      color: #fff;
+      width: 100%;
+      padding: 14px;
+      box-shadow: 0 0 em(10px) rgba(#000, 0.4);
+      display: none;
+
+      .arrow {
+        width: em(30px);
+        height: em(30px);
+        position: absolute;
+        top: em(-18px);
+        left: 50%;
+        transform: translateX(-50%);
+
+        svg {
+          fill: var(--yard-man);
+        }
+      }
+    }
+  }
+
+  .suggestions {
+    width: 100%;
+
+    .col-sm-10 {
+      text-align: left;
+    }
+  }
+}
+
+.embeddedServiceHelpButton .helpButton .uiButton {
+  background: var(--yard-man) !important;
+  background-color: var(--yard-man) !important;
+  box-shadow: 0 0 10px rgba(#000, 0.4) !important;
+}
+
+.embeddedServiceHelpButton .assistiveText {
+  color: #fff !important;
 }
 
 @media only screen and (max-width: em(1400px)) {

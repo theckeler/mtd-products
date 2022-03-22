@@ -239,7 +239,7 @@
   }
 }
 :root {
-  --craftsman: #cf0013;
+  --yard-man: #cf0013;
   --rem: #f26311;
   --cub-cadet: #ffc000;
   --troybilt: #d70029;
@@ -265,21 +265,24 @@ footer {
   font-size: 0.8125rem;
 }
 .mtd-page .bg-red {
-  background: var(--craftsman);
+  background: var(--yard-man);
+}
+.mtd-page .bg-yellow {
+  background: var(--yard-man);
 }
 .mtd-page .bg-white {
   background: var(--white);
 }
 .mtd-page .button,
 .mtd-page a:not([href]):not([tabindex]) {
-  background: var(--craftsman);
-  color: var(--white);
+  background: var(--yard-man);
+  color: #000;
 }
 .mtd-page .button:hover, .mtd-page .button:focus,
 .mtd-page a:not([href]):not([tabindex]):hover,
 .mtd-page a:not([href]):not([tabindex]):focus {
   cursor: pointer;
-  color: var(--white);
+  color: #000;
 }
 .mtd-page iframe {
   margin-top: 1.25em;
@@ -295,6 +298,7 @@ footer {
   min-height: 25em;
 }
 .mtd-page .hero svg {
+  width: 100%;
   max-width: 30em;
   position: relative;
   z-index: 1;
@@ -323,6 +327,7 @@ footer {
   height: 100%;
 }
 .mtd-page .searches a {
+  color: #000;
   font-size: 0.75rem;
   margin-top: 0.625em;
 }
@@ -376,6 +381,7 @@ footer {
   display: flex;
   flex-direction: column;
   height: 100%;
+  color: #000;
   text-decoration: none;
 }
 .mtd-page .section-4 a:hover,
@@ -410,6 +416,7 @@ footer {
   padding: 0.625em;
   font-size: 0.75rem;
   line-height: 1.4;
+  font-weight: normal;
 }
 .mtd-page .section-4 a .content .button,
 .mtd-page .section-5 a .content .button,
@@ -421,8 +428,8 @@ footer {
 .mtd-page .section-4 a .content .button:hover,
 .mtd-page .section-5 a .content .button:hover,
 .mtd-page .section-6 a .content .button:hover {
-  background: var(--craftsman);
-  color: var(--white);
+  background: var(--yard-man);
+  color: #000;
 }
 .mtd-page .section-5 a,
 .mtd-page .section-6 a {
@@ -430,8 +437,8 @@ footer {
 }
 .mtd-page .section-5 a:hover .title,
 .mtd-page .section-6 a:hover .title {
-  background: var(--craftsman);
-  color: #fff;
+  background: var(--yard-man);
+  color: #000;
 }
 .mtd-page .section-5 a .title,
 .mtd-page .section-6 a .title {
@@ -446,6 +453,48 @@ footer {
   background: transparent;
   color: #000;
   text-align: center;
+}
+.mtd-page .part_num-container {
+  position: relative;
+}
+.mtd-page .part_num-container .part_num {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--yard-man);
+  color: #fff;
+  width: 100%;
+  padding: 14px;
+  box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.4);
+  display: none;
+}
+.mtd-page .part_num-container .part_num .arrow {
+  width: 1.875em;
+  height: 1.875em;
+  position: absolute;
+  top: -1.125em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mtd-page .part_num-container .part_num .arrow svg {
+  fill: var(--yard-man);
+}
+.mtd-page .suggestions {
+  width: 100%;
+}
+.mtd-page .suggestions .col-sm-10 {
+  text-align: left;
+}
+
+.embeddedServiceHelpButton .helpButton .uiButton {
+  background: var(--yard-man) !important;
+  background-color: var(--yard-man) !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4) !important;
+}
+
+.embeddedServiceHelpButton .assistiveText {
+  color: #fff !important;
 }
 
 @media only screen and (max-width: 87.5em) {
