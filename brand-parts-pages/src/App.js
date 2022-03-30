@@ -1,5 +1,5 @@
 import React from "react";
-import "./stylesheets/ultima.min.css";
+//import "./stylesheets/main.min.css";
 
 function App() {
   return <></>;

@@ -240,7 +240,7 @@
 }
 :root {
   --craftsman: #cf0013;
-  --rem: #f26311;
+  --remington: #f26311;
   --cub-cadet: #ffc000;
   --troybilt: #d70029;
   --bolens: #025835;
@@ -248,6 +248,7 @@
   --white-outdoor: #c00000;
   --yard-machines: #e50020;
   --yard-man: #face04;
+  --mtd-gold: linear-gradient(to bottom, #c0914b 0%, #f30003 100%);
 }
 
 footer {
@@ -260,6 +261,7 @@ footer {
 }
 .mtd-page section h2 {
   font-size: 2rem;
+  text-transform: uppercase;
 }
 .mtd-page section p {
   font-size: 0.8125rem;
@@ -274,22 +276,32 @@ footer {
 .mtd-page .bg-cub-cadet {
   background: var(--cub-cadet);
 }
-.mtd-page .huskee {
+.mtd-page .bg-huskee {
+  color: #fff;
   background: var(--huskee);
 }
-.mtd-page .bg-rem {
-  background: var(--rem);
+.mtd-page .bg-remington {
+  color: #fff;
+  background: var(--remington);
 }
 .mtd-page .bg-troybilt {
+  color: #fff;
   background: var(--troybilt);
 }
 .mtd-page .bg-bolens {
+  color: #fff;
   background: var(--bolens);
 }
+.mtd-page .bg-mtd-gold {
+  color: #fff;
+  background: var(--mtd-gold);
+}
 .mtd-page .bg-white-outdoor {
+  color: #fff;
   background: var(--white-outdoor);
 }
 .mtd-page .bg-yard-machines {
+  color: #fff;
   background: var(--yard-machines);
 }
 .mtd-page .button,
@@ -316,29 +328,68 @@ footer {
 .mtd-page a:not([href]):not([tabindex]).bg-cub-cadet {
   background: var(--cub-cadet);
 }
-.mtd-page .button.huskee,
-.mtd-page a:not([href]):not([tabindex]).huskee {
+.mtd-page .button.bg-huskee,
+.mtd-page a:not([href]):not([tabindex]).bg-huskee {
   background: var(--huskee);
+  color: #fff;
 }
-.mtd-page .button.bg-rem,
-.mtd-page a:not([href]):not([tabindex]).bg-rem {
-  background: var(--rem);
+.mtd-page .button.bg-huskee svg *,
+.mtd-page a:not([href]):not([tabindex]).bg-huskee svg * {
+  fill: #fff;
+}
+.mtd-page .button.bg-remington,
+.mtd-page a:not([href]):not([tabindex]).bg-remington {
+  background: var(--remington);
+  color: #fff;
+}
+.mtd-page .button.bg-remington svg *,
+.mtd-page a:not([href]):not([tabindex]).bg-remington svg * {
+  fill: #fff;
 }
 .mtd-page .button.bg-troybilt,
 .mtd-page a:not([href]):not([tabindex]).bg-troybilt {
   background: var(--troybilt);
+  color: #fff;
+}
+.mtd-page .button.bg-troybilt svg *,
+.mtd-page a:not([href]):not([tabindex]).bg-troybilt svg * {
+  fill: #fff;
 }
 .mtd-page .button.bg-bolens,
 .mtd-page a:not([href]):not([tabindex]).bg-bolens {
   background: var(--bolens);
+  color: #fff;
+}
+.mtd-page .button.bg-bolens svg *,
+.mtd-page a:not([href]):not([tabindex]).bg-bolens svg * {
+  fill: #fff;
 }
 .mtd-page .button.bg-white-outdoor,
 .mtd-page a:not([href]):not([tabindex]).bg-white-outdoor {
   background: var(--white-outdoor);
+  color: #fff;
+}
+.mtd-page .button.bg-white-outdoor svg *,
+.mtd-page a:not([href]):not([tabindex]).bg-white-outdoor svg * {
+  fill: #fff;
 }
 .mtd-page .button.bg-yard-machines,
 .mtd-page a:not([href]):not([tabindex]).bg-yard-machines {
+  color: #fff;
   background: var(--yard-machines);
+}
+.mtd-page .button.bg-yard-machines svg *,
+.mtd-page a:not([href]):not([tabindex]).bg-yard-machines svg * {
+  fill: #fff;
+}
+.mtd-page .button.bg-mtd-gold,
+.mtd-page a:not([href]):not([tabindex]).bg-mtd-gold {
+  color: #fff;
+  background: var(--mtd-gold);
+}
+.mtd-page .button.bg-mtd-gold svg *,
+.mtd-page a:not([href]):not([tabindex]).bg-mtd-gold svg * {
+  fill: #fff;
 }
 .mtd-page iframe {
   margin-top: 1.25em;

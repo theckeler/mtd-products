@@ -1,7 +1,7 @@
-@import "../../../foundation/";
+@import "../../foundation/";
 :root {
   --craftsman: #cf0013;
-  --rem: #f26311;
+  --remington: #f26311;
   --cub-cadet: #ffc000;
   --troybilt: #d70029;
   --bolens: #025835;
@@ -9,6 +9,7 @@
   --white-outdoor: #c00000;
   --yard-machines: #e50020;
   --yard-man: #face04;
+  --mtd-gold: linear-gradient(to bottom, #c0914b 0%, #f30003 100%);
 }
 
 footer {
@@ -22,6 +23,7 @@ footer {
 
     h2 {
       font-size: rem(32px);
+      text-transform: uppercase;
     }
 
     p {
@@ -42,27 +44,38 @@ footer {
     background: var(--cub-cadet);
   }
 
-  .huskee {
+  .bg-huskee {
+    color: #fff;
     background: var(--huskee);
   }
 
-  .bg-rem {
-    background: var(--rem);
+  .bg-remington {
+    color: #fff;
+    background: var(--remington);
   }
 
   .bg-troybilt {
+    color: #fff;
     background: var(--troybilt);
   }
 
   .bg-bolens {
+    color: #fff;
     background: var(--bolens);
   }
 
+  .bg-mtd-gold {
+    color: #fff;
+    background: var(--mtd-gold);
+  }
+
   .bg-white-outdoor {
+    color: #fff;
     background: var(--white-outdoor);
   }
 
   .bg-yard-machines {
+    color: #fff;
     background: var(--yard-machines);
   }
 
@@ -90,28 +103,81 @@ footer {
       background: var(--cub-cadet);
     }
 
-    &.huskee {
+    &.bg-huskee {
       background: var(--huskee);
+      color: #fff;
+
+      svg {
+        * {
+          fill: #fff;
+        }
+      }
     }
 
-    &.bg-rem {
-      background: var(--rem);
+    &.bg-remington {
+      background: var(--remington);
+      color: #fff;
+
+      svg {
+        * {
+          fill: #fff;
+        }
+      }
     }
 
     &.bg-troybilt {
       background: var(--troybilt);
+      color: #fff;
+
+      svg {
+        * {
+          fill: #fff;
+        }
+      }
     }
 
     &.bg-bolens {
       background: var(--bolens);
+      color: #fff;
+
+      svg {
+        * {
+          fill: #fff;
+        }
+      }
     }
 
     &.bg-white-outdoor {
       background: var(--white-outdoor);
+      color: #fff;
+
+      svg {
+        * {
+          fill: #fff;
+        }
+      }
     }
 
     &.bg-yard-machines {
+      color: #fff;
       background: var(--yard-machines);
+
+      svg {
+        * {
+          fill: #fff;
+        }
+      }
+    }
+
+    &.bg-mtd-gold {
+      color: #fff;
+      background: var(--mtd-gold);
+
+      svg {
+        * {
+          fill: #fff;
+        }
+      }
     }
   }
 
