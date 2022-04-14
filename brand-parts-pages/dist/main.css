@@ -284,7 +284,7 @@ footer {
   color: #fff;
   background: var(--remington);
 }
-.mtd-page .bg-troybilt {
+.mtd-page .bg-troy-bilt {
   color: #fff;
   background: var(--troybilt);
 }
@@ -346,13 +346,13 @@ footer {
 .mtd-page a:not([href]):not([tabindex]).bg-remington svg * {
   fill: #fff;
 }
-.mtd-page .button.bg-troybilt,
-.mtd-page a:not([href]):not([tabindex]).bg-troybilt {
+.mtd-page .button.bg-troy-bilt,
+.mtd-page a:not([href]):not([tabindex]).bg-troy-bilt {
   background: var(--troybilt);
   color: #fff;
 }
-.mtd-page .button.bg-troybilt svg *,
-.mtd-page a:not([href]):not([tabindex]).bg-troybilt svg * {
+.mtd-page .button.bg-troy-bilt svg *,
+.mtd-page a:not([href]):not([tabindex]).bg-troy-bilt svg * {
   fill: #fff;
 }
 .mtd-page .button.bg-bolens,
