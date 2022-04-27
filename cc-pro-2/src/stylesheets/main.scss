@@ -331,6 +331,9 @@ footer {
 
       .wrapper {
         .col {
+          flex: 0 0 100%;
+          max-width: 100%;
+          width: 100%;
           margin-bottom: em(20);
 
           &:last-of-type {
@@ -397,13 +400,13 @@ footer {
       }
     }
 
-    .hero {
+    section.hero {
       .logo {
         padding: em(10);
       }
 
       svg {
-        width: 26vw;
+        width: 24vw;
         max-width: em(200);
       }
     }

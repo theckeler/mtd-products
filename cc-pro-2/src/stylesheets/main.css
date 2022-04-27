@@ -482,6 +482,9 @@ footer {
     padding: 2.5em 0;
   }
   .mtd-page section .wrapper .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
     margin-bottom: 1.25em;
   }
   .mtd-page section .wrapper .col:last-of-type {
@@ -526,11 +529,11 @@ footer {
     -o-object-position: 64%;
        object-position: 64%;
   }
-  .mtd-page .hero .logo {
+  .mtd-page section.hero .logo {
     padding: 0.625em;
   }
-  .mtd-page .hero svg {
-    width: 26vw;
+  .mtd-page section.hero svg {
+    width: 24vw;
     max-width: 12.5em;
   }
   .mtd-page .angle {
