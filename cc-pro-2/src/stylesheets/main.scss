@@ -1,0 +1,449 @@
+@import "../../../foundation/";
+
+.mtd-page {
+  &.commercial-equipment {
+    section {
+      padding: em(80) 0;
+    }
+
+    .section-2 {
+      text-align: center;
+
+      h1 {
+        font-size: em(50);
+      }
+
+      p {
+        max-width: em(500);
+        margin: em(20) auto 0 auto;
+        font-size: em(24);
+        line-height: 1.6;
+      }
+    }
+
+    .section-3 {
+      h2 {
+        position: relative;
+        z-index: 1;
+        text-transform: uppercase;
+        font-size: rem(130);
+        line-height: 1;
+        margin-bottom: em(5);
+      }
+
+      img {
+        margin-bottom: em(20);
+      }
+
+      h3 {
+        font-size: em(32);
+        line-height: 1;
+        margin-bottom: em(6);
+      }
+
+      p {
+        font-size: em(18);
+        line-height: 1.4;
+        margin-bottom: em(40);
+      }
+    }
+
+    .section-4 {
+      padding: em(40) 0;
+
+      .wrapper {
+        margin-bottom: em(40);
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+
+        &.wrapper-3 {
+          margin: em(100) auto;
+
+          p {
+            font-size: rem(18);
+            line-height: 1.4;
+            margin: em(10) 0 0 0;
+          }
+        }
+      }
+
+      li.w-100 {
+        margin-bottom: em(40);
+      }
+    }
+
+    .section-5 {
+      h3 {
+        font-size: rem(34);
+      }
+
+      h4 {
+        font-size: rem(22);
+      }
+
+      img {
+        min-height: em(275);
+      }
+    }
+
+    .section-6 {
+      .img-wrapper,
+      img {
+        min-height: em(275);
+      }
+    }
+
+    .section-7 {
+      .col {
+        > div {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  &.pro-page {
+    section {
+      padding: em(80) 0;
+    }
+
+    .features,
+    .fleet-pricing-dealers {
+      padding-bottom: 0;
+    }
+
+    .pro-series {
+      .img-wrapper,
+      img {
+        min-height: em(275);
+      }
+    }
+
+    .features {
+      img {
+        margin-bottom: em(20);
+      }
+    }
+
+    .surepath {
+      h3 {
+        font-size: rem(34);
+      }
+
+      h4 {
+        font-size: rem(22);
+      }
+
+      img {
+        min-height: em(275);
+      }
+    }
+
+    .tools-accessories {
+      span {
+        display: block;
+        font-size: rem(24);
+        line-height: 1;
+        margin-bottom: em(8);
+      }
+
+      p {
+        font-size: rem(16);
+        line-height: 1.4;
+      }
+    }
+  }
+
+  section {
+    position: relative;
+  }
+
+  .wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: em(1290px);
+    margin: auto;
+  }
+
+  .bg-black {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .bg-white {
+    background-color: #fff;
+    color: #000;
+  }
+
+  .bg-grey {
+    background-color: #efefef;
+    color: #000;
+  }
+
+  .quote-container {
+    padding: em(20);
+
+    .quote {
+      color: #000;
+
+      p {
+        font-size: em(42);
+        line-height: 1.2;
+      }
+
+      cite {
+        font-size: em(16);
+        line-height: 1.2;
+      }
+    }
+
+    .quote-mark {
+      color: #fff;
+      font-size: em(142);
+      line-height: 1;
+      max-width: em(10);
+
+      &.right {
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+  }
+
+  .angle {
+    // width: 100%;
+    width: em(1100);
+    height: 100%;
+    max-height: em(200);
+    position: absolute;
+    z-index: 0;
+
+    &.angle-down {
+      clip-path: polygon(0 0, em(1100) 0, 0 em(200));
+    }
+
+    &.angle-up {
+      clip-path: polygon(100% 0, 101% 101%, 0 101%);
+    }
+
+    &.angle-down {
+      top: 0;
+      left: 0;
+    }
+
+    &.angle-up {
+      bottom: 0;
+      right: 0;
+
+      &.outer {
+        background: rgba(#000, 0.6);
+      }
+
+      &.inner {
+        opacity: 1;
+        width: 85%;
+        height: 85%;
+      }
+    }
+  }
+
+  section.hero {
+    padding: 0;
+    max-height: em(600);
+    overflow: hidden;
+
+    img {
+      position: relative;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      max-height: em(600);
+    }
+
+    svg {
+      width: 100%;
+      max-width: em(300);
+    }
+
+    .logo {
+      padding: em(30);
+    }
+
+    .angle-down {
+      opacity: 0.8;
+    }
+
+    .angle-up {
+      max-width: em(1600);
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+  }
+
+  .form-group {
+    margin-bottom: 0;
+  }
+
+  .social-links {
+    margin-left: auto;
+    margin-right: auto;
+
+    li {
+      flex-grow: 0;
+      padding-left: em(10);
+      padding-right: em(10);
+    }
+  }
+}
+
+footer {
+  margin-top: 0;
+  padding-bottom: em(100);
+}
+
+@media (max-width: em(1057px)) {
+  .mtd-page {
+    .section-3 h2 {
+      font-size: em(110);
+    }
+
+    .quote-container .quote p {
+      font-size: em(32);
+    }
+  }
+}
+
+@media (max-width: em(1024px)) {
+  .mtd-page {
+  }
+}
+
+@media (max-width: em(768px)) {
+  .mtd-page {
+    section {
+      padding: em(40) 0;
+
+      .wrapper {
+        .col {
+          margin-bottom: em(20);
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .h-100 {
+      height: auto !important;
+    }
+
+    .img-wrapper {
+      min-height: em(320);
+
+      img {
+        // min-height: em(320);
+      }
+    }
+
+    .btn {
+      //display: block;
+      width: 100%;
+    }
+
+    .hero {
+      max-height: initial;
+      min-height: em(420);
+
+      img {
+        max-height: initial;
+        min-height: em(420);
+        object-position: left;
+      }
+    }
+
+    .row {
+      flex-direction: column;
+    }
+
+    .quotes {
+      .row {
+        flex-direction: row;
+      }
+
+      .quote-container {
+        .quote-mark {
+          padding: 0 em(2);
+          font-size: rem(60);
+        }
+
+        .quote {
+          font-size: rem(12);
+        }
+      }
+
+      .img {
+        max-width: em(180);
+
+        img {
+          object-position: 64%;
+        }
+      }
+    }
+
+    .hero {
+      .logo {
+        padding: em(10);
+      }
+
+      svg {
+        width: 26vw;
+        max-width: em(200);
+      }
+    }
+
+    .angle {
+      width: 100%;
+      max-height: em(90);
+
+      &.angle-down {
+        clip-path: polygon(0 0, 100% 0, 0 100%);
+      }
+
+      &.angle-up {
+        clip-path: polygon(100% 0, 101% 101%, 0 101%);
+      }
+    }
+
+    &.commercial-equipment {
+      .section-2 {
+        h1 {
+          font-size: rem(40);
+        }
+
+        p {
+          font-size: rem(18);
+        }
+      }
+
+      .section-3 {
+        h2 {
+          font-size: 11vw;
+        }
+      }
+
+      .section-4 li.w-100 {
+        margin-bottom: em(10);
+      }
+
+      .section-6 {
+      }
+    }
+  }
+}
