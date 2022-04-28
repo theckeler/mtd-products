@@ -160,6 +160,7 @@
 
   section {
     position: relative;
+    overflow: hidden;
   }
 
   .wrapper {
@@ -298,6 +299,60 @@
       flex-grow: 0;
       padding-left: em(10);
       padding-right: em(10);
+    }
+  }
+
+  .video {
+    .video-circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      border: em(2) solid #fff;
+      border-radius: 50%;
+      width: em(50);
+      height: em(50);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: em(50);
+      line-height: 1;
+      padding-left: em(4);
+    }
+
+    img {
+      z-index: 0;
+    }
+
+    button {
+      padding: 0;
+      outline: 0;
+      border: 0;
+      -webkit-appearance: none;
+      cursor: pointer;
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+    }
+  }
+
+  .modal {
+    z-index: 9999;
+    background: rgba(#000, 0.6);
+    //display: block;
+
+    &.active {
+      display: block;
+    }
+
+    .modal-dialog {
+      max-width: 80vw;
     }
   }
 }
@@ -446,6 +501,12 @@ footer {
       }
 
       .section-6 {
+      }
+    }
+
+    .modal {
+      .modal-dialog {
+        max-width: 100%;
       }
     }
   }
