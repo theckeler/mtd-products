@@ -55,18 +55,14 @@ module.exports = {
       template: "./src/commercial-zero-turn-mowers.html",
       filename: "commercial-zero-turn-mowers.html",
     }),
-    // new HtmlWebPackPlugin({
-    //   template: "./src/stand-on-mowers.html",
-    //   filename: "stand-on-mowers.html",
-    // }),
-    // new HtmlWebPackPlugin({
-    //   template: "./src/hydro-walk-behind-mowers.html",
-    //   filename: "hydro-walk-behind-mowers.html",
-    // }),
-    // new HtmlWebPackPlugin({
-    //   template: "./src/surepath-commercial-zero-turn-mowers.html",
-    //   filename: "surepath-commercial-zero-turn-mowers.html",
-    // }),
+    new HtmlWebPackPlugin({
+      template: "./src/stand-on-mowers.html",
+      filename: "stand-on-mowers.html",
+    }),
+    new HtmlWebPackPlugin({
+      template: "./src/hydro-walk-behind-mowers.html",
+      filename: "hydro-walk-behind-mowers.html",
+    }),
     new MiniCssExtractPlugin({
       filename: "base.css",
     }),

@@ -499,6 +499,9 @@
   height: 100%;
   background: transparent;
 }
+.mtd-page .tools-accessories a {
+  text-decoration: none;
+}
 .mtd-page .modal {
   z-index: 9999;
   background: rgba(0, 0, 0, 0.6);
