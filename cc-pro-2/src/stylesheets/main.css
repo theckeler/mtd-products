@@ -315,9 +315,19 @@
 .mtd-page.pro-page section {
   padding: 5em 0;
 }
+.mtd-page.pro-page .hero-copy p {
+  max-width: 31.25em;
+  margin: 1.25em auto 0 auto;
+  font-size: 1.5em;
+  line-height: 1.6;
+}
 .mtd-page.pro-page .features,
 .mtd-page.pro-page .fleet-pricing-dealers {
   padding-bottom: 0;
+}
+.mtd-page.pro-page .features a.btn,
+.mtd-page.pro-page .fleet-pricing-dealers a.btn {
+  margin-top: auto;
 }
 .mtd-page.pro-page .pro-series .img-wrapper,
 .mtd-page.pro-page .pro-series img {
@@ -335,7 +345,7 @@
 .mtd-page.pro-page .surepath img {
   min-height: 17.1875em;
 }
-.mtd-page.pro-page .tools-accessories span {
+.mtd-page.pro-page .tools-accessories strong {
   display: block;
   font-size: 1.5rem;
   line-height: 1;

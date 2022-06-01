@@ -1,0 +1,25 @@
+{
+  "promos": [
+    {
+      "title": "Sun Shade",
+      "copy": "Keep Dad cool with some shade",
+      "image": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw6b08f5ac/products/Attachments_Accessories/19B40033100.jpg?sw=500&sh=500&sm=fit",
+      "buttontitle": "Shop Sun Shades",
+      "link": "https://www.cubcadet.com/en_US/riding-mower-accessories/sun-shade/19B40033100.html"
+    },
+    {
+      "title": "Xtreme® Mulching Kit for 42-inch Cutting Decks",
+      "copy": "Make leaf clean up easy",
+      "image": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwe30b518c/products/19A30046100.jpg?sw=500&sh=500&sm=fit",
+      "buttontitle": "Shop Mulching Kits",
+      "link": "https://www.cubcadet.com/en_US/riding-mower-accessories/xtreme-mulching-kit-for-42-inch-cutting-decks/19A30046100.html"
+    },
+    {
+      "title": "Double Bagger For 42- and 46-inch Decks",
+      "copy": "Bag those leaves like Dads do",
+      "image": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw417f7181/products/19B70054100_LFTBACK.jpg?sw=500&sh=500&sm=fit",
+      "buttontitle": "Shop Baggers",
+      "link": "https://www.cubcadet.com/en_US/baggers-and-grass-collectors/double-bagger-for-42--and-46-inch-decks/19B70054100.html"
+    }
+  ]
+}

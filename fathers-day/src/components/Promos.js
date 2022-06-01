@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import "../stylesheets/main.min.css";
-import importedData from "../data/fathers-day.json";
+import importedData from "../data/fathers-day-6-31-22-3.json";
 
 const Promos = () => {
   return (

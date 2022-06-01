@@ -111,9 +111,22 @@
       padding: em(80) 0;
     }
 
+    .hero-copy {
+      p {
+        max-width: 31.25em;
+        margin: 1.25em auto 0 auto;
+        font-size: 1.5em;
+        line-height: 1.6;
+      }
+    }
+
     .features,
     .fleet-pricing-dealers {
       padding-bottom: 0;
+
+      a.btn {
+        margin-top: auto;
+      }
     }
 
     .pro-series {
@@ -144,7 +157,7 @@
     }
 
     .tools-accessories {
-      span {
+      strong {
         display: block;
         font-size: rem(24);
         line-height: 1;

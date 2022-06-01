@@ -1,0 +1,31 @@
+{
+  "promos": [
+    {
+      "title": "XT1 LT42E",
+      "subtitle": "XT ENDURO SERIES",
+      "price": "$4,599.00",
+      "bullets": [
+        "56 Volt MAX, 60Ah, 3000Wh lithium-ion battery that can be charged using a standard 110-Volt outlet.​",
+        "Mow up to two acres, or 1.5 hours, on a single charge without power fade. Recharges in about 4 hours",
+        "No need for oil changes, filters to change, spark plugs to change, no more buying gas​"
+      ],
+      "image": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwbe9b8d44/products/Equipment/Cub_Cadet_XT1_LT42E_2000x2000_1.jpg?sw=740&sh=740&sm=fit",
+      "buttontitle": "Shop LT42E Electric Mower",
+      "link": "https://www.cubcadet.com/en_US/electric-riding-mowers/xt1-lt42e/33ABA7ES710.html"
+    },
+    {
+      "title": "ZTS1 42",
+      "subtitle": "Ultima Series™ ZTS",
+      "price": "$4,599.00",
+      "bullets": [
+        "Synchro-Steer™ technology offers 4-wheel control and provides unrivaled stability for straight-line mowing on hillsides and slopes up to 20-degrees",
+        "A 22 HP/725cc Kohler 7000 series V-twin OHV engine delivers high-performance power and exceptionally smooth, quiet operation",
+        "Dual hydrostatic transmissions allow for quick and effortless 7 MPH forward (3.5 MPH reverse) ground speeds that quickly leaves your lawn with a professional-quality finish​",
+        "42-in. AeroForce fabricated deck that delivers a signature cut with fewer clumps and stragglers, finer clippings and increased evenness"
+      ],
+      "image": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw430689bb/products/Equipment/Cub-Cadet_ZTS142_2000x2000_10.jpg?sw=740&sh=740&sm=fit",
+      "buttontitle": "Shop Ultima ZTS Mower",
+      "link": "https://www.cubcadet.com/en_US/zero-turn-mowers/zts1-42/17ARGBYEA10.html#start=5"
+    }
+  ]
+}
