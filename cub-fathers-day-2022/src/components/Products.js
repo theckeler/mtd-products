@@ -16,15 +16,24 @@ const Promos = () => {
             >
               <div className="p-5 d-flex flex-column align-items-center h-100">
                 <img src={d.image} alt="" className="mb-2" loading="lazy" />
-                <h2 className="w-100">{d.title}</h2>
-                <p className="mb-2 w-100">{d.subtitle}</p>
-                <p className="mb-2 w-100">{d.price}</p>
-                <ul className="w-100 mb-2">
+                <h2
+                  className="mb-1 w-100"
+                  dangerouslySetInnerHTML={{ __html: d.title }}
+                ></h2>
+                <p className="mb-1 w-100 subtitle">{d.subtitle}</p>
+                <p className="mb-1 w-100 price">{d.price}</p>
+                {/* <ul className="w-100 mb-2">
                   {d.bullets.map((b, x) => {
-                    return <li className="mb-2">{b}</li>;
+                    return (
+                      <li
+                        className="mb-2"
+                        dangerouslySetInnerHTML={{ __html: b }}
+                        key={x}
+                      ></li>
+                    );
                   })}
-                </ul>
-                <p className="mb-2">{d.copy}</p>
+                </ul> */}
+                <p className="mb-4 w-100">{d.copy}</p>
                 <button className="btn btn-primary mt-auto bg-yellow">
                   {d.buttontitle}
                 </button>

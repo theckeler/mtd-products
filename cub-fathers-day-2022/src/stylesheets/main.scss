@@ -1,0 +1,297 @@
+@import "../../../foundation/";
+
+.hero.slant-down {
+  display: none;
+  position: fixed;
+  left: -1000vw;
+  top: -1000vh;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.mtd-page {
+  .bg-black {
+    background: #000;
+    color: #fff;
+  }
+
+  .bg-white {
+    background: #fff;
+    color: #000;
+  }
+
+  .bg-yellow {
+    background: #ffc10f;
+  }
+
+  .bg-grey {
+    background-color: #efefef;
+    color: #000;
+  }
+
+  .hero {
+    position: relative;
+    padding: 0;
+
+    h1 {
+      font-size: em(52);
+      text-transform: uppercase;
+      padding-bottom: em(4);
+      border-bottom: em(0.5) solid #cdcdcd;
+    }
+
+    p {
+      font-size: em(18);
+      line-height: 1.4;
+    }
+
+    .wrapper {
+      position: relative;
+      z-index: 11;
+      text-align: center;
+      padding: em(80) em(20);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .section-2 {
+    font-size: 34px;
+    line-height: 1.8;
+    font-weight: 700;
+
+    .img-container {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 50vw;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .section-3 {
+    p {
+      font-size: em(22);
+      line-height: 1.4;
+    }
+  }
+
+  .section-5 {
+    p {
+      font-size: em(22);
+      line-height: 1.4;
+    }
+
+    a {
+      font-size: em(18);
+      font-weight: 700;
+    }
+  }
+
+  .block-title {
+    min-height: em(80);
+  }
+
+  .img-background {
+    position: relative;
+
+    .img-wrapper {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &.img-right {
+      .img-wrapper {
+        left: initial;
+        right: 0;
+      }
+    }
+
+    &.img-third {
+      .img-wrapper {
+        width: 66%;
+      }
+    }
+  }
+
+  .output {
+    h2 {
+      font-size: rem(26);
+    }
+
+    .subtitle {
+      font-size: rem(22);
+    }
+
+    .price {
+      font-size: rem(18);
+    }
+
+    ul.bullets {
+      list-style: disc;
+    }
+
+    .block-title {
+      font-size: rem(14);
+    }
+
+    button {
+      &.bg-yellow {
+        background: #ffc10f;
+        color: #000;
+        border-color: #ffc10f;
+      }
+    }
+
+    img {
+      transition: border-color 0.3s ease-in-out;
+      border: em(1) solid #efefef;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      .block-title {
+        background: #ffc10f;
+      }
+
+      h2 {
+        color: #000;
+      }
+
+      img {
+        border-color: #ffc10f;
+      }
+
+      button {
+        color: #ffc10f;
+        border-color: #ffc10f;
+        background: #000;
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 0;
+  padding-bottom: em(100);
+}
+
+@media (max-width: em(1024px)) {
+  .mtd-page {
+    .col-4 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    .hero {
+      .col-4,
+      .col-6,
+      .col-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+
+    .hero .wrapper {
+      padding: em(10) em(20);
+    }
+
+    .section-2 {
+      display: flex;
+      flex-direction: column-reverse;
+      font-size: rem(28);
+
+      .img-container {
+        position: relative;
+        left: initial;
+        top: initial;
+        right: initial;
+        width: 100%;
+      }
+
+      .row,
+      .pt-8 {
+        width: 100% !important;
+        padding: em(8) em(5) !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+      }
+    }
+
+    .section-3 {
+      .pt-8 {
+        padding-top: 0 !important;
+      }
+    }
+
+    .section-5,
+    .section-6,
+    .section-10 {
+      .wrapper {
+        justify-content: center;
+
+        .col-4,
+        .col-8 {
+          flex: 0 0 100%;
+          max-width: 100%;
+          text-align: center;
+        }
+      }
+    }
+
+    .w-50 {
+      width: 100% !important;
+    }
+  }
+}
+
+@media (max-width: em(768px)) {
+  .mtd-page {
+    .row {
+      flex-direction: column;
+    }
+
+    .hero {
+      .row {
+        flex-direction: column-reverse;
+      }
+
+      .hero-img {
+        min-height: em(400);
+        margin-bottom: em(20);
+      }
+    }
+
+    .col-4,
+    .col-6,
+    .col-8 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.hero.slant-down {
+  position: absolute;
+  left: -10000vw;
+  top: -10000vh;
+  display: none;
+  overflow: hidden;
+  height: 0;
+  width: 0;
+}

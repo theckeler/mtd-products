@@ -20,7 +20,10 @@ const Promos = () => {
               >
                 <div className="p-3 d-flex flex-column align-items-start h-100">
                   <img src={d.image} alt="" className="mb-2" loading="lazy" />
-                  <h2 className="font-weight-normal mb-2 w-100">{d.title}</h2>
+                  <h2
+                    className="font-weight-normal mb-2 w-100"
+                    dangerouslySetInnerHTML={{ __html: d.title }}
+                  ></h2>
                   <p className="mb-2">{d.copy}</p>
                   <button className="btn btn-primary mt-auto w-auto d-inline-block bg-yellow">
                     {d.buttontitle}

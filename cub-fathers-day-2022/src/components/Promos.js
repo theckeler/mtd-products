@@ -17,14 +17,19 @@ const Promos = () => {
             >
               <div className="p-5 d-flex flex-column align-items-center h-100">
                 <img src={d.image} alt="" className="mb-2" loading="lazy" />
-                <h2 className="font-weight-normal mb-2 w-100">{d.title}</h2>
+                <h2
+                  className="mb-2 w-100"
+                  dangerouslySetInnerHTML={{ __html: d.title }}
+                ></h2>
                 <Stars rating={d.rating} />
-                <ul className="w-100 mb-2">
+                <ul className="w-100 mb-2 bullets">
                   {d.bullets.map((b, x) => {
                     return (
-                      <li className="mb-2" key={x}>
-                        {b}
-                      </li>
+                      <li
+                        className="mb-2"
+                        key={x}
+                        dangerouslySetInnerHTML={{ __html: b }}
+                      ></li>
                     );
                   })}
                 </ul>
