@@ -1,0 +1,470 @@
+<script runat="server">
+  Platform.Load("Core", "1");
+  try {
+</script>
+%%[ SET @submitButton = RequestParameter('Submit') SET @FirstName = "" SET
+@LastName = "" SET @Email = "" SET @ZipCode = "" SET @OptIn = "" SET
+@CompanyName = "" SET @PhoneNumber = "" SET @IAmA = "" SET @City = "" SET @State
+= "" SET @Locale = "" SET @Brand = "" SET @LeadOwner = "" SET @LeadType = "" SET
+@LeadSource = "" SET @LeadSourceDetails = "" SET @InterestedIn = "" SET
+@DeckSize = "" SET @Series = "" SET @SteeringControlMethod = "" IF NOT
+EMPTY(@submitButton) AND @submitButton == "Submit" THEN SET @FirstName =
+RequestParameter('FirstName') SET @LastName = RequestParameter('LastName') SET
+@Email = RequestParameter('Email') SET @ZipCode = RequestParameter('ZipCode')
+SET @OptIn = RequestParameter('optin') SET @CompanyName =
+RequestParameter('Company') SET @PhoneNumber = RequestParameter('PhoneNumber')
+SET @IAmA = RequestParameter('i-am-a') SET @City =
+Lookup("ENT.Relational_ZipCodeAddress", "City", "Zip_Postal", @ZipCode) SET
+@State = Lookup("ENT.Relational_ZipCodeAddress", "State", "Zip_Postal",
+@ZipCode) //locale and brand values SET @Locale = "US" SET @Brand = "Cub Cadet"
+SET @LeadOwner = "005A00000050H5zIAE" //SET @LeadType = "Professional"
+012A0000000GoMp SET @LeadType = "012A0000000GoMp" SET @LeadSource = "Surepath"
+SET @LeadSourceDetails = "Surepath" //Optional fields, comment must be removed
+from Ampscript and HTML code //SET @InterestedIn =
+RequestParameter('interested-in') //SET @DeckSize = RequestParameter('DeckSize')
+//SET @Series = RequestParameter('Series') //SET @SteeringControlMethod =
+RequestParameter('SteeringControlMethod') //Google reCaptcha validation block
+SET @ReCaptcha = RequestParameter('g-recaptcha-response') SET @ReCaptchaValid =
+"False" SET @Secret = "6Ld6dcgUAAAAAByJZ-GlRhUq_kIs9LfH8cOtY-iy" SET
+@ContentType = "application/x-www-form-urlencoded" SET @Endpoint =
+"https://www.google.com/recaptcha/api/siteverify" SET @Payload =
+CONCAT("secret=", @Secret, "&response=", @ReCaptcha) SET @Request =
+HTTPPost(@Endpoint, @ContentType, @Payload, @Response) IF @Request == 200 AND
+indexOf(@Response, '"success": true') > 0 THEN SET @ReCaptchaValid = "True"
+ENDIF SET @status = "CONTINUE" SET @errorMessage = "" IF Empty(@FirstName) THEN
+SET @status = "ERROR" SET @errorMessage = Concat(@errorMessage,"
+<li><b>Please, enter a First Name.</b></li>
+") ENDIF IF Empty(@LastName) THEN SET @status = "ERROR" SET @errorMessage =
+Concat(@errorMessage,"
+<li><b>Please, enter a Last Name.</b></li>
+") ENDIF IF Empty(@ZipCode) OR Empty(@City) OR Empty(@State) THEN SET @status =
+"ERROR" SET @errorMessage = Concat(@errorMessage,"
+<li><b>Please, enter a valid Zip Code.</b></li>
+") ENDIF IF IsEmailAddress(@Email) == "false" OR Empty(@Email) THEN SET @status
+= "ERROR" SET @errorMessage = Concat(@errorMessage,"
+<li><b>Please, enter a valid email address.</b></li>
+") ENDIF If Empty(@ReCaptcha) OR @ReCaptchaValid == "False" THEN SET @status =
+"ERROR" SET @errorMessage = Concat(@errorMessage,"
+<li><b>Please, complete the reCaptcha validation.</b></li>
+") ENDIF //Form Submission IF @status == "CONTINUE" THEN If Empty(@CompanyName)
+THEN SET @CompanyName = "Home" ENDIF set @Lead = CreateSalesforceObject( "Lead",
+17, "FirstName", @FirstName, "LastName", @LastName, "Company", @CompanyName,
+"Email", @Email, "PostalCode", @ZipCode, "Phone", @Phone, "City", @City,
+"State", @State, "OwnerId", @LeadOwner, "LeadSource", @LeadSource,
+"Lead_Source_Details__c", @LeadSourceDetails, "RecordTypeId", @LeadType,
+"Business_Owner_Name__c", @IAmA, "Models_interested_in_Demo__c", @InterestedIn,
+"Deck_Size__c", @DeckSize, "Series__c", @Series, "Steering_Control_Method__c",
+@SteeringControlMethod ) //If subscriber has opted in, we create an interaction
+to link the Lead to a CommPref IF @OptIn == "on" THEN SET @Interaction =
+CreateSalesforceObject("Interaction__c", 9, "RecordTypeId",
+"012A0000000VtEWIA0", "Email__c", @Email, "Source__c", @LeadSource, "Brand__c",
+@Brand, "Country__c", @Locale, "Opted_Out_of_Promo_Update_Alerts__c", "false",
+"Publications__c", "", "Language__c", @Language, "Date_Submitted__c",
+FormatDate(NOW(),"iso") ) ENDIF
+Redirect("https://www.cubcadet.com/en_US/commercial-equipment/surepath-commercial-zero-turn-mowers")
+ENDIF ENDIF ]%%
+<script runat="server">
+  } catch(e) { Write(Stringify(e)); }
+</script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Surepath form</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link
+      href="https://mtd-products.consumedesign.com/surepath-form/dist/base.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1631120851162/css/global.css"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <nav role="navigation">
+        <div class="header container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="navbar-header brand">
+                <a href="https://www.cubcadet.com" title="Cub Cadet Home">
+                  <img
+                    class="icon logo"
+                    src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/for-dev/logo.svg"
+                    alt="Cub Cadet"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="main-menu navbar-toggleable-md menu-toggleable-left multilevel-dropdown"
+          id="sg-navbar-collapse"
+        >
+          <div class="container-fluid">
+            <div class="row">
+              <nav
+                id="collapsible-mobile-menu"
+                class="navbar navbar-expand-lg bg-inverse col-12"
+              >
+                <div class="close-menu clearfix d-lg-none">
+                  <div class="back pull-left"></div>
+                  <div class="close-button pull-right"></div>
+                </div>
+                <div
+                  class="menu-group"
+                  aria-label="Main menu"
+                  role="navigation"
+                >
+                  <ul class="nav navbar-nav" role="menu">
+                    <li
+                      class="nav-item layout1 top-level-menu-heading"
+                      role="none"
+                    >
+                      <a
+                        role="menuitem"
+                        href="https://www.cubcadet.com/en_US/lawn-mowers"
+                        id="lawn-mowers"
+                        class="nav-link"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >‹ Back to Cub Cadet</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="app" class="mtd-page">
+      <section class="section-1 hero" style="height: 300px; overflow: hidden">
+        <h1 class="visually-hidden">SurePath</h1>
+        <img
+          class="desktop"
+          sizes="(max-width: 3200px) 100vw, 3200px"
+          srcset="
+            https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/surepath/hero@2x.jpg 1600w,
+            https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/surepath/hero@2x.jpg 3200w
+          "
+          src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/surepath/hero@2x.jpg"
+          alt=""
+          style="object-fit: cover; width: 100%; height: 100%"
+        />
+        <img
+          class="mobile"
+          sizes="(max-width: 768px) 100vw, 768px"
+          srcset="
+            https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/surepath/hero-mobile.jpg    375w,
+            https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/surepath/hero-mobile@2x.jpg 768w
+          "
+          src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v1d5f49f5a13f1eba170bf9f8624abecd5fbcf8a0/images/surepath/hero-mobile@2x.jpg"
+          alt=""
+          style="object-fit: cover; width: 100%; height: 100%"
+        />
+      </section>
+      <section class="section-2 bg-black">
+        <div class="wrapper">
+          <h2>Find your SurePath</h2>
+          <p>
+            For more information about SurePath™, a GPS-assisted automated
+            driving technology from Cub Cadet®, fill out the form below and a
+            Cub Cadet sales representative will reach out regarding our
+            professional equipment.
+          </p>
+        </div>
+      </section>
+      <section class="section-3 wrapper">
+        <form action="%%=RequestParameter('PAGEURL')=%%" method="POST">
+          <ul class="no-list">
+            %%[IF @status == 'ERROR' THEN ]%%
+            <div>
+              <div class="invalid-feedback" style="display: block">
+                %%=v(@errorMessage)=%%
+              </div>
+            </div>
+            %%[ ENDIF ]%%
+            <li>
+              <div><label for="FirstName">First Name</label></div>
+              <div>
+                <input
+                  id="FirstName"
+                  name="FirstName"
+                  value="%%=v(@FirstName)=%%"
+                />
+              </div>
+            </li>
+            <li>
+              <div><label for="LastName">Last Name</label></div>
+              <div>
+                <input
+                  id="LastName"
+                  name="LastName"
+                  value="%%=v(@LastName)=%%"
+                />
+              </div>
+            </li>
+            <li>
+              <div><label for="Email">Email</label></div>
+              <div>
+                <input
+                  id="Email"
+                  type="email"
+                  name="Email"
+                  value="%%=v(@Email)=%%"
+                />
+              </div>
+            </li>
+            <li>
+              <div><label for="ZipCode">Zip Code</label></div>
+              <div>
+                <input id="ZipCode" name="ZipCode" value="%%=v(@ZipCode)=%%" />
+              </div>
+            </li>
+            <li>
+              <div><label for="Company">Company Name</label></div>
+              <div>
+                <input
+                  id="Company"
+                  name="Company"
+                  value="%%=v(@CompanyName)=%%"
+                />
+              </div>
+            </li>
+            <li>
+              <div><label for="PhoneNumber">Phone Number:</label></div>
+              <div>
+                <input
+                  id="PhoneNumber"
+                  type="tel"
+                  name="PhoneNumber"
+                  value="%%=v(@PhoneNumber)=%%"
+                />
+              </div>
+            </li>
+            <li>
+              <div><label for="i-am-a">I am a...</label></div>
+              <div>
+                <select id="i-am-a" name="i-am-a">
+                  <option>-----</option>
+                  <option value="Landscaper">Landscaper</option>
+                  <option value="Homeowner">Homeowner</option>
+                </select>
+              </div>
+            </li>
+            <!-- For use in future implementations     
+           <li>
+              <div><label for="interested-in">Interested in</label></div>
+              <div>
+                <select id="interested-in" name="interested-in">
+                  <option>-----</option>
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                  <option>Option 4</option>
+                </select>
+              </div>
+            </li>
+            <li>
+              <div><label for="DeckSize">Deck Size</label></div>
+              <div>
+                <select id="DeckSize" name="DeckSize">
+                  <option>-----</option>
+                  <option>24-inch</option>
+                  <option>28-inch</option>
+                  <option>32-inch</option>
+                  <option>40-inch</option>
+                </select>
+              </div>
+            </li>
+            <li>
+              <div><label for="Series">Series</label></div>
+              <div>
+                <select id="Series" name="Series">
+                  <option>-----</option>
+                  <option>Series 1</option>
+                  <option>Series 2</option>
+                  <option>Series 3</option>
+                  <option>Series 4</option>
+                </select>
+              </div>
+            </li>
+            <li>
+              <div><label for="SteeringControlMethod">Steering Control Method</label></div>
+              <div>
+                <select id="SteeringControlMethod" name="SteeringControlMethod">
+                  <option>-----</option>
+                  <option>Zero Turn</option>
+                  <option>Standard</option>
+                </select>
+              </div>
+            </li> -->
+            <li>
+              <div></div>
+              <div>
+                <span
+                  >Upon submitting your request, a Cub Cadet representative will
+                  be in touch shortly to schedule a demo with you. If you also
+                  would like to sign up and receive communication on services,
+                  products and special offers, please click below. You may
+                  unsubscribe at any time. Please refer to our Privacy Policy
+                  for more details.</span
+                >
+              </div>
+            </li>
+            <li>
+              <div></div>
+              <div>
+                <input type="checkbox" id="optin" name="optin" />
+                <span for="optin"
+                  >Yes, sign me up for communication on services, products and
+                  special offers.</span
+                >
+              </div>
+            </li>
+            <li>
+              <div>&nbsp;</div>
+              <div>
+                <div
+                  id="recaptcha"
+                  class="g-recaptcha"
+                  data-sitekey="6Ld6dcgUAAAAAGojPFvbKFqpMamNEcyYpYel8rdy"
+                >
+                  &nbsp;
+                </div>
+              </div>
+            </li>
+            <li class="submit">
+              <div>
+                <button id="submit" name="submit" value="Submit">Submit</button>
+              </div>
+            </li>
+          </ul>
+        </form>
+      </section>
+    </div>
+    <footer id="footer">
+      <div class="footer-info container">
+        <div class="footer-info-links">
+          <div class="footer-logo">
+            <img
+              src="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/default/dw8991243d/images/built-in-america-desktop.png"
+              alt="Built in America Badge"
+            />
+          </div>
+          <div class="footer-site-links col-lg-6">
+            <div class="content-asset">
+              <h6>Global Sites</h6>
+              <ul>
+                <li class="site-link">
+                  <a href="https://www.cubcadet.com">US</a>
+                </li>
+                <li class="site-link">
+                  <a href="https://www.cubcadet.ca">Canada</a>
+                </li>
+                <li class="site-link">
+                  <a href="https://eu.cubcadet.com/en/">Europe</a>
+                </li>
+                <li class="site-link">
+                  <a href="http://www.cubcadet.com.au/">Australia</a>
+                </li>
+                <li class="site-link">
+                  <a href="http://www.cubcadet.cn/">China</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 copyright-notice">
+            <div class="content-asset">
+              <div class="copyright">
+                <div class="terms-privacy-links">
+                  <span class="copyright-text"
+                    >© 2021 Cubcadet. All Rights Reserved.</span
+                  >
+                  <span
+                    ><a
+                      href="https://www.cubcadet.com/en_US/privacy-and-security/privacy-policy.html"
+                      >Privacy Policy</a
+                    ></span
+                  >
+                  <span
+                    ><a href="https://www.cubcadet.com/en_US/terms-of-use.html"
+                      >Terms of Use</a
+                    ></span
+                  >
+                  <span
+                    ><a
+                      href="https://www.cubcadet.com/en_US/online-store-policies.html"
+                      >Online Store Policies</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="disclaimer-text">
+          <div class="content-asset">
+            <div class="disclaimers">
+              <p>
+                <strong>Engine Disclaimer: </strong>The engine horsepower
+                information is provided by the engine manufacturer to be used
+                for comparison purposes only. See your local Cub Cadet Dealer
+                for warranty details.
+                <strong>Pricing Disclaimer:</strong> Posted price is in USD
+                Dollars and is manufacturer's suggested sale price. Models and
+                pricing may vary by location. Taxes, freight, set-up and
+                delivery not included. Optional equipment, accessories and
+                attachments sold separately. See your retailer for details.
+                <strong>Image Disclaimer:</strong> Products may vary from
+                depicted model image in design, required attachments, safety
+                features and non-functional appearance, and may not reflect
+                dealer inventory or unit specifications.
+                <strong>Specifications Disclaimer:</strong> Specifications
+                subject to change without notice. Images may not reflect
+                retailer inventory and/or unit specifications.
+                <strong>Operator's Manual Disclaimer:</strong> The operator's
+                manual posted is for general information and use. To ensure the
+                download of the operator's manual specific to your unit, we
+                require a model and serial number.
+                <strong>Speed Disclaimer: </strong>Actual vehicle speed varies
+                based on load, use and environmental conditions.
+                <strong>Battery Disclaimer: </strong>Battery and battery powered
+                product performance varies with load, use and environmental
+                conditions. <strong>Software Disclaimer:</strong> Software
+                available on Company websites is provided on an "as is" basis
+                without any warranty of any kind, either express or implied. The
+                download and use of any software is done at the user's own risk.
+                <strong>Professional Products:</strong> Cub Cadet commercial
+                products are intended for professional use.
+                <strong>UTV:</strong> Cub Cadet Utility Vehicles (UTV) are
+                intended for off-road use by adults only. Please see the
+                operator’s manual and the warning labels posted on the vehicle
+                itself for more details. <strong>Email disclaimer: </strong>Sign
+                up to receive communication on services, products and special
+                offers. You may unsubscribe at any time. Please refer to our
+                <a
+                  class="footer-link"
+                  href="https://www.cubcadet.com/en_US/privacy-and-security/privacy-policy.html"
+                  >Privacy Policy</a
+                >.
+              </p>
+              <p>
+                *When compared to the same engine without IntelliPower™ feature,
+                improvements vary depending on engine models and specific
+                operating conditions.
+              </p>
+              <p>
+                *A-weighted sound level per ISO-5395-1, 95% confidence comparing
+                XT1 Enduro Series LT42, Ultima ZT1 42 and CC30.*
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
