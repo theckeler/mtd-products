@@ -1,28 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Pro 2.0 CA</title>
+    <title>Pro 2.0</title>
     <link
       rel="stylesheet"
       href="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/en_US/v1631120851162/css/global.css"
     />
+    <script defer="defer" src="base.js"></script>
+    <link href="base.css" rel="stylesheet" />
   </head>
   <body>
-    <style>
-      .hero.slant-down {
-        display: none;
-        position: fixed;
-        left: -1000vw;
-        top: -1000vh;
-        width: 0;
-        height: 0;
-        overflow: hidden;
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v78d614b734c23e88d0a660ba8cc3af861fc436d0/pro-2.0/base.css"
-    />
     <div id="app" class="mtd-page commercial-equipment">
       <section class="section-1 hero">
         <div class="angle angle-down bg-yellow"></div>
@@ -143,7 +130,7 @@
                 </p>
                 <a
                   role="button"
-                  href="https://www.cubcadet.ca/en/seasonal-offers.html"
+                  href="https://www.cubcadet.com/en_US/seasonal-offers.html"
                   class="btn bg-black"
                   >VIEW DETAILS</a
                 >
@@ -160,7 +147,7 @@
                 </p>
                 <a
                   role="button"
-                  href="https://www.cubcadet.ca/en/servicelocator?showMap=true&horizontalView=true&isForm=true"
+                  href="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&horizontalView=true&isForm=true&rid=dealers"
                   class="btn bg-black"
                   >FIND A DEALER</a
                 >
@@ -207,6 +194,34 @@
                 </div>
               </div>
             </li>
+            <li class="col">
+              <div class="d-flex flex-column align-items-center h-100">
+                <img
+                  src="https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw49233553/products/Equipment/CubCadet_ProZ972SSurepath_15.jpg?sw=550&sh=550&sm=fit"
+                  alt=""
+                />
+                <div
+                  class="bg-grey p-3 d-flex flex-column align-items-center h-100"
+                >
+                  <h3 class="fw-bold align-self-start">
+                    SurePath Auto Steer Zero-Turn Mowers
+                  </h3>
+                  <p class="mt-2">
+                    Cub Cadet’s first GPS-operated and semi-autonomous mowers
+                    that minimize overlap—and operator fatigue—while making
+                    turns at the push of a button. SurePath™ Auto Steer
+                    technology is only available with Cub Cadet.
+                  </p>
+                  <a
+                    class="btn bg-yellow font-weight-normal w-100 mt-auto"
+                    role="button"
+                    href="https://www.cubcadet.com/en_US/commercial-equipment/surepath-commercial-zero-turn-mowers"
+                    >SHOP COMMERCIAL SUREPATH MOWERS</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="w-100"></li>
             <li class="col">
               <div class="d-flex flex-column align-items-center h-100">
                 <img
@@ -262,6 +277,64 @@
           </ul>
         </div>
       </section>
+      <section class="section-5">
+        <div class="wrapper">
+          <ul class="row list-unstyled no-gutters bg-yellow">
+            <li class="col">
+              <a href="#" id="play-video"
+                ><div class="img-wrapper video">
+                  <div class="video-circle d-flex align-items-center">▶</div>
+                  <img
+                    src="https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v2c825cf4637c57c6b2bee7f5f8ec28c96d43966f/pro-2.0/home/s5.png"
+                    alt=""
+                  /></div
+              ></a>
+              <div class="video-wrapper" id="video-container">
+                <iframe
+                  width="560"
+                  height="315"
+                  src=""
+                  title="YouTube video player"
+                  id="video"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <script>
+                document
+                  .querySelector("#play-video")
+                  .addEventListener("click", function (e) {
+                    e.preventDefault();
+                    document.querySelector("#play-video").style.display =
+                      "none";
+                    document.querySelector("#video").src =
+                      "https://www.youtube.com/embed/Ks6b512nxuo?rel=0&autoplay=1&enablejsapi=1&modestbranding=1&controls=0";
+                    document.querySelector("#video-container").style.display =
+                      "block";
+                  });
+              </script>
+            </li>
+            <li class="col p-3">
+              <h3 class="fw-bold">Introducing SurePath™</h3>
+              <h4 class="font-weight-normal">
+                Incentives for new operating challenges
+              </h4>
+              <p>
+                Put time back on your side with SurePath Auto Steer technology,
+                which uses GPS-assisted driving to minimize unnecessary overlap
+                and guides you to the most efficient cut possible.
+              </p>
+              <a
+                role="button"
+                href="https://www.cubcadet.com/en_US/commercial-equipment/surepath-commercial-zero-turn-mowers"
+                class="btn bg-black font-weight-normal"
+                >LEARN ABOUT SurePath</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
       <section class="section-6 bg-black">
         <div class="wrapper">
           <ul class="row list-unstyled align-items-center">
@@ -281,9 +354,9 @@
               </p>
               <a
                 role="button"
-                href="https://info.cubcadet.ca/request-demo/?_ga=2.111899010.781332818.1656536542-1440355091.1623869862"
+                href="https://www.cubcadet.com/on/demandware.store/Sites-cubcadet-Site/en_US/Stores-Find?showMap=true&horizontalView=true&isForm=true&rid=dealers"
                 class="btn bg-yellow"
-                >Reach Out</a
+                >FIND A DEALER</a
               >
             </li>
           </ul>
@@ -311,7 +384,7 @@
                     <a
                       class="social-icon facebook"
                       title="Go to Facebook"
-                      href="https://www.facebook.com/CubCadetCanada/"
+                      href="https://www.facebook.com/cubcadet/"
                       target="_blank"
                       rel="noreferrer"
                       ><svg
@@ -339,7 +412,7 @@
                     <a
                       class="social-icon instragram"
                       title="Go to Instagram"
-                      href="https://www.instagram.com/cubcadet_canada/?hl=en"
+                      href="https://www.instagram.com/cubcadet_usa/"
                       target="_blank"
                       rel="noreferrer"
                       ><svg
@@ -365,9 +438,37 @@
                   </li>
                   <li class="col mb-0">
                     <a
+                      class="social-icon twitter"
+                      title="Go to Twitter"
+                      href="https://twitter.com/CubCadet_USA"
+                      target="_blank"
+                      rel="noreferrer"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        shape-rendering="geometricPrecision"
+                        text-rendering="geometricPrecision"
+                        image-rendering="optimizeQuality"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        viewBox="0 0 640 640"
+                      >
+                        <path
+                          fill="#ffc20f"
+                          d="M579.999 0H60C27 0 0 27 0 60v520c0 33 27 60 60 60h519.999c33 0 60-27 60-60V60c0-33-27-60-60-60zm-59.942 195.935a161.34 161.34 0 0 1-47.079 12.85c16.914-10.086 29.894-26.22 36.095-45.413-15.862 9.39-33.473 16.287-52.087 19.96-15.048-15.92-36.343-25.83-59.942-25.83-45.331 0-82.04 36.685-82.04 82.016 0 6.355.685 12.626 2.09 18.674-68.186-3.484-128.647-36.13-169.148-85.785a82.08 82.08 0 0 0-11.126 41.245c0 28.465 14.457 53.623 36.485 68.257-13.465-.39-26.068-4.11-37.206-10.205v1.04c0 39.756 28.3 72.969 65.86 80.48a82.817 82.817 0 0 1-21.627 2.883c-5.291 0-10.405-.52-15.472-1.477 10.453 32.587 40.713 56.351 76.642 57-28.134 22.04-63.473 35.163-101.954 35.163-6.65 0-13.134-.39-19.606-1.146 36.39 23.362 79.524 36.85 125.872 36.85 150.935 0 233.507-125.056 233.507-233.494 0-3.603-.06-7.122-.236-10.654 16.027-11.457 29.965-25.937 40.925-42.378l.048-.036z"
+                        ></path>
+                      </svg>
+                      <span class="visually-hidden"
+                        >Visit our Twitter webpage</span
+                      ></a
+                    >
+                  </li>
+                  <li class="col mb-0">
+                    <a
                       class="social-icon youtube"
                       title="Go to YouTube"
-                      href="https://www.youtube.com/user/CubCadetCA/featured"
+                      href="https://www.youtube.com/user/CubCadetRidingMowers"
                       target="_blank"
                       rel="noreferrer"
                       ><svg
@@ -388,6 +489,33 @@
                       </svg>
                       <span class="visually-hidden"
                         >Visit our YouTube webpage</span
+                      ></a
+                    >
+                  </li>
+                  <li class="col mb-0">
+                    <a
+                      class="social-icon LinkedIn"
+                      title="Go to LinkedIn"
+                      href="https://www.linkedin.com/company/cub-cadet-usa/"
+                      target="_blank"
+                      rel="noreferrer"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 64 64"
+                        style="
+                          enable-background: new 0 0 64 64;
+                          width: 32px;
+                          height: 32px;
+                        "
+                        xml:space="preserve"
+                      >
+                        <path
+                          style="fill: #ffc20f"
+                          d="M58 0H6C2.7 0 0 2.7 0 6v52c0 3.3 2.7 6 6 6h52c3.3 0 6-2.7 6-6V6c0-3.3-2.7-6-6-6zM19 54.2H9V25.4h10v28.8zm-4.6-33.6c-3 0-5.4-2.4-5.4-5.4s2.4-5.4 5.4-5.4 5.4 2.4 5.4 5.4-2.4 5.4-5.4 5.4zM55 54.2H45V38.5s0-5.9-5-5.9-5 6-5 6v15.6H25s.1-26.2 0-28.8h10v4c1.3-2 2.9-4.8 8-4.8 6.3 0 12 4.1 12 13v16.6z"
+                        />
+                      </svg>
+                      <span class="visually-hidden"
+                        >Visit our LinkedIn webpage</span
                       ></a
                     >
                   </li>

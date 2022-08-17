@@ -1,0 +1,1422 @@
+<div class="s-a-p" id="s-a-p">
+  <div class="container">
+    <div class="row">
+      <div class="plb-group-heading col-12 col-lg-8 offset-lg-2 text-center">
+        <h1>Explore Service &amp; Parts</h1>
+
+        <p>
+          Cub Cadet Genuine Parts gives you a genuine advantage: the confidence
+          of using parts specifically designed for an exact fit, optimal
+          performance and maximum safety. These are the only parts with the
+          in-depth engineering and rigid testing that assures long-lasting
+          quality.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="sticky">
+      <nav>
+        <ul>
+          <li>
+            <a
+              class="active s-tab"
+              data-show-tab="tab-part-finder"
+              href="#part-finder"
+              id="nav-part-finder"
+              title="Part Finder"
+              >Part Finder</a
+            >
+          </li>
+          <li>
+            <a
+              class="s-tab"
+              data-show-tab="tab-browse-parts"
+              href="#browse-parts"
+              id="nav-browse-parts"
+              title="Shop Parts"
+              >Shop Parts</a
+            >
+          </li>
+          <li>
+            <a
+              class="s-tab"
+              data-show-tab="tab-attachments"
+              href="#attachments"
+              id="nav-attachments"
+              title="Attachments"
+              >Attachments</a
+            >
+          </li>
+          <li>
+            <a
+              class="s-tab"
+              data-show-tab="tab-diagrams"
+              href="#diagrams"
+              id="nav-diagrams"
+              onclick="hotJarClick()"
+              title="Diagrams"
+              >Diagrams</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script>
+      const hotJarClick = (e) => {
+        hj("event", "click_diagrams");
+      };
+    </script>
+
+    <div class="tab-part-finder show-tab" id="tab-part-finder">
+      <div class="container">
+        <div class="row">
+          <div
+            class="plb-group-heading col-12 col-lg-8 offset-lg-2 text-center"
+          >
+            <h2>Find the Right Part for Your Machine</h2>
+
+            <p>
+              Search for parts using your model number, or the part number you
+              are replacing.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pf-search">
+        <div class="wrap">
+          <div class="group">
+            <div class="col sbn">
+              <h3>Search by number</h3>
+
+              <form
+                action="/on/demandware.store/Sites-cubcadet-Site/en_US/Search-Show"
+                class="needs-validation"
+                method="get"
+                name="simpleSearch"
+                novalidate=""
+                role="search"
+              >
+                <div class="form-group">
+                  <label for="search-by-number"
+                    >Model #, Part # or Item #</label
+                  >
+
+                  <div class="input-btn">
+                    <input
+                      autocomplete="off"
+                      class="form-control search-field"
+                      id="search-by-number"
+                      name="q"
+                      required=""
+                      type="search"
+                    /><button
+                      class="btn btn-secondary btn-pf-search"
+                      type="submit"
+                    ></button>
+
+                    <div class="icon-container">
+                      <button
+                        class="btn btn-secondary btn-pf-search"
+                        type="submit"
+                      >
+                        <svg
+                          height="21"
+                          viewbox="0 0 21 21"
+                          width="21"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M20.743 19.404l-6.525-6.526a7.94 7.94 0 0 0 1.704-4.92 7.938 7.938 0 0 0-2.331-5.626A7.932 7.932 0 0 0 7.966 0a7.946 7.946 0 0 0-5.635 2.332A7.94 7.94 0 0 0 0 7.962a7.94 7.94 0 0 0 2.331 5.63 7.93 7.93 0 0 0 5.627 2.331 7.938 7.938 0 0 0 4.863-1.662l.056-.043 6.524 6.526a.87.87 0 0 0 .62.256c.224 0 .45-.086.62-.257l.102-.102a.872.872 0 0 0 0-1.238zm-8.199-6.858a6.454 6.454 0 0 1-4.582 1.898 6.463 6.463 0 0 1-4.583-1.898A6.46 6.46 0 0 1 1.48 7.962c0-1.658.633-3.319 1.898-4.584A6.46 6.46 0 0 1 7.962 1.48c1.658 0 3.318.634 4.582 1.898a6.458 6.458 0 0 1 1.898 4.584 6.456 6.456 0 0 1-1.898 4.584z"
+                            fill="#000"
+                            fill-rule="nonzero"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="suggestions-wrapper"
+                    data-url="/on/demandware.store/Sites-cubcadet-Site/en_US/SearchServices-GetSuggestions?q="
+                  >
+                    &nbsp;
+                  </div>
+
+                  <div class="invalid-feedback">&nbsp;</div>
+                  <input name="lang" type="hidden" value="en_US" />
+                </div>
+              </form>
+              <a
+                class="find-model"
+                data-target="#model-number-modal"
+                data-toggle="modal"
+                href="#"
+                title="Find my model number"
+                >How do I find my model number?</a
+              >
+            </div>
+
+            <div class="col cs">
+              <p class="heading">
+                Can't find your part? <span>Customer Service can help.</span>
+              </p>
+
+              <p>
+                <a
+                  data-target="#call-modal"
+                  data-toggle="modal"
+                  href="#"
+                  title="Call Us"
+                  >Call 1-877-428-2349</a
+                ><br />
+                Monday - Friday, 8:30 am - 5:00 pm EST
+              </p>
+              <button
+                class="btn btn-outline-secondary btn-sm"
+                id="header-live-chat"
+                type="button"
+              >
+                <svg
+                  height="20"
+                  viewbox="0 0 20 20"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.012 1C2.909 1 2 1.939 2 3.077v9.232c0 1.139.909 2.077 2.012 2.077h1.271L4.9 18.238a.696.696 0 0 0 .378.694c.255.126.56.074.76-.132l4.29-4.414h6.65c1.103 0 2.012-.938 2.012-2.077V3.077C18.99 1.94 18.08 1 16.977 1H4.012zm0 1.385h12.965c.384 0 .671.296.671.692v9.232c0 .396-.287.692-.67.692h-6.93a.657.657 0 0 0-.475.202l-3.151 3.239.265-2.683a.707.707 0 0 0-.17-.53.661.661 0 0 0-.493-.228H4.012c-.383 0-.67-.296-.67-.692V3.077c0-.396.287-.692.67-.692zm2.012 4.154c-.618 0-1.118.517-1.118 1.154 0 .637.5 1.154 1.118 1.154.617 0 1.117-.517 1.117-1.154 0-.637-.5-1.154-1.117-1.154zm4.478 0c-.618 0-1.118.517-1.118 1.154 0 .637.5 1.154 1.118 1.154.617 0 1.117-.517 1.117-1.154 0-.637-.5-1.154-1.117-1.154zm4.464 0c-.618 0-1.118.517-1.118 1.154 0 .637.5 1.154 1.118 1.154.617 0 1.117-.517 1.117-1.154 0-.637-.5-1.154-1.117-1.154z"
+                    fill="#FFC20F"
+                    fill-rule="nonzero"
+                  ></path>
+                </svg>
+                Start a live chat
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-browse-parts" id="tab-browse-parts">
+      <h2>Shop by Machine-Type</h2>
+
+      <nav>
+        <ul>
+          <li>
+            <a
+              href="$url('Search-Show','cgid','parts-machine--snow-blo')$"
+              title="Snow Blowers"
+              ><span class="img-wrap">
+                <img
+                  alt="snow-2X-30HP"
+                  src="Service%20and%20Parts/thumbnails/snow-2X-30HP.jpg?$staticlink$"
+                />
+              </span>
+              Snow Blowers
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/zero-turn-mower-parts"
+              title="Riders"
+              ><span class="img-wrap">
+                <img
+                  alt="zero-turn-mower"
+                  src="Service%20and%20Parts/thumbnails/zero-turn_utlima.jpg?$staticlink$"
+                />
+              </span>
+              Zero-Turns</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/riding-lawn-mower-parts"
+              title="Riders"
+              ><span class="img-wrap">
+                <img
+                  alt="riding mower"
+                  src="Service%20and%20Parts/thumbnails/rider_XT2_GX50.jpg?$staticlink$"
+                />
+              </span>
+              Riding Mowers</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/walk-behind-lawn-mower-parts"
+              title="push mowers"
+              ><span class="img-wrap">
+                <img
+                  alt="walks-SC100h"
+                  src="Service%20and%20Parts/thumbnails/walks-SC100h.jpg?$staticlink$"
+                />
+              </span>
+              Walk-Behind Mowers
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/garden-tiller-parts"
+              title="Tillers"
+              ><span class="img-wrap">
+                <img
+                  alt="tiller-RT35"
+                  src="Service%20and%20Parts/thumbnails/tiller-RT35.jpg?$staticlink$"
+                />
+              </span>
+              Garden Tillers
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a
+        class="btn btn-secondary"
+        href="https://www.cubcadet.com/en_US/service-and-parts/shop-by-machine-type"
+        title="Shop all"
+        >Shop All</a
+      >
+
+      <h2>Shop by Part-Type</h2>
+
+      <nav class="part-types-list">
+        <ul>
+          <li>
+            <a href="https://www.cubcadet.com/en_US/belts" title="Belts"
+              ><span class="img-wrap">
+                <img
+                  alt="belts-OCC-754-04207_6"
+                  src="Service%20and%20Parts/thumbnails/belts-OCC-754-04207_6.jpg?$staticlink$"
+                />
+              </span>
+              Belts
+            </a>
+          </li>
+          <li>
+            <a href="https://www.cubcadet.com/en_US/blades" title="Blades"
+              ><span class="img-wrap">
+                <img
+                  alt="blades-942-0741A"
+                  src="Service%20and%20Parts/thumbnails/blades-942-0741A.jpg?$staticlink$"
+                />
+              </span>
+              Blades
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/spark-plugs"
+              title="Spark Plugs"
+              ><span class="img-wrap">
+                <img
+                  alt="spark-plugs-951-10292_5"
+                  src="Service%20and%20Parts/thumbnails/spark-plugs-951-10292_5.jpg?$staticlink$"
+                />
+              </span>
+              Spark Plugs
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/air-oil-fuel-filters"
+              title="Filters"
+              ><span class="img-wrap">
+                <img
+                  alt="filters-937-05066"
+                  src="Service%20and%20Parts/thumbnails/filters-937-05066.jpg?$staticlink$"
+                />
+              </span>
+              Filters
+            </a>
+          </li>
+          <li>
+            <a href="https://www.cubcadet.com/en_US/spindles" title="Spindles"
+              ><span class="img-wrap">
+                <img
+                  alt="spindles-918-04822B"
+                  src="Service%20and%20Parts/thumbnails/spindles-918-04822B.jpg?$staticlink$"
+                />
+              </span>
+              Spindles
+            </a>
+          </li>
+          <li>
+            <a href="https://www.cubcadet.com/en_US/cables" title="Cables"
+              ><span class="img-wrap">
+                <img
+                  alt="cables"
+                  src="Service%20and%20Parts/thumbnails/cables.jpg?$staticlink$"
+                />
+              </span>
+              Cables
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a
+        class="btn btn-secondary"
+        href="https://www.cubcadet.com/en_US/service-and-parts/shop-by-part-type"
+        title="Shop all"
+        >Shop All</a
+      >
+    </div>
+
+    <div class="tab-attachments tab-browse-parts" id="tab-attachments">
+      <h2>Shop Accessories</h2>
+
+      <nav>
+        <ul>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/riding-lawn-mowers/riding-mower-accessories"
+              title="Riding Mower Accessories"
+              ><span class="img-wrap">
+                <img
+                  alt="riding-mower-accessory"
+                  src="Service%20and%20Parts/thumbnails/riding-mower-accessory.png?$staticlink$"
+                />
+              </span>
+              Riding Mower
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/walk-behind-mowers/push-mower-accessories"
+              title="Push Mower Accessories"
+              ><span class="img-wrap">
+                <img
+                  alt="walk-behind-accessory"
+                  src="Service%20and%20Parts/thumbnails/walk-behind-accessory.png?$staticlink$"
+                />
+              </span>
+              Walk-Behind Mower
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/snow-blowers/snow-blower-accessories"
+              title="Snow Blower Accessories"
+              ><span class="img-wrap">
+                <img
+                  alt="snow-blower-accessory"
+                  src="Service%20and%20Parts/thumbnails/snow-blower-accessory.png?$staticlink$"
+                />
+              </span>
+              Snow Blower
+            </a>
+          </li>
+          <!--           <li>
+            <a href="#" title="Commercial Equipment">
+              <span class="img-wrap">
+                <img src="Service%20and%20Parts/thumbnails/riding-mower-accessory.png?$staticlink$" alt="riding-mower-accessory" />
+              </span>
+              Commercial Equipment
+            </a>
+          </li> -->
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/utility-vehicles/utv-accessories"
+              title="UTV"
+              ><span class="img-wrap">
+                <img
+                  alt="utv-accessory"
+                  src="Service%20and%20Parts/thumbnails/utv-accessory.png?$staticlink$"
+                />
+              </span>
+              Utility Vehicles
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!--    <a href="#" title="Shop all" class="btn btn-secondary">Shop All</a>
+-->
+    </div>
+
+    <div class="tab-diagrams" id="tab-diagrams">
+      <div class="container">
+        <div class="row">
+          <div
+            class="plb-group-heading col-12 col-lg-8 offset-lg-2 text-center"
+          >
+            <h1>Lookup Parts By Diagram</h1>
+
+            <p>
+              Use our parts diagram tool below to find the parts you need for
+              your machine. Select the model and year, then browse the parts
+              diagrams to find the right part. Add to cart when you're ready to
+              purchase and we'll ship it to you as soon as possible!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <iframe
+          data-hj-allow-iframe=""
+          height="700px"
+          src="https://www.cubcadet.com/en_US/ari-iframe.html?aribrand=CUT"
+          width="100%"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+
+  <section class="oc">
+    <h1>Owner's Center</h1>
+
+    <div class="group">
+      <div class="col">
+        <h2 class="underline-center-secondary">Knowledge Center</h2>
+
+        <div class="icon-container">
+          <object
+            class="icon icon-how-to-articles"
+            data="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/default/dw9df96b60/images/svg-icons/icon-how-to-articles.svg"
+            type="image/svg+xml"
+          ></object>
+        </div>
+
+        <p>
+          Learn about your new Cub Cadet machine &mdash; maintenance, repairs,
+          safety, and various tips &amp; tricks.
+        </p>
+        <a
+          class="btn btn-secondary"
+          href="https://www.cubcadet.com/en_US/knowledge-center.html"
+          title="Find Articles"
+          >Find Articles</a
+        >
+      </div>
+
+      <div class="col">
+        <h2 class="underline-center-secondary">Service Centers</h2>
+
+        <div class="icon-container">
+          <object
+            class="icon icon-location-nav"
+            data="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/default/dwe3ed370b/images/svg-icons/icon-location-nav.svg"
+            type="image/svg+xml"
+          ></object>
+        </div>
+
+        <p>
+          Get the most out of your Cub Cadet with Genuine Factory Parts and
+          attachments from your expert dealer.
+        </p>
+        <a
+          class="btn btn-secondary"
+          href="https://www.cubcadet.com/en_US/servicelocator"
+          title="Find Service"
+          >Find Service</a
+        >
+      </div>
+
+      <div class="col">
+        <h2 class="underline-center-secondary">Find Manuals</h2>
+
+        <div class="icon-container">
+          <object
+            class="icon icon-owners-manual"
+            data="https://www.cubcadet.com/on/demandware.static/Sites-cubcadet-Site/-/default/dwe3ed370b/images/svg-icons/icon-owners-manual.svg"
+            type="image/svg+xml"
+          ></object>
+        </div>
+
+        <p>
+          Did you misplace your Cub Cadet owner's manual? Download a copy for
+          free.
+        </p>
+        <a
+          class="btn btn-secondary"
+          href="https://www.cubcadet.com/en_US/operatorsmanuals"
+          title="Search Manuals"
+          >Search Manuals</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <section class="hli">
+    <h1>Helpful Links</h1>
+
+    <div class="group">
+      <div class="col ilt">
+        <h3>I'd like to...</h3>
+
+        <ul>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/service-and-parts#part-finder"
+              title="Find a part"
+              >Find a part</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/operatorsmanuals"
+              title="Find a product manual"
+              >Find a product manual</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/servicelocator"
+              title="Find a service center"
+              >Find a service center</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/knowledge-center.html"
+              title="Find an article"
+              >Find an article</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/lookup-parts-via-diagram/ari-partstream-host.html"
+              title="Shop for parts by diagram"
+              >Shop for parts by diagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/service-and-parts/shop-by-machine-type"
+              title="Browse parts by machine"
+              >Browse parts by machine</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/service-and-parts/shop-by-part-type"
+              title="Browse all parts"
+              >Browse all parts</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="col pml">
+        <h3>Popular Machine Links</h3>
+
+        <ul>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/riding-lawn-mower-parts"
+              title="Riding Lawn Mower Parts"
+              >Riding Lawn Mower Parts</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/shop-by-machine-type/snow-blower-parts"
+              title="Snow Blower Parts"
+              >Snow Blower Parts</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/walk-behind-lawn-mower-parts"
+              title="Walk Behind Lawn Mower Parts"
+              >Walk Behind Lawn Mower Parts</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/garden-tiller-parts"
+              title="Garden Tiller Parts"
+              >Garden Tiller Parts</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/log-splitter-parts"
+              title="Log Splitter Parts"
+              >Log Splitter Parts</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/robomow-parts"
+              title="Robotic Mower Parts"
+              >Robotic Mower Parts</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/utility-vehicles/utv-accessories"
+              title="Utility Vehicle Parts"
+              >Utility Vehicle Parts</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/edgers-trimmers-blowers-parts"
+              title="Edger, Trimmer and Leaf Blower Parts"
+              >Edger, Trimmer and Leaf Blower Parts</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/string-trimmer-parts"
+              title="Handheld String Trimmer Parts"
+              >Handheld String Trimmer Parts</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/shop-by-machine-type/chipper-shredder-vacuum-parts"
+              title="Chipper Shredder Vacuum Parts"
+              >Chipper Shredder Vacuum Parts</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="col ppl">
+        <h3>Popular Part Links</h3>
+
+        <ul>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/riding-lawn-mowers/riding-mower-accessories"
+              title="Baggers and Mulch Kits"
+              >Baggers and Mulch Kits</a
+            >
+          </li>
+          <li>
+            <a href="https://www.cubcadet.com/en_US/belts" title="Belts"
+              >Belts</a
+            >
+          </li>
+          <li>
+            <a href="https://www.cubcadet.com/en_US/blades" title="Blades"
+              >Blades</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/shop-by-part-type/cables"
+              title="Cables"
+              >Cables</a
+            >
+          </li>
+          <li>
+            <a href="https://www.cubcadet.com/en_US/spindles" title="Spindles"
+              >Spindles</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/lawn-mower-engine-parts"
+              title="Engine Parts"
+              >Engine Parts</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/tires-and-wheels"
+              title="Tires and Wheels"
+              >Tires and Wheels</a
+            >
+          </li>
+          <li>
+            <a href="https://www.cubcadet.com/en_US/hardware" title="Hardware"
+              >Hardware</a
+            >
+          </li>
+          <li>
+            <a href="https://www.cubcadet.com/en_US/pulleys" title="Pulleys"
+              >Pulleys</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/shave-plates-and-skid-shoes"
+              title="Shave Plates and Skid Shoes"
+              >Shave Plates and Skid Shoes</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/blade-adapters"
+              title="Blade Adapters"
+              >Blade Adapters</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="col pa">
+        <h3>Popular Articles</h3>
+
+        <ul>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/knowledge-center/knowledge-how-to-change-the-blade-on-your-cub-cadet-rider.html"
+              title="Change your blades"
+              >Change your blades</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/knowledge-center/knowledge-how-to-change-the-oil-in-a-cub-cadet-riding-lawn-mower.html"
+              title="Change your oil"
+              >Change your oil</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.cubcadet.com/en_US/knowledge-center/knowledge-how-to-store-your-cub-cadet-walk-behind-mower-in-the-off-season.html"
+              title="Winterize my mower"
+              >Winterize my mower</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section class="section-8 bg-yellow">
+  <div>
+    Still Need Help Finding Your Parts?
+    <p>
+      We&rsquo;re happy to help! Call a customer service specialist at
+      <a href="tel:8669319544">866-931-9544</a> - 8:30am-5pm EST.
+    </p>
+  </div>
+</section>
+
+<div>
+  <div
+    aria-hidden="true"
+    class="modal fade model-num-modal"
+    id="model-number-modal"
+    style="display: none"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <h4 class="modal-title">How to find your model number</h4>
+
+            <p>
+              The product's model number is essential to finding correct Cub
+              Cadet&reg; genuine factory replacement part numbers for your
+              outdoor power equipment.
+            </p>
+          </div>
+          <button
+            aria-label="Close"
+            class="close"
+            data-dismiss="modal"
+            type="button"
+          >
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <span class="img-wrap">
+            <img
+              alt="model plate example with model number in the top left corner outlined in red and serial number in top right corner outlined in red"
+              src="Service%20and%20Parts/How%20to%20Find%20Model%20Number/Find_Model_Number_Cub_Cadet.jpg?$staticlink$"
+            />
+          </span>
+
+          <p>The model number is</p>
+
+          <ul>
+            <li>11 characters long</li>
+            <li>
+              Printed on the left side of the Product Identification Label
+            </li>
+          </ul>
+
+          <p>Characters can include numbers, letters or hyphens.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style type="text/css">
+    .model-num-modal h4 {
+      margin-bottom: 1rem;
+    }
+    .model-num-modal .modal-header {
+      padding-bottom: 0;
+    }
+    .model-num-modal .modal-body {
+      clear: both;
+      overflow: hidden;
+    }
+    .model-num-modal .img-wrap {
+      width: 300px;
+      display: block;
+      margin-bottom: 1rem;
+    }
+    .model-num-modal ul {
+      padding-left: 1rem;
+    }
+    .model-num-modal img {
+      max-width: 100%;
+    }
+    .tab-browse-parts {
+      padding: 0 1rem;
+    }
+    .tab-browse-parts h2 {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .tab-browse-parts nav {
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+      margin-bottom: 1.5rem;
+      margin-left: -1rem;
+      margin-right: -1rem;
+    }
+    .tab-browse-parts ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .tab-browse-parts li {
+      display: inline-block;
+    }
+    .tab-browse-parts li a {
+      text-decoration: none;
+      font-weight: 600;
+      text-align: center;
+      display: block;
+      text-transform: uppercase;
+    }
+    .tab-browse-parts .img-wrap {
+      display: block;
+      width: 150px;
+      margin-bottom: 8px;
+    }
+    .tab-browse-parts .img-wrap img {
+      max-width: 100%;
+    }
+    .tab-browse-parts .btn-secondary {
+      margin-bottom: 3rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 150px;
+    }
+    .pf-search {
+      background: #efefef;
+      padding: 2rem 0;
+      max-width: 1220px;
+      margin: 0 auto 3rem;
+    }
+    .pf-search .wrap {
+      max-width: 375px;
+      margin: 0px auto;
+    }
+    .pf-search h3 {
+      text-transform: uppercase;
+      font-size: 1.125rem;
+      text-align: center;
+      margin: 0 0 1rem;
+    }
+    .pf-search .input-btn {
+      position: relative;
+      width: 290px;
+    }
+    .pf-search .input-btn input {
+      width: 250px;
+    }
+    .pf-search .input-btn button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 40px;
+      width: 40px;
+      padding: 0;
+    }
+    .pf-search .input-btn .icon-container {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      top: 0px;
+      right: 0px;
+    }
+    .pf-search .find-model {
+      text-transform: uppercase;
+      font-weight: 500;
+      text-align: center;
+      display: block;
+    }
+    .pf-search .col {
+      margin-bottom: 1.5rem;
+    }
+    .pf-search .cs {
+      text-align: center;
+      font-weight: 500;
+    }
+    .pf-search .cs p {
+      font-size: 1rem;
+      line-height: 1.25rem;
+    }
+    .pf-search .cs .heading {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+    }
+    .pf-search .heading span {
+      display: block;
+    }
+    .pf-search .cs a {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0;
+      display: block;
+      text-decoration: none;
+    }
+    .pf-search .cs .btn-outline-secondary svg {
+      margin-right: 0.25rem;
+    }
+    .s-a-p {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .s-a-p .tab-browse-parts,
+    .s-a-p .tab-attachments,
+    .s-a-p .tab-diagrams,
+    .s-a-p .tab-part-finder {
+      display: none;
+      transition: opacity 0.4s ease-in-out;
+    }
+    .s-a-p .show-tab {
+      transition: opacity 0.4s ease-in-out;
+      display: block;
+    }
+    .s-a-p .sticky {
+      background: #000;
+      padding: 0.25rem 0.5rem;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      margin-bottom: 2rem;
+      z-index: 1;
+    }
+    .s-a-p .sticky nav {
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+    }
+    .s-a-p .sticky ul {
+      max-width: 380px;
+      margin: 0px auto;
+      padding: 0;
+    }
+    .s-a-p .sticky li {
+      display: inline-block;
+      position: relative;
+      padding: 0.5rem 0;
+    }
+    .s-a-p .sticky a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 0.5rem 0.375rem;
+      transition: background-color 0.5s ease;
+    }
+    .s-a-p .sticky a:hover {
+      color: #000;
+      background-color: #fff;
+    }
+    .s-a-p .sticky .active:hover,
+    .s-a-p .sticky .active {
+      background: #ffc20f;
+      color: #000;
+    }
+    .oc {
+      background: #ffc10f;
+      padding: 1rem;
+      margin-bottom: 2rem;
+    }
+    .oc .group {
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .oc .col {
+      background: #fff;
+      padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .oc h1,
+    .oc .col h2,
+    .oc .col p {
+      text-align: center;
+    }
+    .oc h1,
+    .oc h2,
+    .oc p {
+      margin-bottom: 1.5rem;
+    }
+    .oc .icon-container {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1rem;
+      width: 84px;
+    }
+    .oc p {
+      max-width: 220px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .oc .col .btn-secondary {
+      width: 90%;
+      margin: 0px auto;
+      display: block;
+    }
+    .hli {
+      padding: 1rem;
+      margin-bottom: 2rem;
+    }
+    .hli h1 {
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .hli .group {
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hli .col {
+      padding: 1.5rem 2rem;
+    }
+    .hli ul {
+      list-style-type: none;
+      margin: 0 0 0 1rem;
+      padding: 0;
+    }
+    .hli li {
+      margin-bottom: 0.3125rem;
+    }
+    .hli a {
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      display: block;
+    }
+    @media only screen and (min-width: 23.4375em) {
+      .pf-search .input-btn {
+        position: relative;
+        width: 348px;
+      }
+      .pf-search .input-btn input {
+        width: 308px;
+      }
+    }
+    @media only screen and (min-width: 48em) {
+      .s-a-p .sticky {
+        padding: 0.5rem 1rem;
+      }
+      .s-a-p .sticky nav {
+        overflow: hidden;
+        white-space: normal;
+      }
+      .s-a-p .sticky ul {
+        max-width: 530px;
+      }
+      .s-a-p .sticky li {
+        padding: 0.5rem;
+      }
+      .s-a-p .sticky a {
+        font-size: 0.875rem;
+        line-height: 1rem;
+        padding: 0.5rem 0.75rem;
+      }
+      .tab-browse-parts {
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4rem;
+      }
+      .tab-attachments {
+        max-width: 615px;
+      }
+      .tab-browse-parts h2 {
+        text-align: center;
+      }
+      .tab-browse-parts nav {
+        overflow: hidden;
+        margin-bottom: 2rem;
+      }
+      .tab-browse-parts .part-types-list .img-wrap {
+        width: 125px;
+      }
+      .model-num-modal .img-wrap {
+        float: right;
+      }
+    }
+    @media only screen and (min-width: 52.5em) {
+      .pf-search .wrap {
+        max-width: 840px;
+      }
+      .pf-search .group {
+        clear: both;
+        overflow: hidden;
+      }
+      .pf-search .col {
+        float: left;
+        width: 50%;
+      }
+      .pf-search h3 {
+        text-align: left;
+      }
+      .pf-search .find-model {
+        text-align: left;
+        margin-left: 4rem;
+      }
+      .pf-search .heading span {
+        display: inline;
+      }
+      .tab-browse-parts {
+        max-width: 840px;
+      }
+      .tab-attachments {
+        max-width: 672px;
+      }
+      .tab-browse-parts li {
+        margin-right: 1rem;
+      }
+    }
+    @media only screen and (min-width: 60em) {
+      .oc {
+        padding: 2rem 0 3rem;
+      }
+      .oc h1 {
+        margin-bottom: 2.5rem;
+        font-size: 2.5rem;
+      }
+      .oc .group {
+        clear: both;
+        overflow: hidden;
+        max-width: 940px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .oc .col {
+        float: left;
+        width: 31%;
+        margin: 0 2rem 0 0;
+      }
+      .oc .col:last-child {
+        margin-right: 0;
+      }
+      .hli h1 {
+        font-size: 1.75rem;
+      }
+      .oc h2,
+      .hli h3 {
+        font-size: 1.5rem;
+      }
+      .oc .icon-container {
+        height: 70px;
+      }
+      .hli .group {
+        clear: both;
+        overflow: hidden;
+        width: 99%;
+        max-width: 1220px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .hli .col {
+        float: left;
+        width: 23%;
+        margin: 0 1rem 0 0;
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .hli .ilt {
+        width: 20%;
+      }
+      .hli .pml {
+        width: 30%;
+      }
+      .hli .ppl {
+        width: 26%;
+      }
+      .hli .pa {
+        width: 18%;
+      }
+      .hli .col:last-child {
+        margin-right: 0;
+      }
+      .hli li {
+        margin-bottom: 0.75rem;
+      }
+      .tab-browse-parts h2 {
+        margin-bottom: 2rem;
+      }
+      .tab-browse-parts h2 a {
+        top: 1rem;
+      }
+      .tab-browse-parts li {
+        margin-right: 1rem;
+      }
+    }
+    @media only screen and (min-width: 69.25em) {
+      .tab-browse-parts {
+        max-width: 1108px;
+      }
+      .tab-attachments {
+        max-width: 886px;
+      }
+      .tab-browse-parts .img-wrap {
+        width: 190px;
+      }
+      .tab-browse-parts .part-types-list .img-wrap {
+        width: 160px;
+      }
+    }
+    @media only screen and (min-width: 80em) {
+      .oc .group {
+        max-width: 1220px;
+      }
+      .oc .col {
+        width: 28%;
+        margin-right: 6rem;
+      }
+    }
+
+    .bg-yellow {
+      background: #ffc20f;
+    }
+
+    .bg-yellow p {
+      font-size: 26px;
+    }
+
+    .bg-yellow a {
+      text-decoration: none;
+      font-size: 26px;
+      font-weight: 700;
+    }
+
+    .section-8 {
+      margin-top: 60px;
+      padding: 40px 20px;
+      font-size: 36px;
+      font-weight: 700;
+      text-align: center;
+    }
+  </style>
+  <script>
+    /**
+     * Element.closest() polyfill
+     * https://developer.mozilla.org/en-US/docs/Web/API/Element/closest#Polyfill
+     */
+    if (!Element.prototype.closest) {
+      if (!Element.prototype.matches) {
+        Element.prototype.matches =
+          Element.prototype.msMatchesSelector ||
+          Element.prototype.webkitMatchesSelector;
+      }
+      Element.prototype.closest = function (s) {
+        var el = this;
+        var ancestor = this;
+        if (!document.documentElement.contains(el)) return null;
+        do {
+          if (ancestor.matches(s)) return ancestor;
+          ancestor = ancestor.parentElement;
+        } while (ancestor !== null);
+        return null;
+      };
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var $SP = document.getElementById("s-a-p"),
+        activeClass = "active",
+        showTabClass = "show-tab",
+        urlHash = location.hash || false,
+        state = {
+          selectedTab: "nav-part-finder",
+          selectedTabContent: "tab-part-finder",
+        },
+        tabObject = {
+          partfinder: {
+            tab: "nav-part-finder",
+            content: "tab-part-finder",
+          },
+          browseparts: {
+            tab: "nav-browse-parts",
+            content: "tab-browse-parts",
+          },
+          attachments: {
+            tab: "nav-attachments",
+            content: "tab-attachments",
+          },
+          diagrams: {
+            tab: "nav-diagrams",
+            content: "tab-diagrams",
+          },
+        };
+
+      var render = function (state) {
+        var $activeTab = $SP.getElementsByClassName(activeClass)[0];
+        $activeTab.classList.remove(activeClass);
+        document.getElementById(state.selectedTab).classList.add(activeClass);
+        $SP
+          .getElementsByClassName(showTabClass)[0]
+          .classList.remove(showTabClass);
+        document
+          .getElementById(state.selectedTabContent)
+          .classList.add(showTabClass);
+      };
+
+      if (urlHash) {
+        cleanHash = urlHash.replace("#", "").replace("-", "");
+        var findSelected = Object.keys(tabObject).filter(function (key) {
+          return key.indexOf(cleanHash) !== -1;
+        });
+        if (findSelected.length > 0) {
+          var selectedTab = tabObject[findSelected];
+          state.selectedTab = selectedTab.tab;
+          state.selectedTabContent = selectedTab.content;
+          render(state);
+        }
+      }
+      history.replaceState(state, "", "");
+
+      $SP.addEventListener("click", function (event) {
+        if (event.target.className === "s-tab") {
+          event.preventDefault();
+          var $activeTab = $SP.getElementsByClassName(activeClass)[0];
+          $activeTab.classList.remove(activeClass);
+          event.target.classList.add(activeClass);
+          var showTab = event.target.getAttribute("data-show-tab");
+          $SP
+            .getElementsByClassName(showTabClass)[0]
+            .classList.remove(showTabClass);
+          var $activeTabContent = document.getElementById(showTab);
+          $activeTabContent.style.opacity = 0;
+          $activeTabContent.classList.add(showTabClass);
+          state.selectedTab = event.target.getAttribute("id");
+          state.selectedTabContent = showTab;
+          history.pushState(state, "", event.target.href);
+          setTimeout(function () {
+            $activeTabContent.style.opacity = 1;
+          }, 300);
+        }
+      });
+
+      window.onpopstate = function (event) {
+        if (event.state) {
+          render(event.state);
+        }
+      };
+    });
+  </script>
+</div>
