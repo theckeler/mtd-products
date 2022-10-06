@@ -2709,6 +2709,14 @@
                                           <button
                                             class="pa0 ma0 bn bg-white b--white br0 pb3 pointer"
                                             data-testid="item-page-vertical-carousel-hero-image-button"
+                                            onclick="
+                                                document.querySelector('#hide-me').style.display = 'block';
+                                                document.querySelector('#show-me').style.display = 'hide';
+                                                 document.querySelector('#vac-marker').classList.add('b--white');
+                                                 document.querySelector('#vac-marker').classList.remove('b--blue');
+                                                 document.querySelector('#orig-marker').classList.add('b--blue');
+                                                 document.querySelector('#orig-marker').classList.remove('b--white');
+                                           "
                                           >
                                             <div
                                               class="relative"
@@ -2736,6 +2744,7 @@
                                             <div
                                               class="bb bw2 pt1 w-100 b--blue"
                                               data-testid="image-marker"
+                                              id="orig-marker"
                                             ></div>
                                           </button>
                                         </div>
@@ -2746,7 +2755,10 @@
                                             onclick="
                                                 document.querySelector('#hide-me').style.display = 'none';
                                                 document.querySelector('#show-me').style.display = 'block';
-                                            "
+                                                 document.querySelector('#vac-marker').classList.add('b--blue');
+                                                 document.querySelector('#orig-marker').classList.remove('b--blue');
+                                                 document.querySelector('#orig-marker').classList.add('b--white');
+                                           "
                                           >
                                             <div
                                               class="relative"
@@ -2802,6 +2814,7 @@
                                             <div
                                               class="bb bw2 pt1 w-100 b--white"
                                               data-testid="image-marker"
+                                              id="vac-marker"
                                             ></div>
                                           </button>
                                         </div>
