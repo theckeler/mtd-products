@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.783e947a.css",
+    "main.js": "/static/js/main.03945ed0.js",
+    "static/media/x-series.svg": "/static/media/x-series.7892686bc56fa9942c42b06ef5eab2f9.svg",
+    "static/media/intellipower-logo.svg": "/static/media/intellipower-logo.ba69203997ae02df8814df7cdacf1d50.svg",
+    "static/media/efi-logo.svg": "/static/media/efi-logo.c82e19a6aa8a127cc7a4266fb2808516.svg",
+    "index.html": "/index.html",
+    "static/media/icon-star.svg": "/static/media/icon-star.ffd7102941ae5aa5dc4eb68bc360ef84.svg",
+    "static/media/icon-plus.svg": "/static/media/icon-plus.f502220bb60c0e3b1ef836bb5828a785.svg",
+    "main.783e947a.css.map": "/static/css/main.783e947a.css.map",
+    "main.03945ed0.js.map": "/static/js/main.03945ed0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.783e947a.css",
+    "static/js/main.03945ed0.js"
+  ]
+}
