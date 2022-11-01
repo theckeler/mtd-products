@@ -1,0 +1,321 @@
+{
+  "hero": {
+    "img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw5ae90783/images/product-line-browse/Main-Carousel/Hero_3X_30HD_Desktop_1015x630.jpg",
+    "logo": "",
+    "alt": ""
+  },
+
+  "copyBlock": {
+    "h1": "X Series Snow Blowers by Cub Cadet<sup>®</sup>",
+    "copy": "The Cub Cadet X Series lineup offers three levels of snow-clearing power and a host of model options. Choose from the compact performance of the 1X<sup>®</sup>, the impressive power and handling of the 2X<sup>®</sup> or the three-stage system of the 3X<sup>®</sup>."
+  },
+
+  "lineup": {
+    "title": "The X Series Lineup",
+    "blocks": [
+      {
+        "url": "https://www.cubcadet.com/en_US/snow-blowers/single-stage-snow-blowers",
+        "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw855378c6/products/Equipment/Cub-Cadet-1X_21LHP_1.jpg?sw=290&sh=290&sm=fit",
+        "title": "1X Single-Stage Snow Blowers",
+        "copy": "Engineered to use a high-performance auger to quickly and easily remove up to 6 inches of snow from small, smooth areas.",
+        "engFor": [
+          {
+            "title": "Snowfall",
+            "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-snowfall-up-6.svg",
+            "copy": "Up to 6\""
+          },
+          {
+            "title": "Driveway",
+            "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-driveway-up-8.svg",
+            "copy": "Up to 8 cars"
+          },
+          {
+            "title": "Surfaces",
+            "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-surfaces-smooth.svg",
+            "copy": "Smooth"
+          }
+        ],
+        "button": {
+          "copy": "Explore 1X snow blowers"
+        }
+      },
+      {
+        "url": "https://www.cubcadet.com/en_US/snow-blowers/two-stage-snow-blowers",
+        "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw855378c6/products/Equipment/Cub-Cadet-1X_21LHP_1.jpg?sw=290&sh=290&sm=fit",
+        "title": "2X Two-Stage Snow Blowers",
+        "copy": "Engineered for clearing between 12-18 inches in powder and slush. If you measure snow in feet instead of inches, step up to the commercial-grade features on the 2X MAX.",
+        "engFor": [
+          {
+            "title": "Snowfall",
+            "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-snowfall-up-18.svg",
+            "copy": "Up to 18\" <br><small>(18–23\" for EFI and MAX<sup>™</sup> units)</small>"
+          },
+          {
+            "title": "Driveway",
+            "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-driveway-up-15.svg",
+            "copy": "Up to 15 cars"
+          },
+          {
+            "title": "Surfaces",
+            "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-surfaces-smooth-gravel.svg",
+            "copy": "Smooth & gravel"
+          }
+        ],
+        "button": {
+          "copy": "Explore 2X snow blowers"
+        }
+      },
+      {
+        "url": "https://www.cubcadet.com/en_US/snow-blowers/three-stage-snow-blowers",
+        "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw855378c6/products/Equipment/Cub-Cadet-1X_21LHP_1.jpg?sw=290&sh=290&sm=fit",
+        "title": "3X Three-Stage Snow Blowers",
+        "copy": "Engineered to clear deep snowfall faster than 2X models with its patented three-stage system. Designed to easily remove up to 23 inches of snowfall and bust through tough snow barriers.",
+        "engFor": [
+          {
+            "title": "Snowfall",
+            "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-snowfall-up-23.svg",
+            "copy": "Up to 623\""
+          },
+          {
+            "title": "Driveway",
+            "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-driveway-up-15-plus.svg",
+            "copy": "Up to 15+ cars"
+          },
+          {
+            "title": "Surfaces",
+            "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-surfaces-smooth-gravel.svg",
+            "copy": "Smooth & gravel"
+          }
+        ],
+        "button": {
+          "copy": "Explore 3X snow blowers"
+        }
+      }
+    ]
+  },
+
+  "quote": {
+    "stars": 5,
+    "img": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw5ae90783/images/product-line-browse/Main-Carousel/Hero_3X_30HD_Desktop_1015x630.jpg",
+    "title": "THIS THING WAS A BEAST.",
+    "copy": "“We just had our first blizzard of the season. No problem clearing our property, and helped a couple neighbors too. Over a foot of wet heavy snow and it did not intimidate this Cub.”",
+    "name": "Ryan from Sioux City, IA",
+    "unit": "3X<sup>®</sup> 30” HD"
+  },
+
+  "intellipower": {
+    "blocks": [
+      {
+        "title": "Discover power that rises to the occasion.",
+        "copy": "Intellipower<sup>™</sup> technology provides <strong>up to 13% more available power</strong> for the 272cc engine, resulting in less bogging down when clearing heavy, wet and deep snow.<sup>*</sup>",
+        "tag": "<sup>*</sup>When compared to the same engine without IntelliPower<sup>™</sup> technology. Improvements vary depending on engine models and specific operating conditions."
+      },
+      {
+        "title": "Cub Cadet electronic fuel-injected (EFI) engines set new standards in strength and power. EFI provides reliable starting in most conditions.",
+        "copy": "Available with IntelliPower™ engine technology to take on heavy, deep and wet snow conditions.",
+        "tag": ""
+      }
+    ],
+    "button": {
+      "copy": "Learn more about cub cadet engine innovation",
+      "url": "https://www.cubcadet.com/en_US/snow-blowers/single-stage-snow-blowers"
+    }
+  },
+
+  "machineExtreme": {
+    "h2": "A Machine for the Extreme",
+    "copy": "All Cub Cadet X Series models come with premium features to get your winter done right.",
+    "blocks": [
+      {
+        "icon": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-chute-control.svg",
+        "title": "Easy chute control",
+        "copy": "Throw snow in any direction with easy pitch and chute control from the operator’s station."
+      },
+      {
+        "icon": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-light.svg",
+        "title": "Improved Visibility",
+        "copy": "Designed to help you see at dawn or dusk with headlights that shine bright and far."
+      },
+      {
+        "icon": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-push-button.svg",
+        "title": "Push-button electric start",
+        "copy": "Eliminate pull starts and start blowing snow quickly with push-button electric start."
+      },
+      {
+        "icon": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-speed.svg",
+        "title": "Move at your speed",
+        "copy": "A high-performance auger-propelled drive system designed to work at your pace."
+      }
+    ]
+  },
+
+  "imgBlocks": {
+    "desktop": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/Group%203540.png",
+
+    "mobile": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/Group%203564.png"
+  },
+
+  "compare": {
+    "h2": "Shop and Compare X Series Snow Blowers",
+    "blocks": [
+      {
+        "row": [
+          { "copy": "Available Snow Blower Features", "sub": false },
+          {
+            "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-snowfall-up-6.svg",
+            "copy": "Light Snowfall Moderate Use"
+          },
+          {
+            "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-snowfall-up-18.svg",
+            "copy": "Moderate Snowfall Moderate Use"
+          },
+          {
+            "img": "https://staging-na01-mtd.demandware.net/on/demandware.static/-/Sites-cubcadet-Library/default/v939bc9acaff6adfd88f97d4f5008d7921824fb15/snow-v2/icon-snowfall-up-23.svg",
+            "copy": "Heavy Snowfall Frequent Use"
+          }
+        ]
+      },
+      {
+        "row": [
+          {
+            "copy": "Push-button electric start comes equipped on all models",
+            "sub": false
+          },
+          { "active": true },
+          { "active": true },
+          { "active": true }
+        ]
+      },
+      {
+        "row": [
+          { "copy": "Heavy-duty gearbox for durability", "sub": false },
+          { "active": false },
+          { "active": true },
+          { "active": true }
+        ]
+      },
+      {
+        "row": [
+          {
+            "copy": "Trigger-control power steering for easy maneuverability",
+            "sub": false
+          },
+          { "active": false },
+          { "active": true },
+          { "active": true }
+        ]
+      },
+      {
+        "row": [
+          {
+            "copy": "Heated hand grips for comfortable operation",
+            "sub": false
+          },
+          { "active": false },
+          { "active": true },
+          { "active": true }
+        ]
+      },
+      {
+        "row": [
+          {
+            "copy": "LED light bar for visibility before and after dawn",
+            "sub": false
+          },
+          { "active": false },
+          { "active": true },
+          { "active": true }
+        ]
+      },
+      {
+        "row": [
+          {
+            "copy": "IntelliPower<sup>™</sup> for more available engine power to tackle heavy and wet snow",
+            "sub": false
+          },
+          { "active": false },
+          { "active": true },
+          { "active": false }
+        ]
+      },
+      {
+        "row": [
+          {
+            "copy": "Track drive system, designed for severe weather conditions",
+            "sub": false
+          },
+          { "active": false },
+          { "active": true },
+          { "active": true }
+        ]
+      },
+      {
+        "row": [
+          {
+            "copy": "Backed by our limited residential warranty",
+            "sub": "See brochure for full warranty information"
+          },
+          { "copy": "3-Year" },
+          { "copy": "5-Year" },
+          { "copy": "5-Year" }
+        ]
+      }
+    ],
+    "copy": "Explore the full brochure for specific model and trim options",
+    "button": {
+      "copy": "View brochure",
+      "url": "https://www.cubcadet.com/en_US/snow-blowers/three-stage-snow-blowers"
+    }
+  },
+
+  "howTo": {
+    "h2": "How To’s & Maintenance",
+    "blocks": [
+      {
+        "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw071865a6/Knowledge_Center/help-center/snow-thrower-operation-tips_1100x572.jpg",
+        "title": "How to Prepare Your Snow Thrower for Winter Use",
+        "copy": "Whether you’re prepping your trusty 2X two-stage snow thrower for yet another winter, or getting your new 3X three-stage snow thrower ready to face its first blizzard, these snow thrower…",
+        "url": "https://www.cubcadet.com/en_US/snow-blowers/single-stage-snow-blowers"
+      },
+      {
+        "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw071865a6/Knowledge_Center/help-center/snow-thrower-operation-tips_1100x572.jpg",
+        "title": "Snow Blower Safety Tips",
+        "copy": "Snow blowers, often referred to as snow blowers are an easy way to keep the snow off your driveway during the winter months. Like any piece of power equipment, snow blower safety…",
+        "url": "https://www.cubcadet.com/en_US/snow-blowers/single-stage-snow-blowers"
+      },
+      {
+        "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw071865a6/Knowledge_Center/help-center/snow-thrower-operation-tips_1100x572.jpg",
+        "title": "How to Prepare Your Snow Blower for Storage in the Off-Season",
+        "copy": "These instructions will explain how to prepare your snow thrower for off-season storage. Some of these steps differ between single-, two- and three-stage snow throwers. Depending on…",
+        "url": "https://www.cubcadet.com/en_US/snow-blowers/single-stage-snow-blowers"
+      }
+    ]
+  },
+
+  "attAcc": {
+    "h2": "Attachments & Accessories",
+    "blocks": [
+      {
+        "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw071865a6/Knowledge_Center/help-center/snow-thrower-operation-tips_1100x572.jpg",
+        "title": "Snow Cab",
+        "item": "490-241-0032",
+        "price": "$132.99",
+        "url": "https://www.cubcadet.com/en_US/snow-blowers/single-stage-snow-blowers"
+      },
+      {
+        "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw071865a6/Knowledge_Center/help-center/snow-thrower-operation-tips_1100x572.jpg",
+        "title": "Snow Blower Cover",
+        "item": "490-290-0010",
+        "price": "$38.99",
+        "url": "https://www.cubcadet.com/en_US/snow-blowers/single-stage-snow-blowers"
+      },
+      {
+        "img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-cubcadet-Library/default/dw071865a6/Knowledge_Center/help-center/snow-thrower-operation-tips_1100x572.jpg",
+        "title": "Drift Cutter Kit",
+        "item": "OEM-390-679",
+        "price": "$41.99",
+        "url": "https://www.cubcadet.com/en_US/snow-blowers/single-stage-snow-blowers"
+      }
+    ]
+  }
+}

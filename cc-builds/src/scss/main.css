@@ -1,0 +1,335 @@
+.mtd-page {
+  font-size: 16px;
+}
+.mtd-page section {
+  position: relative;
+  overflow: hidden;
+}
+.mtd-page .wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 80.625rem;
+  margin: auto;
+}
+.mtd-page .bg-black {
+  background-color: #000;
+  color: #fff;
+}
+.mtd-page .bg-white {
+  background-color: #fff;
+  color: #000;
+}
+.mtd-page .bg-grey {
+  background-color: #efefef;
+  color: #000;
+}
+.mtd-page sup {
+  display: inline-block;
+  font-size: 60%;
+  vertical-align: super;
+}
+.mtd-page h1 {
+  font-size: 3.125rem;
+}
+.mtd-page h1 sup {
+  font-size: 40%;
+}
+.mtd-page .star-rating svg * {
+  fill: #000;
+}
+.mtd-page .clip-corner {
+  -webkit-clip-path: polygon(1.5rem 0, 100% 0%, 100% 100%, 0 100%, 0 1.5rem);
+          clip-path: polygon(1.5rem 0, 100% 0%, 100% 100%, 0 100%, 0 1.5rem);
+}
+.mtd-page .desktop {
+  display: block;
+}
+.mtd-page .mobile {
+  display: none;
+}
+.mtd-page .unstyled.link {
+  text-decoration: none;
+}
+.mtd-page button {
+  display: block;
+  padding: 0.625rem 2.5rem;
+  font-weight: 600;
+  border: 0;
+}
+.mtd-page button.bg-black {
+  color: #fff;
+  background: #000;
+}
+.mtd-page .snow-v2 .title {
+  font-size: 1.875rem;
+  line-height: 1;
+}
+.mtd-page .snow-v2 .copy {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.mtd-page .snow-v2 .pluses {
+  position: absolute;
+  max-width: 6.25rem;
+}
+.mtd-page .snow-v2 .pluses.top {
+  top: 2.5rem;
+  left: 2.5rem;
+}
+.mtd-page .snow-v2 .pluses.bottom {
+  bottom: 2.5rem;
+  right: 2.5rem;
+}
+.mtd-page .snow-v2 .pluses svg {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+.mtd-page .snow-v2 .pluses svg * {
+  fill: #fff;
+}
+.mtd-page .snow-v2 .flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.mtd-page .snow-v2 section.hero .wrapper {
+  margin-bottom: 1.25rem;
+}
+.mtd-page .snow-v2 section.hero .block {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  max-width: 25rem;
+}
+.mtd-page .snow-v2 section.hero .block svg * {
+  fill: #fff;
+}
+.mtd-page .snow-v2 section.quote .wrapper {
+  margin-top: 2.5rem;
+}
+.mtd-page .snow-v2 section.quote .block {
+  max-width: 43.75rem;
+}
+.mtd-page .snow-v2 section.quote .star-rating svg {
+  max-width: 1.375rem;
+}
+.mtd-page .snow-v2 section.hero,
+.mtd-page .snow-v2 section.quote {
+  display: flex;
+  padding: 0;
+  min-height: 37.5rem;
+}
+.mtd-page .snow-v2 section.hero .block,
+.mtd-page .snow-v2 section.quote .block {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 1.5rem;
+}
+.mtd-page .snow-v2 section.hero > img,
+.mtd-page .snow-v2 section.quote > img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1001;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 37.5rem;
+}
+.mtd-page .snow-v2 section.section-2 {
+  padding: 7.5rem;
+  background: #000;
+  text-align: center;
+}
+.mtd-page .snow-v2 section.section-2 p {
+  font-size: 1.375rem;
+  line-height: 1.6;
+  margin: 1.25rem auto 0 auto;
+  max-width: 43.75rem;
+}
+.mtd-page .snow-v2 section.section-3 {
+  padding: 5rem 0;
+}
+.mtd-page .snow-v2 section.section-3 h2 {
+  font-size: 3.125rem;
+  margin: 0 auto 1.25rem auto;
+  text-align: center;
+}
+.mtd-page .snow-v2 section.section-3 .row .col {
+  display: flex;
+}
+.mtd-page .snow-v2 section.section-3 .row .col a {
+  display: flex;
+  flex-direction: column;
+  padding: 0.625rem;
+  cursor: pointer;
+  border-radius: 0.1875rem;
+}
+.mtd-page .snow-v2 section.section-3 .row .col a:hover {
+  color: #000;
+  background: #eaeaea;
+}
+.mtd-page .snow-v2 section.section-3 .row .col a > img {
+  max-width: 18.75rem;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 1.25rem auto;
+  border-radius: 0.1875rem;
+}
+.mtd-page .snow-v2 section.section-3 .row .col a .title {
+  margin-bottom: 0.625rem;
+}
+.mtd-page .snow-v2 section.section-3 .row .col a .icon {
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+  width: 100%;
+  height: 7.5rem;
+}
+.mtd-page .snow-v2 section.section-3 .row .col a .copy {
+  margin-bottom: 1.25rem;
+}
+.mtd-page .snow-v2 section.section-3 .row .col a .eng-for {
+  font-size: 1rem;
+  text-align: center;
+  background: #000;
+  padding: 0.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: 0.75rem;
+}
+.mtd-page .snow-v2 section.section-3 .row .col a .eng-for-blocks {
+  text-align: center;
+  font-size: 0.75rem;
+}
+.mtd-page .snow-v2 section.section-3 .row .col a small {
+  display: block;
+  line-height: 1;
+  margin-top: 0.25rem;
+  text-align: center;
+}
+.mtd-page .snow-v2 section.section-5 .block {
+  max-width: 37.5em;
+}
+.mtd-page .snow-v2 section.section-5 .block .title {
+  font-size: 1.125rem;
+}
+.mtd-page .snow-v2 section.section-5 .block .copy {
+  font-size: 1.375rem;
+}
+.mtd-page .snow-v2 section.section-5 .block .row {
+  margin-bottom: 0;
+}
+.mtd-page .snow-v2 section.section-5 .block .author,
+.mtd-page .snow-v2 section.section-5 .block .unit {
+  font-size: 1rem;
+  flex: 0 1 auto;
+  width: auto;
+}
+.mtd-page .snow-v2 section.section-5 .block .unit {
+  border-left: 1px solid #000;
+}
+.mtd-page .snow-v2 section.section-6 {
+  padding: 3.75rem 0;
+}
+.mtd-page .snow-v2 section.section-6 .logo {
+  min-height: 18.125rem;
+}
+.mtd-page .snow-v2 section.section-6 .row .title {
+  font-weight: 600;
+}
+.mtd-page .snow-v2 section.section-6 .row .plus {
+  font-family: "Times New Roman", sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+  flex: 0 0 1.25rem;
+  padding-right: 1.25rem;
+  margin-top: -14px;
+}
+.mtd-page .snow-v2 section.section-7 {
+  padding: 3.75rem 0;
+}
+.mtd-page .snow-v2 section.section-7 .copy {
+  margin-bottom: 2.5rem;
+}
+.mtd-page .snow-v2 section.section-8 {
+  padding: 3.75rem 0;
+}
+.mtd-page .snow-v2 section.section-9 {
+  padding: 3.75rem 0;
+}
+.mtd-page .snow-v2 section.section-9 .compare {
+  padding: 1.25rem;
+}
+.mtd-page .snow-v2 section.section-9 .compare li {
+  border: 1px solid #000;
+  border-top-width: 0.0625rem;
+  border-right-width: 0rem;
+  border-bottom-width: 0rem;
+  border-left-width: 0.0625rem;
+  flex: 0 1 20%;
+  max-width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+.mtd-page .snow-v2 section.section-9 .compare li img {
+  max-width: 60%;
+}
+.mtd-page .snow-v2 section.section-9 .compare li p {
+  margin-top: 0.625rem;
+}
+.mtd-page .snow-v2 section.section-9 .compare li:nth-child(4n+4) {
+  border-right-width: 0;
+}
+.mtd-page .snow-v2 section.section-9 .compare li:nth-child(4n+1) {
+  justify-content: left;
+  border-left-width: 0;
+  flex: 0 1 40%;
+  max-width: 40%;
+}
+.mtd-page .snow-v2 section.section-9 .compare li:nth-child(-n+4) {
+  border-top-width: 0rem;
+}
+.mtd-page .snow-v2 section.section-10 a,
+.mtd-page .snow-v2 section.section-11 a {
+  display: flex;
+  flex-direction: column;
+  background: #efefef;
+  text-decoration: none;
+  height: 100%;
+}
+.mtd-page .snow-v2 section.section-10 a .content strong,
+.mtd-page .snow-v2 section.section-11 a .content strong {
+  font-size: 1.375rem;
+  line-height: 1.3;
+}
+.mtd-page .snow-v2 section.section-10 a .content .copy,
+.mtd-page .snow-v2 section.section-11 a .content .copy {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.mtd-page .snow-v2 section.section-10 a .content .read-more,
+.mtd-page .snow-v2 section.section-11 a .content .read-more {
+  text-decoration: underline;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.mtd-page .snow-v2 section.section-10 a:hover,
+.mtd-page .snow-v2 section.section-11 a:hover {
+  color: #000;
+}
+
+@media (max-width: 48rem) {
+  .mtd-page .desktop {
+    display: none;
+  }
+  .mtd-page .mobile {
+    display: block;
+  }
+}
